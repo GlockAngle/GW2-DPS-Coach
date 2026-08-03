@@ -1,0 +1,8 @@
+Spider Venom modifier audit update
+
+- Replaced the single opaque "Condition and trait multiplier" row with a source breakdown.
+- Shows supported sigil and relic condition modifiers separately.
+- Shows Lead Attacks, Combat High, Distracting Throw, and Lotus Training inputs and contributions.
+- Labels each modifier Applied or Neutral.
+- Displays outgoing multiplier, separate Vulnerability multiplier, and combined damage factor.
+- Splits the audit into Base contribution, Outgoing damage modifiers, and Final contribution.

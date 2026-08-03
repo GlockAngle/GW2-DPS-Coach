@@ -1,0 +1,8 @@
+Trait calculation validation pass
+
+- Added a live Active Trait Effects panel to Gear Simulator.
+- The panel lists every resolved trait effect, amount, condition and destination.
+- Event-driven and conditional parts remain visible in a separate work queue.
+- Added representative runtime checks for Deadly Ambition, Potent Poison,
+  Lead Attacks, Combat High, Executioner and One in the Chamber.
+- Added regression tests ensuring passive and event parts are both preserved.

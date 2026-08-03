@@ -1,0 +1,4731 @@
+{
+  "_README": {
+    "status_values": [
+      "implemented",
+      "assumption",
+      "event_ready",
+      "data_only"
+    ],
+    "purpose": "All Thief traits are mapped. Static effects are implemented, conditional averages are assumption-ready, and event-only traits expose exact official event packets for the future rotation engine.",
+    "effect_states": [
+      "applied_now",
+      "event_engine",
+      "needs_implementation"
+    ],
+    "effect_model": "Each trait now stores separate effect records so passive and event-driven portions can have different implementation states."
+  },
+  "1245": {
+    "status": "implemented",
+    "handler": "dagger_training",
+    "notes": "Baseline +80 Power is always active; the additional +80 is resolved from the selected weapon configuration.",
+    "effects": [
+      {
+        "type": "attribute_bonus",
+        "attribute": "Power",
+        "value": 80,
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "attribute_bonus",
+        "attribute": "Power",
+        "value": 80,
+        "condition": "dagger_equipped",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1291": {
+    "status": "implemented",
+    "modifiers": {
+      "Poison Duration": 0.33,
+      "poison": 0.33
+    },
+    "labels": {
+      "Poison Duration": "Poison duration",
+      "poison": "Poison damage"
+    },
+    "destinations": {
+      "Poison Duration": "Poison duration audit",
+      "poison": "Poison condition modifier"
+    },
+    "notes": "The additional poison stacks on other Deadly Arts traits require their trigger handlers.",
+    "effects": [
+      {
+        "type": "modifier",
+        "target": "Poison Duration",
+        "value": 0.33,
+        "state": "applied_now",
+        "source": "static_override"
+      },
+      {
+        "type": "modifier",
+        "target": "poison",
+        "value": 0.33,
+        "state": "applied_now",
+        "source": "static_override"
+      }
+    ]
+  },
+  "1904": {
+    "status": "assumption",
+    "handler": "no_quarter",
+    "notes": "PvE Ferocity is applied according to configured Fury uptime. Fury extension requires critical-hit event timing.",
+    "event_trigger": "Landing a critical hit while under the effects of fury increases the duration of fury.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 2
+      },
+      {
+        "effect": "Fury",
+        "stacks": 1,
+        "duration_s": 2
+      },
+      {
+        "effect": "CritDamage",
+        "base": 250,
+        "scales_with": "CritDamage"
+      },
+      {
+        "effect": "CritDamage",
+        "base": 300,
+        "scales_with": "CritDamage"
+      }
+    ],
+    "effects": [
+      {
+        "type": "attribute_bonus",
+        "attribute": "Ferocity",
+        "value": 250,
+        "condition": "fury_uptime",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "boon",
+        "boon": "Fury",
+        "duration_s": 2,
+        "trigger": "critical_hit",
+        "internal_cooldown_s": 2,
+        "state": "event_engine",
+        "source": "event_packet"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Landing a critical hit while under the effects of fury increases the duration of fury.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 2
+          },
+          {
+            "effect": "Fury",
+            "stacks": 1,
+            "duration_s": 2
+          },
+          {
+            "effect": "CritDamage",
+            "base": 250,
+            "scales_with": "CritDamage"
+          },
+          {
+            "effect": "CritDamage",
+            "base": 300,
+            "scales_with": "CritDamage"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1164": {
+    "status": "assumption",
+    "handler": "deadly_ambition",
+    "notes": "The static +180 Condition Damage is active. Poison application needs attack events.",
+    "event_trigger": "Inflict poison when striking a foe with a dual wield attack.",
+    "event_packet": [
+      {
+        "effect": "Poisoned",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "ConditionDamage",
+        "base": 180,
+        "scales_with": "ConditionDamage"
+      },
+      {
+        "effect": "ConditionDamage",
+        "base": 120,
+        "scales_with": "ConditionDamage"
+      }
+    ],
+    "effects": [
+      {
+        "type": "attribute_bonus",
+        "attribute": "Condition Damage",
+        "value": 180,
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "apply_condition",
+        "condition": "Poison",
+        "duration_s": 3,
+        "trigger": "qualifying_dual_wield_attack",
+        "state": "event_engine",
+        "source": "official_trait"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Inflict poison when striking a foe with a dual wield attack.",
+        "packet": [
+          {
+            "effect": "Poisoned",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "ConditionDamage",
+            "base": 180,
+            "scales_with": "ConditionDamage"
+          },
+          {
+            "effect": "ConditionDamage",
+            "base": 120,
+            "scales_with": "ConditionDamage"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1704": {
+    "status": "implemented",
+    "handler": "revealed_training",
+    "notes": "Uses configured Revealed uptime for the additional Power.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "revealed_training",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1257": {
+    "status": "implemented",
+    "handler": "exposed_weakness",
+    "notes": "Uses configured unique-condition count.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "exposed_weakness",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1269": {
+    "status": "assumption",
+    "handler": "executioner",
+    "notes": "Uses configured target health.",
+    "event_trigger": "Deal increased strike damage when your target is below the health threshold.",
+    "event_packet": [
+      {
+        "effect": "Damage Increase",
+        "value": null
+      },
+      {
+        "effect": "Health Threshold",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "executioner",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Deal increased strike damage when your target is below the health threshold.",
+        "packet": [
+          {
+            "effect": "Damage Increase",
+            "value": null
+          },
+          {
+            "effect": "Health Threshold",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1281": {
+    "status": "implemented",
+    "handler": "keen_observer",
+    "notes": "Uses configured player health.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "keen_observer",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1268": {
+    "status": "implemented",
+    "handler": "twin_fangs",
+    "notes": "Uses player health and flanking/defiant assumption.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "twin_fangs",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1272": {
+    "status": "implemented",
+    "handler": "practiced_tolerance",
+    "notes": "Converts 10% of final Precision into Ferocity in PvE.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "practiced_tolerance",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1299": {
+    "status": "assumption",
+    "handler": "deadly_aim",
+    "notes": "The +10% strike modifier is active for pistol/harpoon gun. Piercing is skill behavior.",
+    "event_trigger": "Your pistol and harpoon gun attacks now pierce and have increased strike damage.",
+    "event_packet": [
+      {
+        "effect": "Pierces"
+      },
+      {
+        "effect": "Number of Targets",
+        "value": 5
+      },
+      {
+        "effect": "Damage Increase",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "deadly_aim",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Your pistol and harpoon gun attacks now pierce and have increased strike damage.",
+        "packet": [
+          {
+            "effect": "Pierces"
+          },
+          {
+            "effect": "Number of Targets",
+            "value": 5
+          },
+          {
+            "effect": "Damage Increase",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1282": {
+    "status": "implemented",
+    "handler": "ferocious_strikes",
+    "notes": "Uses configured target health.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "ferocious_strikes",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1215": {
+    "status": "assumption",
+    "handler": "hidden_killer",
+    "notes": "Uses configured stealth/linger uptime.",
+    "event_trigger": "Gain bonus critical-hit chance while stealthed.",
+    "event_packet": [
+      {
+        "effect": "Critical Chance Increase",
+        "value": null
+      },
+      {
+        "effect": "Hidden Killer",
+        "stacks": 1,
+        "duration_s": 4
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "hidden_killer",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain bonus critical-hit chance while stealthed.",
+        "packet": [
+          {
+            "effect": "Critical Chance Increase",
+            "value": null
+          },
+          {
+            "effect": "Hidden Killer",
+            "stacks": 1,
+            "duration_s": 4
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2362": {
+    "status": "assumption",
+    "handler": "enterprising_aristocrat",
+    "notes": "Damage reduction uses barrier uptime. Artifact barrier/initiative need event simulation.",
+    "event_trigger": "Gain initiative and barrier whenever you use an artifact skill.",
+    "event_packet": [
+      {
+        "effect": "Barrier",
+        "base": 975,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Initiative",
+        "value": 2
+      },
+      {
+        "effect": "Initiative",
+        "value": 1
+      },
+      {
+        "effect": "Condition Damage Reduced",
+        "value": null
+      },
+      {
+        "effect": "Damage Reduced",
+        "value": null
+      },
+      {
+        "effect": "Condition Damage Reduced",
+        "value": null
+      },
+      {
+        "effect": "Damage Reduced",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "enterprising_aristocrat",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain initiative and barrier whenever you use an artifact skill.",
+        "packet": [
+          {
+            "effect": "Barrier",
+            "base": 975,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Initiative",
+            "value": 2
+          },
+          {
+            "effect": "Initiative",
+            "value": 1
+          },
+          {
+            "effect": "Condition Damage Reduced",
+            "value": null
+          },
+          {
+            "effect": "Damage Reduced",
+            "value": null
+          },
+          {
+            "effect": "Condition Damage Reduced",
+            "value": null
+          },
+          {
+            "effect": "Damage Reduced",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2348": {
+    "status": "assumption",
+    "handler": "combat_high",
+    "notes": "Uses configured average stacks: +3% strike damage and +2% condition damage per stack in PvE. Stack gain/decay requires event simulation.",
+    "event_trigger": "Gain Combat High when you use Skritt Swipe, increasing your outgoing strike and condition damage.",
+    "event_packet": [
+      {
+        "effect": "Combat High",
+        "stacks": 10,
+        "duration_s": 20
+      },
+      {
+        "effect": "Interval",
+        "seconds": 2
+      },
+      {
+        "effect": "Damage Increase per Stack",
+        "value": null
+      },
+      {
+        "effect": "Damage Increase per Stack",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "combat_high",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain Combat High when you use Skritt Swipe, increasing your outgoing strike and condition damage.",
+        "packet": [
+          {
+            "effect": "Combat High",
+            "stacks": 10,
+            "duration_s": 20
+          },
+          {
+            "effect": "Interval",
+            "seconds": 2
+          },
+          {
+            "effect": "Damage Increase per Stack",
+            "value": null
+          },
+          {
+            "effect": "Damage Increase per Stack",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1232": {
+    "status": "assumption",
+    "handler": "preparedness",
+    "notes": "Expertise is active. Maximum initiative requires the initiative engine.",
+    "event_trigger": "Increases maximum initiative by 3.",
+    "event_packet": [
+      {
+        "effect": "ConditionDuration",
+        "base": 150,
+        "scales_with": "ConditionDuration"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "preparedness",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Increases maximum initiative by 3.",
+        "packet": [
+          {
+            "effect": "ConditionDuration",
+            "base": 150,
+            "scales_with": "ConditionDuration"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1157": {
+    "status": "assumption",
+    "handler": "lead_attacks",
+    "notes": "Uses configured average damage bonus. Initiative spending and Steal recharge need event/cooldown logic.",
+    "event_trigger": "Increases all damage dealt per initiative spent.",
+    "event_packet": [
+      {
+        "effect": "Lead Attacks",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Maximum Damage Increase",
+        "value": null
+      },
+      {
+        "effect": "Recharge Reduced",
+        "value": null
+      },
+      {
+        "effect": "Combat Only"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "lead_attacks",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Increases all damage dealt per initiative spent.",
+        "packet": [
+          {
+            "effect": "Lead Attacks",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Maximum Damage Increase",
+            "value": null
+          },
+          {
+            "effect": "Recharge Reduced",
+            "value": null
+          },
+          {
+            "effect": "Combat Only"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1706": {
+    "status": "assumption",
+    "handler": "deadly_ambush",
+    "notes": "Bleeding damage modifier is active. Steal-applied bleeding needs events.",
+    "event_trigger": "Stealing also applies bleeding.",
+    "event_packet": [
+      {
+        "effect": "Damage Increase",
+        "value": null
+      },
+      {
+        "effect": "Bleeding",
+        "stacks": 3,
+        "duration_s": 10
+      },
+      {
+        "effect": "Bleeding",
+        "stacks": 3,
+        "duration_s": 6
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "deadly_ambush",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Stealing also applies bleeding.",
+        "packet": [
+          {
+            "effect": "Damage Increase",
+            "value": null
+          },
+          {
+            "effect": "Bleeding",
+            "stacks": 3,
+            "duration_s": 10
+          },
+          {
+            "effect": "Bleeding",
+            "stacks": 3,
+            "duration_s": 6
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1192": {
+    "status": "assumption",
+    "handler": "swindlers_equilibrium",
+    "notes": "Static and weapon-conditional Power are active. Evade recharge interaction needs events.",
+    "event_trigger": "Gain power and additional power while wielding a sword or underwater spear.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 1
+      },
+      {
+        "effect": "Recharge Time Reduced",
+        "seconds": 2
+      },
+      {
+        "effect": "Power",
+        "base": 120,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Bonus Power",
+        "base": 120,
+        "scales_with": "Power"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "swindlers_equilibrium",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain power and additional power while wielding a sword or underwater spear.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 1
+          },
+          {
+            "effect": "Recharge Time Reduced",
+            "seconds": 2
+          },
+          {
+            "effect": "Power",
+            "base": 120,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Bonus Power",
+            "base": 120,
+            "scales_with": "Power"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1887": {
+    "status": "assumption",
+    "handler": "weakening_strikes",
+    "notes": "Uses configured weakened-target uptime. Weakness application needs dodge/attack events.",
+    "event_trigger": "Your next attack after dodging causes weakness to foes struck.",
+    "event_packet": [
+      {
+        "effect": "Weakening Strikes",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Weakness",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "Weakness",
+        "stacks": 1,
+        "duration_s": 2
+      },
+      {
+        "effect": "Damage Reduced",
+        "value": null
+      },
+      {
+        "effect": "Damage Increase",
+        "value": null
+      },
+      {
+        "effect": "Damage Increase",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "weakening_strikes",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Your next attack after dodging causes weakness to foes struck.",
+        "packet": [
+          {
+            "effect": "Weakening Strikes",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Weakness",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "Weakness",
+            "stacks": 1,
+            "duration_s": 2
+          },
+          {
+            "effect": "Damage Reduced",
+            "value": null
+          },
+          {
+            "effect": "Damage Increase",
+            "value": null
+          },
+          {
+            "effect": "Damage Increase",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1933": {
+    "status": "assumption",
+    "handler": "marauders_resilience",
+    "notes": "Power-to-Vitality conversion is active. Nearby-foe reduction uses configured uptime.",
+    "event_trigger": "Gain vitality based on a portion of your power.",
+    "event_packet": [
+      {
+        "effect": "Attribute Conversion",
+        "value": null
+      },
+      {
+        "effect": "Damage Reduced",
+        "value": null
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "marauders_resilience",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain vitality based on a portion of your power.",
+        "packet": [
+          {
+            "effect": "Attribute Conversion",
+            "value": null
+          },
+          {
+            "effect": "Damage Reduced",
+            "value": null
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1884": {
+    "status": "assumption",
+    "handler": "staff_master",
+    "notes": "Static and staff-conditional Power are active. Endurance gain requires initiative events.",
+    "event_trigger": "While wielding a staff, gain endurance for each initiative point spent.",
+    "event_packet": [
+      {
+        "effect": "Endurance per Initiative",
+        "value": 2
+      },
+      {
+        "effect": "Endurance per Initiative",
+        "value": 1
+      },
+      {
+        "effect": "Power",
+        "base": 120,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Bonus Power with Staff",
+        "base": 120,
+        "scales_with": "Power"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "staff_master",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "While wielding a staff, gain endurance for each initiative point spent.",
+        "packet": [
+          {
+            "effect": "Endurance per Initiative",
+            "value": 2
+          },
+          {
+            "effect": "Endurance per Initiative",
+            "value": 1
+          },
+          {
+            "effect": "Power",
+            "base": 120,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Bonus Power with Staff",
+            "base": 120,
+            "scales_with": "Power"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1893": {
+    "status": "implemented",
+    "handler": "havoc_specialist",
+    "notes": "Uses configured endurance-not-full uptime and the current PvE +15% strike damage value.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "havoc_specialist",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "2084": {
+    "status": "implemented",
+    "handler": "iron_sight",
+    "notes": "Uses configured marked-target uptime.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "iron_sight",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "2118": {
+    "status": "assumption",
+    "handler": "silent_scope",
+    "notes": "Precision is active. Stealth-attack access requires malice and skill state.",
+    "event_trigger": "Gain precision.",
+    "event_packet": [
+      {
+        "effect": "Silent Scope",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "Precision",
+        "base": 120,
+        "scales_with": "Precision"
+      },
+      {
+        "effect": "Malice Threshold",
+        "value": 3
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "silent_scope",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain precision.",
+        "packet": [
+          {
+            "effect": "Silent Scope",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "Precision",
+            "base": 120,
+            "scales_with": "Precision"
+          },
+          {
+            "effect": "Malice Threshold",
+            "value": 3
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2160": {
+    "status": "implemented",
+    "handler": "premeditation",
+    "notes": "Concentration and strike bonus use configured unique-boon count.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "premeditation",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "2093": {
+    "status": "assumption",
+    "handler": "be_quick_or_be_killed",
+    "notes": "Power/Precision use configured Quickness uptime. Mark-triggered Quickness needs events.",
+    "event_trigger": "Gain quickness when marking a foe.",
+    "event_packet": [
+      {
+        "effect": "Quickness",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Quickness",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "Power",
+        "base": 200,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Precision",
+        "base": 200,
+        "scales_with": "Precision"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "be_quick_or_be_killed",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain quickness when marking a foe.",
+        "packet": [
+          {
+            "effect": "Quickness",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Quickness",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "Power",
+            "base": 200,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Precision",
+            "base": 200,
+            "scales_with": "Precision"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2284": {
+    "status": "implemented",
+    "handler": "second_opinion",
+    "notes": "Condition Damage and conversion are active; scepter bonus resolves from weapon selection.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "second_opinion",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "2264": {
+    "status": "implemented",
+    "handler": "strength_of_shadows",
+    "notes": "Vitality conversion and the current PvE +20% Torment damage modifier are active.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "strength_of_shadows",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1242": {
+    "status": "assumption",
+    "handler": "fluid_strikes",
+    "notes": "Configured uptime applies the current PvE +10% strike damage buff. Automatic activation requires movement-skill/shadowstep events.",
+    "event_trigger": "Gain increased strike damage for a period of time when you shadowstep or use a movement skill.",
+    "event_packet": [
+      {
+        "effect": "Fluid Strikes",
+        "stacks": 1,
+        "duration_s": 5
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "fluid_strikes",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain increased strike damage for a period of time when you shadowstep or use a movement skill.",
+        "packet": [
+          {
+            "effect": "Fluid Strikes",
+            "stacks": 1,
+            "duration_s": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1833": {
+    "status": "assumption",
+    "handler": "lotus_training",
+    "notes": "Configured uptime applies the current PvE +15% condition damage buff. Impaling Lotus damage and conditions require dodge/skill events.",
+    "event_trigger": "Your dodge ability now uses Impaling Lotus, firing daggers at nearby enemies.",
+    "event_packet": [
+      {
+        "effect": "Lotus Training",
+        "stacks": 1,
+        "duration_s": 6
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "lotus_training",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Your dodge ability now uses Impaling Lotus, firing daggers at nearby enemies.",
+        "packet": [
+          {
+            "effect": "Lotus Training",
+            "stacks": 1,
+            "duration_s": 6
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2047": {
+    "status": "assumption",
+    "handler": "bounding_dodger",
+    "notes": "Configured uptime applies the current PvE +15% strike damage buff. Bound damage requires dodge/skill events.",
+    "event_trigger": "Your dodge ability is replaced by Bound, dealing damage to the area after you evade.",
+    "event_packet": [
+      {
+        "effect": "Bounding Dodger",
+        "stacks": 1,
+        "duration_s": 6
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "bounding_dodger",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Your dodge ability is replaced by Bound, dealing damage to the area after you evade.",
+        "packet": [
+          {
+            "effect": "Bounding Dodger",
+            "stacks": 1,
+            "duration_s": 6
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2350": {
+    "status": "assumption",
+    "handler": "exhilarating_ephemera",
+    "notes": "Configured uptime applies the current PvE +10% strike damage buff. Automatic activation requires artifact-use events.",
+    "event_trigger": "Gain increased damage for a period of time after using an artifact.",
+    "event_packet": [
+      {
+        "effect": "Exhilarating Ephemera",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Maximum Duration",
+        "seconds": 20
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "exhilarating_ephemera",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain increased damage for a period of time after using an artifact.",
+        "packet": [
+          {
+            "effect": "Exhilarating Ephemera",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Maximum Duration",
+            "seconds": 20
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2272": {
+    "status": "assumption",
+    "handler": "dark_sentry",
+    "notes": "The current PvE +20% outgoing healing to allies is registered. Rot Wallow Venom requires barrier and ally-hit events.",
+    "event_trigger": "Apply Rot Wallow Venom to allies that you grant barrier to.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 1
+      },
+      {
+        "effect": "Rot Wallow Venom",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Torment",
+        "stacks": 1,
+        "duration_s": 2
+      },
+      {
+        "effect": "Healing Increase to Others",
+        "value": null
+      },
+      {
+        "effect": "Healing Increase to Others",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "dark_sentry",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Apply Rot Wallow Venom to allies that you grant barrier to.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 1
+          },
+          {
+            "effect": "Rot Wallow Venom",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Torment",
+            "stacks": 1,
+            "duration_s": 2
+          },
+          {
+            "effect": "Healing Increase to Others",
+            "value": null
+          },
+          {
+            "effect": "Healing Increase to Others",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1702": {
+    "status": "implemented",
+    "handler": "invigorating_precision",
+    "notes": "Registers healing equal to 4% of outgoing critical-hit damage, increased to 6% while under Fury in PvE.",
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "invigorating_precision",
+        "state": "applied_now",
+        "source": "handler"
+      }
+    ]
+  },
+  "1964": {
+    "status": "assumption",
+    "handler": "unhindered_combatant",
+    "notes": "Configured uptime applies the PvE 10% incoming strike and condition damage reduction. Dodge replacement, condition removal and exhaustion require events.",
+    "event_trigger": "Your dodge ability is replaced by a long-range dash that removes inhibiting conditions and grants swiftness and damage reduction.",
+    "event_packet": [
+      {
+        "effect": "Unhindered Combatant",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      },
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "unhindered_combatant",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Your dodge ability is replaced by a long-range dash that removes inhibiting conditions and grants swiftness and damage reduction.",
+        "packet": [
+          {
+            "effect": "Unhindered Combatant",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          },
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2136": {
+    "status": "assumption",
+    "handler": "one_in_the_chamber",
+    "notes": "The PvE +25% stolen-skill damage modifier is active in the Skill Library. Cantrip-generated stolen skills require events.",
+    "event_trigger": "When you cast a cantrip, gain a random new stolen skill.",
+    "event_packet": [
+      {
+        "effect": "Stolen Skill Uses",
+        "value": 1
+      },
+      {
+        "effect": "Damage Increase",
+        "value": null
+      },
+      {
+        "effect": "Damage Increase",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "one_in_the_chamber",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "When you cast a cantrip, gain a random new stolen skill.",
+        "packet": [
+          {
+            "effect": "Stolen Skill Uses",
+            "value": 1
+          },
+          {
+            "effect": "Damage Increase",
+            "value": null
+          },
+          {
+            "effect": "Damage Increase",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1130": {
+    "status": "assumption",
+    "handler": "leeching_venoms",
+    "notes": "Life-siphon damage and healing are connected to the Spider Venom calculator. Extra Spider Venom stacks from entering/exiting stealth require stealth events.",
+    "event_trigger": "Venom utility skills siphon life from struck foes.",
+    "event_packet": [
+      {
+        "effect": "Life Siphon Damage",
+        "base": 320,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Life Siphon Damage",
+        "base": 160,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Life Siphon Healing",
+        "base": 325,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Venom Stacks",
+        "value": 3
+      },
+      {
+        "effect": "Venom Stacks",
+        "value": 1
+      },
+      {
+        "effect": "Spider Venom",
+        "stacks": 3,
+        "duration_s": 30
+      },
+      {
+        "effect": "Spider Venom",
+        "stacks": 1,
+        "duration_s": 30
+      }
+    ],
+    "effects": [
+      {
+        "type": "life_siphon",
+        "trigger": "venom_consumed",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "gain_venom_stacks",
+        "trigger": "enter_or_leave_stealth",
+        "state": "event_engine",
+        "source": "official_trait"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Venom utility skills siphon life from struck foes.",
+        "packet": [
+          {
+            "effect": "Life Siphon Damage",
+            "base": 320,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Life Siphon Damage",
+            "base": 160,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Life Siphon Healing",
+            "base": 325,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Venom Stacks",
+            "value": 3
+          },
+          {
+            "effect": "Venom Stacks",
+            "value": 1
+          },
+          {
+            "effect": "Spider Venom",
+            "stacks": 3,
+            "duration_s": 30
+          },
+          {
+            "effect": "Spider Venom",
+            "stacks": 1,
+            "duration_s": 30
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1279": {
+    "status": "event_ready",
+    "handler": "serpents_touch",
+    "notes": "Steal: 2 poison stacks for 10s in PvE; Potent Poison raises this to 3 stacks. Downed attacks remain event-driven.",
+    "event_packet_ready": true,
+    "event_trigger": "Stealing inflicts poison.",
+    "event_packet": [
+      {
+        "effect": "Poisoned",
+        "stacks": 2,
+        "duration_s": 10
+      },
+      {
+        "effect": "Poisoned",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Poisoned",
+        "stacks": 1,
+        "duration_s": 2
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "serpents_touch",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Stealing inflicts poison.",
+        "packet": [
+          {
+            "effect": "Poisoned",
+            "stacks": 2,
+            "duration_s": 10
+          },
+          {
+            "effect": "Poisoned",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Poisoned",
+            "stacks": 1,
+            "duration_s": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1276": {
+    "status": "event_ready",
+    "handler": "mug",
+    "notes": "Steal proc: 1.5 coefficient, cannot crit, and 2,460 base healing. Trigger frequency requires Steal events.",
+    "event_packet_ready": true,
+    "event_trigger": "Deal damage and gain life when stealing.",
+    "event_packet": [
+      {
+        "effect": "Strike damage",
+        "coefficient": 1.5,
+        "hits": 1,
+        "can_crit": true
+      },
+      {
+        "effect": "Strike damage",
+        "coefficient": 0.75,
+        "hits": 1,
+        "can_crit": true
+      },
+      {
+        "effect": "Healing",
+        "base": 2460,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Cannot Critical Hit"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "mug",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Deal damage and gain life when stealing.",
+        "packet": [
+          {
+            "effect": "Strike damage",
+            "coefficient": 1.5,
+            "hits": 1,
+            "can_crit": true
+          },
+          {
+            "effect": "Strike damage",
+            "coefficient": 0.75,
+            "hits": 1,
+            "can_crit": true
+          },
+          {
+            "effect": "Healing",
+            "base": 2460,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Cannot Critical Hit"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1169": {
+    "status": "event_ready",
+    "handler": "even_the_odds",
+    "notes": "Steal applies 10 vulnerability for 10s; stealth attacks apply cripple and blind. Requires Steal/stealth-attack events.",
+    "event_packet_ready": true,
+    "event_trigger": "Apply vulnerability when you steal.",
+    "event_packet": [
+      {
+        "effect": "Vulnerability",
+        "stacks": 10,
+        "duration_s": 10
+      },
+      {
+        "effect": "Vulnerability",
+        "stacks": 10,
+        "duration_s": 6
+      },
+      {
+        "effect": "Crippled",
+        "stacks": 1,
+        "duration_s": 5
+      },
+      {
+        "effect": "Blinded",
+        "stacks": 1,
+        "duration_s": 5
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "even_the_odds",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Apply vulnerability when you steal.",
+        "packet": [
+          {
+            "effect": "Vulnerability",
+            "stacks": 10,
+            "duration_s": 10
+          },
+          {
+            "effect": "Vulnerability",
+            "stacks": 10,
+            "duration_s": 6
+          },
+          {
+            "effect": "Crippled",
+            "stacks": 1,
+            "duration_s": 5
+          },
+          {
+            "effect": "Blinded",
+            "stacks": 1,
+            "duration_s": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1292": {
+    "status": "event_ready",
+    "handler": "panic_strike",
+    "notes": "At 3+ unique conditions, the trigger can immobilize; immobilizing applies poison. Requires hit/control events.",
+    "event_packet_ready": true,
+    "event_trigger": "Immobilizing a foe poisons them.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 20
+      },
+      {
+        "effect": "Immobile",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "Immobile",
+        "stacks": 1,
+        "duration_s": 2
+      },
+      {
+        "effect": "Poisoned",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Poisoned",
+        "stacks": 1,
+        "duration_s": 1
+      },
+      {
+        "effect": "Condition Threshold",
+        "value": 3
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "panic_strike",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Immobilizing a foe poisons them.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 20
+          },
+          {
+            "effect": "Immobile",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "Immobile",
+            "stacks": 1,
+            "duration_s": 2
+          },
+          {
+            "effect": "Poisoned",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Poisoned",
+            "stacks": 1,
+            "duration_s": 1
+          },
+          {
+            "effect": "Condition Threshold",
+            "value": 3
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1210": {
+    "status": "event_ready",
+    "handler": "unrelenting_strikes",
+    "notes": "Critical hits grant 4s Fury to 5 targets on an 8s cooldown. Requires critical-hit timing.",
+    "event_packet_ready": true,
+    "event_trigger": "Grant fury to yourself and nearby allies when you critically strike an enemy.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 8
+      },
+      {
+        "effect": "Fury",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Number of Targets",
+        "value": 5
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "unrelenting_strikes",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Grant fury to yourself and nearby allies when you critically strike an enemy.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 8
+          },
+          {
+            "effect": "Fury",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Number of Targets",
+            "value": 5
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1163": {
+    "status": "event_ready",
+    "handler": "thrill_of_the_crime",
+    "notes": "Steal grants Fury, Swiftness and 5 Might for 10s to 5 targets. Requires Steal timing.",
+    "event_packet_ready": true,
+    "event_trigger": "When you Steal, you and all nearby allies gain fury, might, and swiftness for 10 seconds.",
+    "event_packet": [
+      {
+        "effect": "Fury",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Might",
+        "stacks": 5,
+        "duration_s": 10
+      },
+      {
+        "effect": "Swiftness",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      },
+      {
+        "effect": "Number of Allied Targets",
+        "value": 5
+      },
+      {
+        "effect": "Might",
+        "stacks": 3,
+        "duration_s": 6
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "thrill_of_the_crime",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "When you Steal, you and all nearby allies gain fury, might, and swiftness for 10 seconds.",
+        "packet": [
+          {
+            "effect": "Fury",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Might",
+            "stacks": 5,
+            "duration_s": 10
+          },
+          {
+            "effect": "Swiftness",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          },
+          {
+            "effect": "Number of Allied Targets",
+            "value": 5
+          },
+          {
+            "effect": "Might",
+            "stacks": 3,
+            "duration_s": 6
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1187": {
+    "status": "event_ready",
+    "handler": "quick_pockets",
+    "notes": "Weapon swap grants 3 initiative on an 8s cooldown in PvE. Requires weapon-swap events.",
+    "event_packet_ready": true,
+    "event_trigger": "Gain initiative on swapping weapons while in combat.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 8
+      },
+      {
+        "effect": "Initiative",
+        "value": 3
+      },
+      {
+        "effect": "Initiative",
+        "value": 2
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "quick_pockets",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain initiative on swapping weapons while in combat.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 8
+          },
+          {
+            "effect": "Initiative",
+            "value": 3
+          },
+          {
+            "effect": "Initiative",
+            "value": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1158": {
+    "status": "event_ready",
+    "handler": "sleight_of_hand",
+    "notes": "Steal dazes for 1s and has 20% reduced recharge. Requires control and cooldown timing.",
+    "event_packet_ready": true,
+    "event_trigger": "Stealing also dazes the target.",
+    "event_packet": [
+      {
+        "effect": "Daze",
+        "stacks": 1,
+        "duration_s": 1
+      },
+      {
+        "effect": "Recharge Reduced",
+        "value": null
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "sleight_of_hand",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Stealing also dazes the target.",
+        "packet": [
+          {
+            "effect": "Daze",
+            "stacks": 1,
+            "duration_s": 1
+          },
+          {
+            "effect": "Recharge Reduced",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2337": {
+    "status": "event_ready",
+    "handler": "magpies_defense",
+    "notes": "Healing or elite skill grants 2,600 base barrier, separate 20s cooldowns. Requires skill-use events.",
+    "event_packet_ready": true,
+    "event_trigger": "Grant yourself barrier when you use a healing or elite skill.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 20
+      },
+      {
+        "effect": "Barrier",
+        "base": 2600,
+        "scales_with": "Healing"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "magpies_defense",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Grant yourself barrier when you use a healing or elite skill.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 20
+          },
+          {
+            "effect": "Barrier",
+            "base": 2600,
+            "scales_with": "Healing"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2280": {
+    "status": "event_ready",
+    "handler": "panakus_ambition",
+    "notes": "Stealth attack grants 714 base barrier; applying stealth to allies grants 2,122 base barrier. Requires stealth events.",
+    "event_packet_ready": true,
+    "event_trigger": "Gain barrier when you strike foes with a stealth attack.",
+    "event_packet": [
+      {
+        "effect": "Stealth Barrier",
+        "base": 2122,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Stealth Attack Barrier",
+        "base": 714,
+        "scales_with": "Healing"
+      }
+    ],
+    "effects": [
+      {
+        "type": "calculator_handler",
+        "handler": "panakus_ambition",
+        "state": "applied_now",
+        "source": "handler"
+      },
+      {
+        "type": "event_packet",
+        "trigger": "Gain barrier when you strike foes with a stealth attack.",
+        "packet": [
+          {
+            "effect": "Stealth Barrier",
+            "base": 2122,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Stealth Attack Barrier",
+            "base": 714,
+            "scales_with": "Healing"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1112": {
+    "status": "event_ready",
+    "event_trigger": "Gain evasion when you use an elite skill.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 30
+      },
+      {
+        "effect": "Instant Reflexes",
+        "stacks": 1,
+        "duration_s": 2
+      },
+      {
+        "effect": "Instant Reflexes",
+        "stacks": 1,
+        "duration_s": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain evasion when you use an elite skill.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 30
+          },
+          {
+            "effect": "Instant Reflexes",
+            "stacks": 1,
+            "duration_s": 2
+          },
+          {
+            "effect": "Instant Reflexes",
+            "stacks": 1,
+            "duration_s": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1134": {
+    "status": "event_ready",
+    "event_trigger": "When you steal, create a field around yourself that grants allies protection.",
+    "event_packet": [
+      {
+        "effect": "Protection",
+        "stacks": 4,
+        "duration_s": 2
+      },
+      {
+        "effect": "Combo Field",
+        "value": null
+      },
+      {
+        "effect": "Field Duration",
+        "seconds": 3
+      },
+      {
+        "effect": "Field Radius",
+        "distance": 240
+      },
+      {
+        "effect": "Condition Removal Radius",
+        "distance": 360
+      },
+      {
+        "effect": "Conditions Removed",
+        "value": 1
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "When you steal, create a field around yourself that grants allies protection.",
+        "packet": [
+          {
+            "effect": "Protection",
+            "stacks": 4,
+            "duration_s": 2
+          },
+          {
+            "effect": "Combo Field",
+            "value": null
+          },
+          {
+            "effect": "Field Duration",
+            "seconds": 3
+          },
+          {
+            "effect": "Field Radius",
+            "distance": 240
+          },
+          {
+            "effect": "Condition Removal Radius",
+            "distance": 360
+          },
+          {
+            "effect": "Conditions Removed",
+            "value": 1
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1135": {
+    "status": "event_ready",
+    "event_trigger": "Gain initiative when you enter or exit stealth.",
+    "event_packet": [
+      {
+        "effect": "Initiative on Enter",
+        "value": 2
+      },
+      {
+        "effect": "Initiative on Enter",
+        "value": 1
+      },
+      {
+        "effect": "Initiative on Exit",
+        "value": 1
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain initiative when you enter or exit stealth.",
+        "packet": [
+          {
+            "effect": "Initiative on Enter",
+            "value": 2
+          },
+          {
+            "effect": "Initiative on Enter",
+            "value": 1
+          },
+          {
+            "effect": "Initiative on Exit",
+            "value": 1
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1136": {
+    "status": "event_ready",
+    "event_trigger": "Gain superspeed when you enter or exit stealth.",
+    "event_packet": [
+      {
+        "effect": "Superspeed",
+        "stacks": 1,
+        "duration_s": 2
+      },
+      {
+        "effect": "Superspeed",
+        "stacks": 1,
+        "duration_s": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain superspeed when you enter or exit stealth.",
+        "packet": [
+          {
+            "effect": "Superspeed",
+            "stacks": 1,
+            "duration_s": 2
+          },
+          {
+            "effect": "Superspeed",
+            "stacks": 1,
+            "duration_s": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1137": {
+    "status": "event_ready",
+    "event_trigger": "Stealing gives you initiative.",
+    "event_packet": [
+      {
+        "effect": "Initiative",
+        "value": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Stealing gives you initiative.",
+        "packet": [
+          {
+            "effect": "Initiative",
+            "value": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1159": {
+    "status": "event_ready",
+    "event_trigger": "Leave behind lesser caltrops when you dodge.",
+    "event_packet": [],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Leave behind lesser caltrops when you dodge.",
+        "packet": [],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1160": {
+    "status": "event_ready",
+    "event_trigger": "Grant barrier and dark aura to nearby allies when you use a healing skill.",
+    "event_packet": [
+      {
+        "effect": "Dark Aura",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Barrier",
+        "base": 1044,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      },
+      {
+        "effect": "Number of Allied Targets",
+        "value": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Grant barrier and dark aura to nearby allies when you use a healing skill.",
+        "packet": [
+          {
+            "effect": "Dark Aura",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Barrier",
+            "base": 1044,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          },
+          {
+            "effect": "Number of Allied Targets",
+            "value": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1162": {
+    "status": "event_ready",
+    "event_trigger": "Steal boons from enemies you strike with stealth attacks.",
+    "event_packet": [
+      {
+        "effect": "Boons Stolen",
+        "value": 2
+      },
+      {
+        "effect": "Break Barrier"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Steal boons from enemies you strike with stealth attacks.",
+        "packet": [
+          {
+            "effect": "Boons Stolen",
+            "value": 2
+          },
+          {
+            "effect": "Break Barrier"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1167": {
+    "status": "event_ready",
+    "event_trigger": "Use stolen skills twice.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 15
+      },
+      {
+        "effect": "Recharge Reduced",
+        "value": null
+      },
+      {
+        "effect": "Recharge Reduced",
+        "value": null
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Use stolen skills twice.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 15
+          },
+          {
+            "effect": "Recharge Reduced",
+            "value": null
+          },
+          {
+            "effect": "Recharge Reduced",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1170": {
+    "status": "event_ready",
+    "event_trigger": "Stealth Attack skills inflict vulnerability and grant fury upon successfully hitting foes.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 1
+      },
+      {
+        "effect": "Vulnerability",
+        "stacks": 10,
+        "duration_s": 6
+      },
+      {
+        "effect": "Fury",
+        "stacks": 1,
+        "duration_s": 6
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Stealth Attack skills inflict vulnerability and grant fury upon successfully hitting foes.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 1
+          },
+          {
+            "effect": "Vulnerability",
+            "stacks": 10,
+            "duration_s": 6
+          },
+          {
+            "effect": "Fury",
+            "stacks": 1,
+            "duration_s": 6
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1190": {
+    "status": "event_ready",
+    "event_trigger": "Enemies you interrupt are inflicted with torment.This trait can only affect enemies with defiance bars once per interval.",
+    "event_packet": [
+      {
+        "effect": "Torment",
+        "stacks": 2,
+        "duration_s": 8
+      },
+      {
+        "effect": "Interval",
+        "seconds": 3
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Enemies you interrupt are inflicted with torment.This trait can only affect enemies with defiance bars once per interval.",
+        "packet": [
+          {
+            "effect": "Torment",
+            "stacks": 2,
+            "duration_s": 8
+          },
+          {
+            "effect": "Interval",
+            "seconds": 3
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1209": {
+    "status": "event_ready",
+    "event_trigger": "Gain might when you gain fury.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 2
+      },
+      {
+        "effect": "Might",
+        "stacks": 3,
+        "duration_s": 8
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain might when you gain fury.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 2
+          },
+          {
+            "effect": "Might",
+            "stacks": 3,
+            "duration_s": 8
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1234": {
+    "status": "event_ready",
+    "event_trigger": "Gain vigor upon successfully evading an attack.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 1
+      },
+      {
+        "effect": "Vigor",
+        "stacks": 1,
+        "duration_s": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain vigor upon successfully evading an attack.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 1
+          },
+          {
+            "effect": "Vigor",
+            "stacks": 1,
+            "duration_s": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1237": {
+    "status": "event_ready",
+    "event_trigger": "Dodging removes a damaging condition from you.",
+    "event_packet": [
+      {
+        "effect": "Bleeding",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Burning",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Confusion",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Poisoned",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Torment",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Conditions Removed",
+        "value": 1
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Dodging removes a damaging condition from you.",
+        "packet": [
+          {
+            "effect": "Bleeding",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Burning",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Confusion",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Poisoned",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Torment",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Conditions Removed",
+            "value": 1
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1238": {
+    "status": "event_ready",
+    "event_trigger": "Heal yourself whenever you use a skill that uses initiative.",
+    "event_packet": [
+      {
+        "effect": "Health per Initiative",
+        "base": 151,
+        "scales_with": "Healing"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Heal yourself whenever you use a skill that uses initiative.",
+        "packet": [
+          {
+            "effect": "Health per Initiative",
+            "base": 151,
+            "scales_with": "Healing"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1240": {
+    "status": "event_ready",
+    "event_trigger": "Gain swiftness upon dodging.",
+    "event_packet": [
+      {
+        "effect": "Swiftness",
+        "stacks": 1,
+        "duration_s": 6
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain swiftness upon dodging.",
+        "packet": [
+          {
+            "effect": "Swiftness",
+            "stacks": 1,
+            "duration_s": 6
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1241": {
+    "status": "event_ready",
+    "event_trigger": "Movement skills grant resistance.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 5
+      },
+      {
+        "effect": "Resistance",
+        "stacks": 1,
+        "duration_s": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Movement skills grant resistance.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 5
+          },
+          {
+            "effect": "Resistance",
+            "stacks": 1,
+            "duration_s": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1252": {
+    "status": "event_ready",
+    "event_trigger": "Use Lesser Haste when attacking a foe from behind or from the side or when they are defiant.",
+    "event_packet": [],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Use Lesser Haste when attacking a foe from behind or from the side or when they are defiant.",
+        "packet": [],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1267": {
+    "status": "event_ready",
+    "event_trigger": "Signets grant initiative.",
+    "event_packet": [
+      {
+        "effect": "Initiative",
+        "value": 3
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Signets grant initiative.",
+        "packet": [
+          {
+            "effect": "Initiative",
+            "value": 3
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1277": {
+    "status": "event_ready",
+    "event_trigger": "Stealing grants you and all nearby allies vigor.",
+    "event_packet": [
+      {
+        "effect": "Vigor",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Might",
+        "stacks": 5,
+        "duration_s": 10
+      },
+      {
+        "effect": "Might",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Boons Stolen",
+        "value": 3
+      },
+      {
+        "effect": "Boons Stolen",
+        "value": 2
+      },
+      {
+        "effect": "Radius",
+        "distance": 240
+      },
+      {
+        "effect": "Number of Allied Targets",
+        "value": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Stealing grants you and all nearby allies vigor.",
+        "packet": [
+          {
+            "effect": "Vigor",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Might",
+            "stacks": 5,
+            "duration_s": 10
+          },
+          {
+            "effect": "Might",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Boons Stolen",
+            "value": 3
+          },
+          {
+            "effect": "Boons Stolen",
+            "value": 2
+          },
+          {
+            "effect": "Radius",
+            "distance": 240
+          },
+          {
+            "effect": "Number of Allied Targets",
+            "value": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1280": {
+    "status": "event_ready",
+    "event_trigger": "Gain might and weaken targets when you poison them.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 10
+      },
+      {
+        "effect": "Weakness",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Might",
+        "stacks": 3,
+        "duration_s": 10
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain might and weaken targets when you poison them.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 10
+          },
+          {
+            "effect": "Weakness",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Might",
+            "stacks": 3,
+            "duration_s": 10
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1284": {
+    "status": "event_ready",
+    "event_trigger": "Stealing inflicts blindness.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 2
+      },
+      {
+        "effect": "Blinded",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "Weakness",
+        "stacks": 1,
+        "duration_s": 3
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Stealing inflicts blindness.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 2
+          },
+          {
+            "effect": "Blinded",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "Weakness",
+            "stacks": 1,
+            "duration_s": 3
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1286": {
+    "status": "event_ready",
+    "event_trigger": "Tricks remove conditions.",
+    "event_packet": [
+      {
+        "effect": "Conditions Removed",
+        "value": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Tricks remove conditions.",
+        "packet": [
+          {
+            "effect": "Conditions Removed",
+            "value": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1289": {
+    "status": "event_ready",
+    "event_trigger": "Gain might when you dodge.",
+    "event_packet": [
+      {
+        "effect": "Might",
+        "stacks": 3,
+        "duration_s": 20
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain might when you dodge.",
+        "packet": [
+          {
+            "effect": "Might",
+            "stacks": 3,
+            "duration_s": 20
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1290": {
+    "status": "event_ready",
+    "event_trigger": "Gain endurance when you shadowstep.",
+    "event_packet": [
+      {
+        "effect": "Endurance Gained",
+        "value": 8
+      },
+      {
+        "effect": "Endurance Gained",
+        "value": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain endurance when you shadowstep.",
+        "packet": [
+          {
+            "effect": "Endurance Gained",
+            "value": 8
+          },
+          {
+            "effect": "Endurance Gained",
+            "value": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1293": {
+    "status": "event_ready",
+    "event_trigger": "Remove conditions when you enter or exit stealth.",
+    "event_packet": [
+      {
+        "effect": "Conditions Removed",
+        "value": 1
+      },
+      {
+        "effect": "Burning",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Bleeding",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Poisoned",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Torment",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Confusion",
+        "stacks": 1,
+        "duration_s": null
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Remove conditions when you enter or exit stealth.",
+        "packet": [
+          {
+            "effect": "Conditions Removed",
+            "value": 1
+          },
+          {
+            "effect": "Burning",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Bleeding",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Poisoned",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Torment",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Confusion",
+            "stacks": 1,
+            "duration_s": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1294": {
+    "status": "event_ready",
+    "event_trigger": "Heal when you enter or exit stealth.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 10
+      },
+      {
+        "effect": "Healing",
+        "base": 273,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Healing",
+        "base": 439,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Stealth",
+        "stacks": 1,
+        "duration_s": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Heal when you enter or exit stealth.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 10
+          },
+          {
+            "effect": "Healing",
+            "base": 273,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Healing",
+            "base": 439,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Stealth",
+            "stacks": 1,
+            "duration_s": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1295": {
+    "status": "event_ready",
+    "event_trigger": "Gain initiative when you dodge, and gain initiative and regeneration when you evade an attack.Evading can only trigger this trait once per interval.",
+    "event_packet": [
+      {
+        "effect": "Initiative on Dodge",
+        "value": 1
+      },
+      {
+        "effect": "Initiative on Evade",
+        "value": 1
+      },
+      {
+        "effect": "Regeneration",
+        "stacks": 1,
+        "duration_s": 6
+      },
+      {
+        "effect": "Interval",
+        "seconds": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain initiative when you dodge, and gain initiative and regeneration when you evade an attack.Evading can only trigger this trait once per interval.",
+        "packet": [
+          {
+            "effect": "Initiative on Dodge",
+            "value": 1
+          },
+          {
+            "effect": "Initiative on Evade",
+            "value": 1
+          },
+          {
+            "effect": "Regeneration",
+            "stacks": 1,
+            "duration_s": 6
+          },
+          {
+            "effect": "Interval",
+            "seconds": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1297": {
+    "status": "event_ready",
+    "event_trigger": "Gain dark aura when you steal.",
+    "event_packet": [
+      {
+        "effect": "Dark Aura",
+        "stacks": 1,
+        "duration_s": 4
+      },
+      {
+        "effect": "Healing",
+        "base": 596,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      },
+      {
+        "effect": "Number of Allied Targets",
+        "value": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain dark aura when you steal.",
+        "packet": [
+          {
+            "effect": "Dark Aura",
+            "stacks": 1,
+            "duration_s": 4
+          },
+          {
+            "effect": "Healing",
+            "base": 596,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          },
+          {
+            "effect": "Number of Allied Targets",
+            "value": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1300": {
+    "status": "event_ready",
+    "event_trigger": "Gaining stealth blinds nearby foes.",
+    "event_packet": [
+      {
+        "effect": "Blinded",
+        "stacks": 1,
+        "duration_s": 5
+      },
+      {
+        "effect": "Number of Targets",
+        "value": 5
+      },
+      {
+        "effect": "Radius",
+        "distance": 240
+      },
+      {
+        "effect": "Life Siphon Damage",
+        "base": 130,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Life Siphon Healing",
+        "base": 194,
+        "scales_with": "Healing"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gaining stealth blinds nearby foes.",
+        "packet": [
+          {
+            "effect": "Blinded",
+            "stacks": 1,
+            "duration_s": 5
+          },
+          {
+            "effect": "Number of Targets",
+            "value": 5
+          },
+          {
+            "effect": "Radius",
+            "distance": 240
+          },
+          {
+            "effect": "Life Siphon Damage",
+            "base": 130,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Life Siphon Healing",
+            "base": 194,
+            "scales_with": "Healing"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1703": {
+    "status": "event_ready",
+    "event_trigger": "While you have swiftness, movement-impairing conditions have reduced duration.",
+    "event_packet": [
+      {
+        "effect": "Chilled",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Crippled",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Immobile",
+        "stacks": 1,
+        "duration_s": null
+      },
+      {
+        "effect": "Conditions Removed",
+        "value": 1
+      },
+      {
+        "effect": "Duration Decreased",
+        "value": null
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "While you have swiftness, movement-impairing conditions have reduced duration.",
+        "packet": [
+          {
+            "effect": "Chilled",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Crippled",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Immobile",
+            "stacks": 1,
+            "duration_s": null
+          },
+          {
+            "effect": "Conditions Removed",
+            "value": 1
+          },
+          {
+            "effect": "Duration Decreased",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1705": {
+    "status": "event_ready",
+    "event_trigger": "Stealth attacks siphon health if they hit.Cannot siphon the same target more than once per interval.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 1
+      },
+      {
+        "effect": "Life Siphon Damage",
+        "base": 312,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Life Siphon Damage",
+        "base": 218,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Life Siphon Healing",
+        "base": 504,
+        "scales_with": "Healing"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Stealth attacks siphon health if they hit.Cannot siphon the same target more than once per interval.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 1
+          },
+          {
+            "effect": "Life Siphon Damage",
+            "base": 312,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Life Siphon Damage",
+            "base": 218,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Life Siphon Healing",
+            "base": 504,
+            "scales_with": "Healing"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1837": {
+    "status": "event_ready",
+    "event_trigger": "Gain endurance when you successfully steal from an enemy.",
+    "event_packet": [
+      {
+        "effect": "Endurance Gained",
+        "value": 50
+      },
+      {
+        "effect": "Endurance Gained",
+        "value": 25
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain endurance when you successfully steal from an enemy.",
+        "packet": [
+          {
+            "effect": "Endurance Gained",
+            "value": 50
+          },
+          {
+            "effect": "Endurance Gained",
+            "value": 25
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1949": {
+    "status": "event_ready",
+    "event_trigger": "Physical skills grant endurance when activated.",
+    "event_packet": [
+      {
+        "effect": "Endurance Gained",
+        "value": 15
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Physical skills grant endurance when activated.",
+        "packet": [
+          {
+            "effect": "Endurance Gained",
+            "value": 15
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1975": {
+    "status": "event_ready",
+    "event_trigger": "Recharge steal and inflict a pulmonary impact when you interrupt an enemy.This trait can only affect enemies with defiance bars once per interval.",
+    "event_packet": [
+      {
+        "effect": "Interval",
+        "seconds": 3
+      },
+      {
+        "effect": "Recharge Time Reduced",
+        "seconds": 3
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Recharge steal and inflict a pulmonary impact when you interrupt an enemy.This trait can only affect enemies with defiance bars once per interval.",
+        "packet": [
+          {
+            "effect": "Interval",
+            "seconds": 3
+          },
+          {
+            "effect": "Recharge Time Reduced",
+            "seconds": 3
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "1994": {
+    "status": "event_ready",
+    "event_trigger": "Gain access to physical skills.",
+    "event_packet": [
+      {
+        "effect": "Endurance Threshold Increase",
+        "value": 50
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain access to physical skills.",
+        "packet": [
+          {
+            "effect": "Endurance Threshold Increase",
+            "value": 50
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2023": {
+    "status": "event_ready",
+    "event_trigger": "Gain health and remove a condition whenever you evade an attack.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 1
+      },
+      {
+        "effect": "Healing",
+        "base": 684,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Conditions Removed",
+        "value": 1
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain health and remove a condition whenever you evade an attack.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 1
+          },
+          {
+            "effect": "Healing",
+            "base": 684,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Conditions Removed",
+            "value": 1
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2078": {
+    "status": "event_ready",
+    "event_trigger": "When Renewing Gaze triggers, this trait restores a portion of the recharge time needed by your healing, utility, and elite skills.Excludes racial skills.",
+    "event_packet": [
+      {
+        "effect": "Recharge Reduced",
+        "value": null
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "When Renewing Gaze triggers, this trait restores a portion of the recharge time needed by your healing, utility, and elite skills.Excludes racial skills.",
+        "packet": [
+          {
+            "effect": "Recharge Reduced",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2111": {
+    "status": "event_ready",
+    "event_trigger": "Increase the maximum malice-stack count.",
+    "event_packet": [
+      {
+        "effect": "Increased Malice Cap",
+        "value": 7
+      },
+      {
+        "effect": "Might",
+        "stacks": 10,
+        "duration_s": 10
+      },
+      {
+        "effect": "Might",
+        "stacks": 10,
+        "duration_s": 6
+      },
+      {
+        "effect": "Fury",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Protection",
+        "stacks": 1,
+        "duration_s": 5
+      },
+      {
+        "effect": "Regeneration",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Swiftness",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Vigor",
+        "stacks": 1,
+        "duration_s": 10
+      },
+      {
+        "effect": "Initiative",
+        "value": 7
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Increase the maximum malice-stack count.",
+        "packet": [
+          {
+            "effect": "Increased Malice Cap",
+            "value": 7
+          },
+          {
+            "effect": "Might",
+            "stacks": 10,
+            "duration_s": 10
+          },
+          {
+            "effect": "Might",
+            "stacks": 10,
+            "duration_s": 6
+          },
+          {
+            "effect": "Fury",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Protection",
+            "stacks": 1,
+            "duration_s": 5
+          },
+          {
+            "effect": "Regeneration",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Swiftness",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Vigor",
+            "stacks": 1,
+            "duration_s": 10
+          },
+          {
+            "effect": "Initiative",
+            "value": 7
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2145": {
+    "status": "event_ready",
+    "event_trigger": "Marking a target or striking your mark with a stealth attack will immediately grant malice.",
+    "event_packet": [
+      {
+        "effect": "Malice Gained",
+        "value": 2
+      },
+      {
+        "effect": "Malice Gained",
+        "value": 1
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Marking a target or striking your mark with a stealth attack will immediately grant malice.",
+        "packet": [
+          {
+            "effect": "Malice Gained",
+            "value": 2
+          },
+          {
+            "effect": "Malice Gained",
+            "value": 1
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2146": {
+    "status": "event_ready",
+    "event_trigger": "Using a stolen skill grants additional boons to allies around you.",
+    "event_packet": [
+      {
+        "effect": "Internal cooldown",
+        "seconds": 0.5
+      },
+      {
+        "effect": "Might",
+        "stacks": 8,
+        "duration_s": 12
+      },
+      {
+        "effect": "Fury",
+        "stacks": 1,
+        "duration_s": 12
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      },
+      {
+        "effect": "Number of Allied Targets",
+        "value": 5
+      },
+      {
+        "effect": "Might",
+        "stacks": 8,
+        "duration_s": 6
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Using a stolen skill grants additional boons to allies around you.",
+        "packet": [
+          {
+            "effect": "Internal cooldown",
+            "seconds": 0.5
+          },
+          {
+            "effect": "Might",
+            "stacks": 8,
+            "duration_s": 12
+          },
+          {
+            "effect": "Fury",
+            "stacks": 1,
+            "duration_s": 12
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          },
+          {
+            "effect": "Number of Allied Targets",
+            "value": 5
+          },
+          {
+            "effect": "Might",
+            "stacks": 8,
+            "duration_s": 6
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2171": {
+    "status": "event_ready",
+    "event_trigger": "Steal is replaced with Deadeye's Mark, which unlocks new Stolen skills and malice generation.",
+    "event_packet": [],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Steal is replaced with Deadeye's Mark, which unlocks new Stolen skills and malice generation.",
+        "packet": [],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2172": {
+    "status": "event_ready",
+    "event_trigger": "Deadeye's Mark recharges if your mark is defeated.",
+    "event_packet": [
+      {
+        "effect": "Regeneration",
+        "stacks": 1,
+        "duration_s": 3
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Deadeye's Mark recharges if your mark is defeated.",
+        "packet": [
+          {
+            "effect": "Regeneration",
+            "stacks": 1,
+            "duration_s": 3
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2173": {
+    "status": "event_ready",
+    "event_trigger": "Trigger Burst of Shadows at your target's location if it dies while marked.",
+    "event_packet": [],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Trigger Burst of Shadows at your target's location if it dies while marked.",
+        "packet": [],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2184": {
+    "status": "event_ready",
+    "event_trigger": "Unlock scepter.",
+    "event_packet": [
+      {
+        "effect": "Shadow Shroud per Initiative Spent",
+        "value": null
+      },
+      {
+        "effect": "Shadow Shroud per Initiative Spent",
+        "value": null
+      },
+      {
+        "effect": "Combat Only"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Unlock scepter.",
+        "packet": [
+          {
+            "effect": "Shadow Shroud per Initiative Spent",
+            "value": null
+          },
+          {
+            "effect": "Shadow Shroud per Initiative Spent",
+            "value": null
+          },
+          {
+            "effect": "Combat Only"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2275": {
+    "status": "event_ready",
+    "event_trigger": "Gain stacks of Consume Shadows at regular intervals while in Shadow Shroud.",
+    "event_packet": [
+      {
+        "effect": "Healing per Stack",
+        "value": null
+      },
+      {
+        "effect": "Healing per Stack",
+        "value": null
+      },
+      {
+        "effect": "Radius",
+        "distance": 600
+      },
+      {
+        "effect": "Number of Allied Targets",
+        "value": 5
+      },
+      {
+        "effect": "Interval",
+        "seconds": 1
+      },
+      {
+        "effect": "Maximum Stacks",
+        "value": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain stacks of Consume Shadows at regular intervals while in Shadow Shroud.",
+        "packet": [
+          {
+            "effect": "Healing per Stack",
+            "value": null
+          },
+          {
+            "effect": "Healing per Stack",
+            "value": null
+          },
+          {
+            "effect": "Radius",
+            "distance": 600
+          },
+          {
+            "effect": "Number of Allied Targets",
+            "value": 5
+          },
+          {
+            "effect": "Interval",
+            "seconds": 1
+          },
+          {
+            "effect": "Maximum Stacks",
+            "value": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2285": {
+    "status": "event_ready",
+    "event_trigger": "Heal allies in the area around you when you shadowstep.",
+    "event_packet": [
+      {
+        "effect": "Resistance",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "Resistance",
+        "stacks": 1,
+        "duration_s": 2
+      },
+      {
+        "effect": "Healing",
+        "base": 645,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Baseline Percentage",
+        "value": null
+      },
+      {
+        "effect": "Percentage per Ally",
+        "value": null
+      },
+      {
+        "effect": "Number of Targets",
+        "value": 5
+      },
+      {
+        "effect": "Combat Only"
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Heal allies in the area around you when you shadowstep.",
+        "packet": [
+          {
+            "effect": "Resistance",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "Resistance",
+            "stacks": 1,
+            "duration_s": 2
+          },
+          {
+            "effect": "Healing",
+            "base": 645,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Baseline Percentage",
+            "value": null
+          },
+          {
+            "effect": "Percentage per Ally",
+            "value": null
+          },
+          {
+            "effect": "Number of Targets",
+            "value": 5
+          },
+          {
+            "effect": "Combat Only"
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2288": {
+    "status": "event_ready",
+    "event_trigger": "Gain increased shadow force when hitting a foe with Siphon.",
+    "event_packet": [
+      {
+        "effect": "Increased Shroud Gain",
+        "value": 10
+      },
+      {
+        "effect": "Effectiveness Increased",
+        "value": null
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain increased shadow force when hitting a foe with Siphon.",
+        "packet": [
+          {
+            "effect": "Increased Shroud Gain",
+            "value": 10
+          },
+          {
+            "effect": "Effectiveness Increased",
+            "value": null
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2289": {
+    "status": "event_ready",
+    "event_trigger": "Shadow Shroud skills provide additional supportive effects to nearby allies and your tethered ally.",
+    "event_packet": [
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      },
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      },
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      },
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      },
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      },
+      {
+        "effect": "Apply Buff/Condition",
+        "value": null
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      },
+      {
+        "effect": "Number of Targets",
+        "value": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Shadow Shroud skills provide additional supportive effects to nearby allies and your tethered ally.",
+        "packet": [
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          },
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          },
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          },
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          },
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          },
+          {
+            "effect": "Apply Buff/Condition",
+            "value": null
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          },
+          {
+            "effect": "Number of Targets",
+            "value": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2290": {
+    "status": "event_ready",
+    "event_trigger": "Steal health and gain shadow force when you torment a foe.",
+    "event_packet": [
+      {
+        "effect": "Shroud Gain",
+        "value": null
+      },
+      {
+        "effect": "Life Siphon Damage",
+        "base": 99,
+        "scales_with": "Power"
+      },
+      {
+        "effect": "Life Siphon Healing",
+        "base": 99,
+        "scales_with": "Healing"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Steal health and gain shadow force when you torment a foe.",
+        "packet": [
+          {
+            "effect": "Shroud Gain",
+            "value": null
+          },
+          {
+            "effect": "Life Siphon Damage",
+            "base": 99,
+            "scales_with": "Power"
+          },
+          {
+            "effect": "Life Siphon Healing",
+            "base": 99,
+            "scales_with": "Healing"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2299": {
+    "status": "event_ready",
+    "event_trigger": "Transfer conditions to an enemy when targeting them with Siphon.",
+    "event_packet": [
+      {
+        "effect": "Conditions Transferred",
+        "value": 3
+      },
+      {
+        "effect": "Conditions Transferred",
+        "value": 2
+      },
+      {
+        "effect": "Conditions Removed",
+        "value": 3
+      },
+      {
+        "effect": "Conditions Removed",
+        "value": 2
+      },
+      {
+        "effect": "Radius",
+        "distance": 360
+      },
+      {
+        "effect": "Number of Allied Targets",
+        "value": 5
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Transfer conditions to an enemy when targeting them with Siphon.",
+        "packet": [
+          {
+            "effect": "Conditions Transferred",
+            "value": 3
+          },
+          {
+            "effect": "Conditions Transferred",
+            "value": 2
+          },
+          {
+            "effect": "Conditions Removed",
+            "value": 3
+          },
+          {
+            "effect": "Conditions Removed",
+            "value": 2
+          },
+          {
+            "effect": "Radius",
+            "distance": 360
+          },
+          {
+            "effect": "Number of Allied Targets",
+            "value": 5
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2300": {
+    "status": "event_ready",
+    "event_trigger": "While in shroud, transfer conditions from your tethered ally and cleanse conditions from yourself.",
+    "event_packet": [
+      {
+        "effect": "Interval",
+        "seconds": 1
+      },
+      {
+        "effect": "Interval",
+        "seconds": 3
+      },
+      {
+        "effect": "Conditions Removed",
+        "value": 1
+      },
+      {
+        "effect": "Conditions Transferred",
+        "value": 1
+      },
+      {
+        "effect": "Healing",
+        "base": 517,
+        "scales_with": "Healing"
+      },
+      {
+        "effect": "Healing",
+        "base": 773,
+        "scales_with": "Healing"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "While in shroud, transfer conditions from your tethered ally and cleanse conditions from yourself.",
+        "packet": [
+          {
+            "effect": "Interval",
+            "seconds": 1
+          },
+          {
+            "effect": "Interval",
+            "seconds": 3
+          },
+          {
+            "effect": "Conditions Removed",
+            "value": 1
+          },
+          {
+            "effect": "Conditions Transferred",
+            "value": 1
+          },
+          {
+            "effect": "Healing",
+            "base": 517,
+            "scales_with": "Healing"
+          },
+          {
+            "effect": "Healing",
+            "base": 773,
+            "scales_with": "Healing"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2346": {
+    "status": "event_ready",
+    "event_trigger": "Gain an additional artifact slot.",
+    "event_packet": [],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain an additional artifact slot.",
+        "packet": [],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2365": {
+    "status": "event_ready",
+    "event_trigger": "Reduce the recharge of Skritt Swipe whenever you use an artifact.",
+    "event_packet": [
+      {
+        "effect": "Recharge Time Reduced",
+        "seconds": 2
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Reduce the recharge of Skritt Swipe whenever you use an artifact.",
+        "packet": [
+          {
+            "effect": "Recharge Time Reduced",
+            "seconds": 2
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2393": {
+    "status": "event_ready",
+    "event_trigger": "Artifacts grant boons to allies when used.",
+    "event_packet": [
+      {
+        "effect": "Might",
+        "stacks": 10,
+        "duration_s": 12
+      },
+      {
+        "effect": "Alacrity",
+        "stacks": 1,
+        "duration_s": 5
+      },
+      {
+        "effect": "Might",
+        "stacks": 4,
+        "duration_s": 6
+      },
+      {
+        "effect": "Fury",
+        "stacks": 1,
+        "duration_s": 6
+      },
+      {
+        "effect": "Alacrity",
+        "stacks": 1,
+        "duration_s": 5
+      },
+      {
+        "effect": "Protection",
+        "stacks": 1,
+        "duration_s": 5
+      },
+      {
+        "effect": "Regeneration",
+        "stacks": 1,
+        "duration_s": 6
+      },
+      {
+        "effect": "Protection",
+        "stacks": 1,
+        "duration_s": 3
+      },
+      {
+        "effect": "Number of Targets",
+        "value": 5
+      },
+      {
+        "effect": "Range",
+        "value": 360
+      },
+      {
+        "effect": "Might",
+        "stacks": 8,
+        "duration_s": 6
+      },
+      {
+        "effect": "Regeneration",
+        "stacks": 1,
+        "duration_s": 8
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Artifacts grant boons to allies when used.",
+        "packet": [
+          {
+            "effect": "Might",
+            "stacks": 10,
+            "duration_s": 12
+          },
+          {
+            "effect": "Alacrity",
+            "stacks": 1,
+            "duration_s": 5
+          },
+          {
+            "effect": "Might",
+            "stacks": 4,
+            "duration_s": 6
+          },
+          {
+            "effect": "Fury",
+            "stacks": 1,
+            "duration_s": 6
+          },
+          {
+            "effect": "Alacrity",
+            "stacks": 1,
+            "duration_s": 5
+          },
+          {
+            "effect": "Protection",
+            "stacks": 1,
+            "duration_s": 5
+          },
+          {
+            "effect": "Regeneration",
+            "stacks": 1,
+            "duration_s": 6
+          },
+          {
+            "effect": "Protection",
+            "stacks": 1,
+            "duration_s": 3
+          },
+          {
+            "effect": "Number of Targets",
+            "value": 5
+          },
+          {
+            "effect": "Range",
+            "value": 360
+          },
+          {
+            "effect": "Might",
+            "stacks": 8,
+            "duration_s": 6
+          },
+          {
+            "effect": "Regeneration",
+            "stacks": 1,
+            "duration_s": 8
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2400": {
+    "status": "event_ready",
+    "event_trigger": "Gain Scoundrel's Luck whenever you use Skritt Swipe.",
+    "event_packet": [
+      {
+        "effect": "Scoundrel's Luck",
+        "stacks": 1,
+        "duration_s": 10
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain Scoundrel's Luck whenever you use Skritt Swipe.",
+        "packet": [
+          {
+            "effect": "Scoundrel's Luck",
+            "stacks": 1,
+            "duration_s": 10
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2403": {
+    "status": "event_ready",
+    "event_trigger": "Steal is replaced with Skritt Swipe, allowing you to pilfer from enemies.",
+    "event_packet": [],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Steal is replaced with Skritt Swipe, allowing you to pilfer from enemies.",
+        "packet": [],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2409": {
+    "status": "event_ready",
+    "event_trigger": "You pilfer after using a certain amount of initiative.",
+    "event_packet": [
+      {
+        "effect": "Prodigious Pincher",
+        "stacks": 1,
+        "duration_s": 0
+      },
+      {
+        "effect": "Initiative Spent",
+        "value": 15
+      },
+      {
+        "effect": "Combat Only"
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "You pilfer after using a certain amount of initiative.",
+        "packet": [
+          {
+            "effect": "Prodigious Pincher",
+            "stacks": 1,
+            "duration_s": 0
+          },
+          {
+            "effect": "Initiative Spent",
+            "value": 15
+          },
+          {
+            "effect": "Combat Only"
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2423": {
+    "status": "event_ready",
+    "event_trigger": "Gain access to Reshuffle.",
+    "event_packet": [
+      {
+        "effect": "Conditions Removed",
+        "value": 1
+      }
+    ],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Gain access to Reshuffle.",
+        "packet": [
+          {
+            "effect": "Conditions Removed",
+            "value": 1
+          }
+        ],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  },
+  "2431": {
+    "status": "event_ready",
+    "event_trigger": "Your artifacts have increased effectiveness.",
+    "event_packet": [],
+    "notes": "Exact official effect packet is mapped. Encounter contribution requires the combat-event/rotation engine.",
+    "effects": [
+      {
+        "type": "event_packet",
+        "trigger": "Your artifacts have increased effectiveness.",
+        "packet": [],
+        "state": "event_engine",
+        "source": "official_mapping"
+      }
+    ]
+  }
+}

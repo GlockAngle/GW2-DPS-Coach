@@ -1,0 +1,3 @@
+Fix: Superior Rune of the Dragonhunter now contributes +100 Power and +300 Ferocity for a complete six-rune set.
+The previous imported data only included the Power formula and omitted Ferocity.
+Expected full Berserker dual-wield example: equipment Ferocity 961 + rune Ferocity 300 = 1261.

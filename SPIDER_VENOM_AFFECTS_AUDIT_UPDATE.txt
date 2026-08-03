@@ -1,0 +1,7 @@
+Spider Venom modifier audit update
+
+- Renamed the audit section to Outgoing condition-damage modifiers.
+- Added an Affects column so each source clearly states whether it modifies condition damage or both strike and condition damage.
+- Replaced raw factor-contribution decimals with readable multipliers such as ×1.0500.
+- Added a modifier summary for outgoing condition damage, Vulnerability, and the final combined damage factor.
+- No damage formulas were changed.

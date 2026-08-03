@@ -1,0 +1,7 @@
+Sidebar human cleanup
+
+- Removed the generated weapon emblem from the brand header.
+- Replaced it with a restrained typographic THIEF LAB / BY JUNIOR identity.
+- Added a simple red accent rule rather than an illustrated logo.
+- Fixed Streamlit radio control alignment so the native radio circles no longer overlap SVG icons.
+- Normalized menu row height, padding, text alignment, hover state and selected state across all pages.

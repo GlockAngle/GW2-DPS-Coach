@@ -1,0 +1,6 @@
+Linked trait preset selection fix
+
+- Gear Simulator now preserves gear_trait_preset_selection across Streamlit reruns.
+- Selecting a trait preset applies it immediately instead of waiting for a separate load action.
+- The selected preset no longer snaps back to None when the page reruns.
+- Reload traits remains available to deliberately reapply the current preset.

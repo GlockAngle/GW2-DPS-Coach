@@ -1,0 +1,12 @@
+Clickable trait builder update
+
+- Replaces the display-only Armory preview plus radio-button editor with one visual trait editor.
+- Specialization lines are chosen in three compact dropdowns.
+- Major traits are selected by clicking their icons directly.
+- Selected icons are bright and outlined; alternatives are dimmed.
+- Minor traits are automatic and displayed between major tiers.
+- Hovering an icon shows its official API description and calculator implementation status.
+- Trait presets, validation, saved selection state, and calculation hooks remain active.
+
+Technical note:
+The editor uses a lightweight Streamlit HTML component. Icon clicks return to Python through a short query parameter, so no Node.js build or external fork is required.

@@ -1,0 +1,24 @@
+Trait implementation pass 1
+
+Implemented with current calculator state/assumptions:
+- Dagger Training
+- Deadly Ambition static Condition Damage
+- Revealed Training
+- Exposed Weakness
+- Executioner
+- Keen Observer
+- Twin Fangs
+- Practiced Tolerance
+- Deadly Aim strike modifier
+- Ferocious Strikes
+- No Quarter static Ferocity under Fury
+- Hidden Killer average critical chance
+- Enterprising Aristocrat average incoming damage reduction while barrier is active
+- Combat High average outgoing strike and condition modifier
+- Potent Poison (existing)
+
+Added a collapsed Trait assumptions panel for player health, target health,
+unique target conditions, flanking/defiant state, Revealed uptime,
+stealth/linger uptime, barrier uptime, and average Combat High stacks.
+
+Traits that require actual skill/initiative/artifact/proc events remain clearly marked waiting.

@@ -1,0 +1,10 @@
+Trait implementation pass 2
+
+New calculator-connected traits:
+- Trickery: Preparedness, Lead Attacks, Deadly Ambush
+- Acrobatics: Swindler's Equilibrium
+- Daredevil: Weakening Strikes, Marauder's Resilience, Staff Master, Havoc Specialist
+- Deadeye: Iron Sight, Silent Scope, Premeditation, Be Quick or Be Killed
+- Specter: Second Opinion, Strength of Shadows
+
+New assumptions are available for effects that can be represented as average uptime/state values. Event-driven condition applications, initiative generation/spending timelines, Steal/Mark triggers, skill replacements, and internal cooldown procs remain explicitly pending.

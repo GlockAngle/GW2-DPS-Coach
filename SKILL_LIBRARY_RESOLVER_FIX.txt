@@ -1,0 +1,9 @@
+SKILL LIBRARY WIKI RESOLVER FIX
+
+- Removed the Semantic MediaWiki filter that accidentally restricted mapping to one skill supertype.
+- Resolve every Thief skill by exact game ID, not by name alone.
+- Preserve MediaWiki normalized-title and redirect aliases.
+- Try conservative skill/weapon title variants.
+- Use title search only as a final fallback, and accept a result only when its infobox ID exactly matches the API skill ID.
+- Existing manual overrides still take precedence.
+- Sync feedback now reports how many records were rescued by fallback search and how many remain unresolved.

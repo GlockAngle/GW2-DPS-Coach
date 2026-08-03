@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\extra\boost_variant2.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include\boost\variant2.hpp">
+      <Filter>Header Files\boost</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include\boost\variant2\variant.hpp">
+      <Filter>Header Files\boost\variant2</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{170B5AC1-2CFD-3393-AC3F-B2EAD9ABD2BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\boost">
+      <UniqueIdentifier>{1BD01889-F7DD-33D6-B33F-5A327A3DB6C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\boost\variant2">
+      <UniqueIdentifier>{7B44BE00-5609-3565-A9A4-3E30E712A487}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

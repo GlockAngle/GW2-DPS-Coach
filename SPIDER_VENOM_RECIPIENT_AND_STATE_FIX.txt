@@ -1,0 +1,7 @@
+Spider Venom recipient and state fix
+
+- The Spider Venom contribution now includes the caster automatically.
+- The user input now represents 0-4 nearby allies; total recipients are self + nearby allies (maximum 5).
+- Venom-specific controls use stable session-state keys and no longer reset when navigating away from the tab/page.
+- Saved builds now store and restore nearby allies and effective Spider Venom casts.
+- The calculation audit explicitly shows self + allied recipients.

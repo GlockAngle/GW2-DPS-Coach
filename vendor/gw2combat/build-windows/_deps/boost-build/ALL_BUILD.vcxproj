@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D9FF3051-BCCC-3E43-948C-15E577141499}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostInstall.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostMessage.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostInstall.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostMessage.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostInstall.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostMessage.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\WriteBasicConfigVersionFile.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostInstall.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostMessage.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\ZERO_CHECK.vcxproj">
+      <Project>{8626DE2E-AC62-3189-AEEC-0B847E1A962F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\assert\boost_assert.vcxproj">
+      <Project>{931FC5DD-7D41-3AC1-8112-2E0D002433A5}</Project>
+      <Name>boost_assert</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\atomic\boost_atomic.vcxproj">
+      <Project>{4EE27B5C-7EDF-3CB0-8934-344E9FDA552A}</Project>
+      <Name>boost_atomic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\chrono\boost_chrono.vcxproj">
+      <Project>{EFDDED96-3B56-3AD5-8069-4AD2BF3AFF1F}</Project>
+      <Name>boost_chrono</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\container\boost_container.vcxproj">
+      <Project>{95058124-91F4-349D-9A04-D87BEF2AB6C0}</Project>
+      <Name>boost_container</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\context\boost_context.vcxproj">
+      <Project>{ADCBAF3B-6C8C-3A5D-B1A9-2F2C7844A5AC}</Project>
+      <Name>boost_context</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\contract\boost_contract.vcxproj">
+      <Project>{0B252B39-5453-31AA-809B-1265F9C192E1}</Project>
+      <Name>boost_contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\core\boost_core.vcxproj">
+      <Project>{44A4984A-26EC-3069-BD35-AC2FE91F8822}</Project>
+      <Name>boost_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\coroutine\boost_coroutine.vcxproj">
+      <Project>{FECBA670-483F-3B05-8967-6CE8A27035D1}</Project>
+      <Name>boost_coroutine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\date_time\boost_date_time.vcxproj">
+      <Project>{BC0390D7-A013-3BE3-A320-A954505B3234}</Project>
+      <Name>boost_date_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\exception\boost_exception.vcxproj">
+      <Project>{2A90CEED-496B-3124-BF6B-1F1AA2CFDC59}</Project>
+      <Name>boost_exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\fiber\boost_fiber.vcxproj">
+      <Project>{98546021-FE4A-3F38-A5F3-42FA6796BB53}</Project>
+      <Name>boost_fiber</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\fiber\boost_fiber_numa.vcxproj">
+      <Project>{A4FD6617-855A-3B0F-96C2-F28C688E41E8}</Project>
+      <Name>boost_fiber_numa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\filesystem\boost_filesystem.vcxproj">
+      <Project>{ACC5D9E9-F513-3D25-9235-7882DC43D8E3}</Project>
+      <Name>boost_filesystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\graph\boost_graph.vcxproj">
+      <Project>{023B998F-0023-3A9A-93AA-736DFF7757C7}</Project>
+      <Name>boost_graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\iostreams\boost_iostreams.vcxproj">
+      <Project>{7E081F1A-7FC3-3329-BABC-8A0CDBC19F08}</Project>
+      <Name>boost_iostreams</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\boost_json.vcxproj">
+      <Project>{317423C5-528D-3044-A2FF-3EF71D6D37A5}</Project>
+      <Name>boost_json</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\locale\boost_locale.vcxproj">
+      <Project>{B07F7CEB-2FB3-348F-BAE4-EB731158794A}</Project>
+      <Name>boost_locale</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\log\boost_log.vcxproj">
+      <Project>{B5F6AF71-0F1B-3DCA-A571-800FB7BD911D}</Project>
+      <Name>boost_log</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\log\boost_log_setup.vcxproj">
+      <Project>{085D8AEA-1376-378F-892F-FD7C3480C162}</Project>
+      <Name>boost_log_setup</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\nowide\boost_nowide.vcxproj">
+      <Project>{4E9D8A58-B6D2-35E6-A4BE-A7BB17B0BF32}</Project>
+      <Name>boost_nowide</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\test\boost_prg_exec_monitor.vcxproj">
+      <Project>{3F408CB1-D0D6-3995-8F2C-A9DB01421AA8}</Project>
+      <Name>boost_prg_exec_monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\program_options\boost_program_options.vcxproj">
+      <Project>{AE8C4413-3B4C-3B82-85BD-88D45E120E8C}</Project>
+      <Name>boost_program_options</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\random\boost_random.vcxproj">
+      <Project>{9E67E495-CA24-3FB9-A1DE-24C44E34B1F8}</Project>
+      <Name>boost_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\serialization\boost_serialization.vcxproj">
+      <Project>{DCD6ED3D-798C-3099-B879-3F931B605E76}</Project>
+      <Name>boost_serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\stacktrace\boost_stacktrace_basic.vcxproj">
+      <Project>{C325B059-73D6-3B17-8315-1B7C5B784794}</Project>
+      <Name>boost_stacktrace_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\stacktrace\boost_stacktrace_noop.vcxproj">
+      <Project>{3C00087D-5A63-32D6-ACAF-06BC5F048FD4}</Project>
+      <Name>boost_stacktrace_noop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\stacktrace\boost_stacktrace_windbg.vcxproj">
+      <Project>{757CB4F5-F514-320E-A740-1D614DD8CABB}</Project>
+      <Name>boost_stacktrace_windbg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\stacktrace\boost_stacktrace_windbg_cached.vcxproj">
+      <Project>{B1F6B1BB-B9A8-3D05-B17B-EEE3986F37E6}</Project>
+      <Name>boost_stacktrace_windbg_cached</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\system\boost_system.vcxproj">
+      <Project>{23C64803-D211-3566-B687-C57A3E97DB9D}</Project>
+      <Name>boost_system</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\test\boost_test_exec_monitor.vcxproj">
+      <Project>{72ECA372-5D92-3201-8068-FEC317EC2F91}</Project>
+      <Name>boost_test_exec_monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\thread\boost_thread.vcxproj">
+      <Project>{D3DF9DEB-12DF-31EF-92C6-D864215B10FE}</Project>
+      <Name>boost_thread</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\timer\boost_timer.vcxproj">
+      <Project>{DF0F895A-AC3F-33BD-AF1A-555383C2FC38}</Project>
+      <Name>boost_timer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\type_erasure\boost_type_erasure.vcxproj">
+      <Project>{5AB86DC3-7D85-3D61-8CF8-1D2EDC214571}</Project>
+      <Name>boost_type_erasure</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\test\boost_unit_test_framework.vcxproj">
+      <Project>{FFD7AE31-4FF4-3C96-A394-A91F4781EA65}</Project>
+      <Name>boost_unit_test_framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\url\boost_url.vcxproj">
+      <Project>{9D1C7D74-19E7-36C2-958B-75F30E5F4813}</Project>
+      <Name>boost_url</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\variant2\boost_variant2.vcxproj">
+      <Project>{717E9766-FF66-3F17-85B9-9A7546B61D60}</Project>
+      <Name>boost_variant2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\wave\boost_wave.vcxproj">
+      <Project>{79054A4D-9B7A-3DE0-BFDF-55C59E835D67}</Project>
+      <Name>boost_wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\serialization\boost_wserialization.vcxproj">
+      <Project>{EC9F692D-D271-36B2-844F-BEB96C25F87A}</Project>
+      <Name>boost_wserialization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

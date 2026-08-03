@@ -1,0 +1,12 @@
+THIEF TRAITS PAGE
+
+- Added a dedicated Traits page to the sidebar.
+- Supports all current Thief specialization lines: Deadly Arts, Critical Strikes, Shadow Arts, Acrobatics, Trickery, Daredevil, Deadeye, Specter and Antiquary.
+- Uses official Guild Wars 2 API IDs and can refresh names, icons, descriptions and facts into a local cache.
+- Every trait links to its Guild Wars 2 Wiki page.
+- Shows minor traits and one selectable major trait per tier.
+- Validates duplicate specialization lines and the one-elite-specialization rule.
+- Includes save, load, overwrite and delete for local trait presets.
+- Adds a transparent implementation status for every trait.
+- Only verified static effects declared in data/traits/thief_effect_overrides.json can alter Gear Simulator totals.
+- Complex effects are kept data-only until initiative, stealth, skill-event or rotation handlers exist.

@@ -1,0 +1,8 @@
+Traits page update
+
+- Replaced the 27 large trait buttons with one compact dropdown per major tier.
+- Kept all three active specialization lines side by side.
+- Kept automatic minor traits in one small row per specialization.
+- The selected trait icon and a short description appear under each tier dropdown.
+- The shared Trait details and Active trait effects panels remain unchanged.
+- Trait presets and calculator integration remain intact.

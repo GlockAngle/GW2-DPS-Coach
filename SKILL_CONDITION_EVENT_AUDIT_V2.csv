@@ -1,0 +1,307 @@
+id,name,category,hits,condition_rows,explicit_condition_events,dynamic_recall,status,condition_audit_result,issues
+73145,Barbed Spear,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+73005,Ashen Assault,Stealth Attack,6,3,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+73041,Mantis Sting,Weapon,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+72896,Entangling Asp,Weapon,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+73076,Falling Spider,Weapon,1,2,False,False,Partial,STRUCTURALLY_CLEAR,
+72986,Unsuspecting Strike,Weapon,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+73063,Vampiric Slash,Weapon,1,1,False,False,Partial,STRUCTURALLY_CLEAR,
+72904,Shattering Assault,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+72927,Distracting Throw,Weapon,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+72991,Shadow Veil,Weapon,0,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5842,Bomb,Weapon,3,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12433,Brutal Swipe,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+40229,Double Lava Axe,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5752,Electrified Tornado,Weapon,1,0,False,False,Partial,STRUCTURALLY_CLEAR,
+12345,Fire Rocket,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5928,Flame Jet,Weapon,30,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+5532,Flame Wave,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5541,Lava Axe,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30371,Mortar Shot,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5595,Water Arrow,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5603,Whirlpool (Whirlpool skill),Bundle,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+10661,Withering Plague,Weapon,,1,False,False,Partial,REVIEW,condition skill has no verified hit/application mapping
+5753,Dust Tornado,Weapon,1,1,False,False,Partial,STRUCTURALLY_CLEAR,
+5593,Explosive Lava Axe,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5533,Fiery Eruption,Weapon,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+5823,Fire Bomb,Weapon,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+5931,Flame Blast,Weapon,2,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+5720,Frost Volley,Weapon,5,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+12434,Heavy Swipe,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+10662,Plague of Darkness,Weapon,,2,False,False,Partial,REVIEW,condition skill has no verified hit/application mapping
+30885,Poison Gas Shell,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+12348,Rocket Spray,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5930,Air Blast,Weapon,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+5717,Burning Retreat (Lava Axe skill),Weapon,1,1,False,False,Partial,STRUCTURALLY_CLEAR,
+5754,Debris Tornado,Weapon,2,0,False,False,Partial,STRUCTURALLY_CLEAR,
+30307,Endothermic Shell,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+5697,Fiery Whirl,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5568,Frost Fan,Weapon,7,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+5822,Galvanic Bomb,Weapon,3,2,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+12349,Heat Seeker,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+10663,Plague of Pestilence,Weapon,,2,False,False,Partial,REVIEW,condition skill has no verified hit/application mapping
+35224,Elemental Requiem,Weapon,1,3,False,False,Partial,STRUCTURALLY_CLEAR,
+5517,Fiery Rush,Weapon,2,0,False,False,Partial,STRUCTURALLY_CLEAR,
+30121,Flash Shell,Weapon,2,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+5723,Frost Storm,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+76530,Magnetic Bomb,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5718,Ring of Fire (Lava Axe skill),Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12435,Roar,Weapon,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12347,Rocket Jump,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76493,Stoke the Flames,Weapon,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+5813,Big Ol' Bomb,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5721,Deep Freeze,Weapon,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+35304,Dust Charge,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30032,Elixir Shell,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12346,Fire Rocket Barrage,Weapon,5,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+5531,Firestorm,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5719,Flame Leap,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+5929,Napalm,Weapon,30,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+12343,Artillery Barrage,Elite,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12373,Avatar of Melandru,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13132,Basilisk Venom,Elite,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+12385,Become the Bear,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12403,Become the Raven,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12401,Become the Snow Leopard,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12391,Become the Wolf,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12344,Charrzooka,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13085,Dagger Storm,Elite,2,2,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+29639,Finishing Blow,Elite,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12363,Hounds of Balthazar,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+29516,Impact Strike,Elite,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+10800,Mistfire Wolf,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12367,Reaper of Grenth,Elite,,2,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+12372,Remove Avatar of Melandru,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+45508,Shadow Meld,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63275,Shadowfall,Elite,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+77255,Skritt Scuffle,Elite,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12323,Summon 7-Series Golem,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12324,Summon D-Series Golem,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12447,Summon Druid Spirit,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12325,Summon Power Suit,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12450,Summon Sylvan Hound,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12457,Take Root,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13082,Thieves Guild,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30077,Uppercut (Daredevil skill),Elite,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12340,Warband Support,Elite,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76886,Antivenom Draught,Heal,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76881,Antivenom Draught: Backfired,Heal,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30400,Channeled Vigor,Heal,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12440,Healing Seed,Heal,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13027,Hide in Shadows,Heal,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+45088,Malicious Restoration,Heal,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12360,Prayer to Dwayna,Heal,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13050,Signet of Malice,Heal,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+21778,Skelk Venom,Heal,3,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63292,Well of Gloom,Heal,4,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13021,Withdraw,Heal,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+43390,Deadeye's Mark,Profession,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63067,Siphon,Profession,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+77397,Skritt Swipe,Profession,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13014,Steal,Profession,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76816,Chak Shield,Artifact,7,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63155,Enter Shadow Shroud,Profession,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63251,Exit Shadow Shroud,Profession,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76550,Forged Surfer Dash (underwater),Artifact,2,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+77288,Mistburn Mortar (underwater),Artifact,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+43768,Steal Defenses,Profession,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+43373,Steal Durability,Profession,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+40903,Steal Health,Profession,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+44526,Steal Mobility,Profession,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+40888,Steal Precision,Profession,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+40133,Steal Resistance,Profession,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+40904,Steal Strength,Profession,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+42863,Steal Time,Profession,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+39960,Steal Warmth,Profession,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76900,Summon Kryptis Turret (underwater),Artifact,16,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76909,Unstable Skritt Bomb,Artifact,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76895,Zephyrite Sun Crystal,Artifact,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+13046,Assassin's Signet,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30661,Bandit's Defense,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12338,Battle Roar,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+41205,Binding Shadow,Utility,2,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13044,Blinding Powder,Utility,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+12387,Call Owl,Utility,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12417,Call Wurm,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13028,Caltrops,Utility,,2,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+76744,Canach-Coin Toss (backfired),Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+77230,Canach-Coin Toss,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13093,Devourer Venom,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30568,Distracting Daggers,Utility,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+76784,Emergency Jade Shield (backfired),Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76879,Emergency Jade Shield,Utility,3,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30868,Fist Flurry,Utility,10,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+12453,Grasping Vines,Utility,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13066,Haste,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12339,Hidden Pistol,Utility,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13096,Ice Drake Venom,Utility,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+30369,Impairing Daggers,Utility,3,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13064,Infiltrator's Signet,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76808,Inquest Portal Device,Utility,2,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+77361,Inquest Portal Device: Backfired,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+41372,Mercy,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12320,Pain Inverter,Utility,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+30693,Palm Strike,Utility,3,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+56880,Pitfall,Utility,4,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+12361,Prayer to Kormir,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12362,Prayer to Lyssa,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13057,Prepare Pitfall,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13056,Prepare Seal Area,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13038,Prepare Shadow Portal,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13026,Prepare Thousand Needles,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12319,Radiation Field,Utility,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30519,Reflexive Strike,Utility,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13035,Roll for Initiative,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13020,Scorpion Wire,Utility,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13099,Seal Area,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12456,Seed Turret,Utility,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+41158,Shadow Flare,Utility,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+46335,Shadow Gust,Utility,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+16435,Shadow Portal,Utility,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+13117,Shadow Refuge,Utility,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13106,Shadow Return,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+45672,Shadow Swap,Utility,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13002,Shadowstep,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12337,Shrapnel Mine,Utility,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13062,Signet of Agility,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13060,Signet of Shadows,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13055,Skale Venom,Utility,,4,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | condition skill has no verified hit/application mapping
+13065,Smoke Screen,Utility,,3,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+13037,Spider Venom,Utility,,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | condition skill has no verified hit/application mapping
+76725,Stone Summit Cannon,Utility,8,4,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+77092,Stone Summit Cannon (backfired),Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+12318,Technobabble,Utility,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+56898,Thousand Needles,Utility,2,4,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+63323,Well of Bounty,Utility,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63230,Well of Silence,Utility,,1,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+63276,Well of Sorrow,Utility,1,6,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+63294,Well of Tears,Utility,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+72034,Cunning Salvo,Stealth Attack,2,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+71835,Malicious Cunning Salvo,Stealth Attack,2,5,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+71854,Spinning Axe,Weapon,2,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+71852,Venomous Volley,Weapon,6,1,True,False,Manually verified,STRUCTURALLY_CLEAR,
+71864,Harrowing Storm,Weapon,,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | condition skill has no verified hit/application mapping
+71965,Orchestrated Assault,Weapon,,2,False,False,Partial — condition events unverified,REVIEW,condition skill has no verified hit/application mapping
+71895,Recall Axes,Weapon,5,2,False,True,State-dependent verified,STATE_DEPENDENT,
+13005,Backstab,Stealth Attack,4,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13004,Double Strike,Weapon,4,0,False,False,Partial,STRUCTURALLY_CLEAR,
+13108,Lotus Strike,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+50481,Malicious Backstab,Stealth Attack,4,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13087,Wild Strike,Weapon,2,2,False,False,Partial,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13097,Heartseeker,Weapon,5,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13006,Death Blossom,Weapon,3,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13040,Shadow Shot,Weapon,2,1,False,False,Partial,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13110,Twisting Fangs,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13019,Dancing Dagger,Weapon,2,2,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+16432,Cloak and Dagger,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13079,Diving Knife,Weapon,1,1,False,False,Partial,STRUCTURALLY_CLEAR,
+13003,Trail of Knives,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13138,Venomous Knife,Stealth Attack,1,3,False,False,Partial,REVIEW,repeated condition rows lack explicit event mapping
+13081,Cheap Shot,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13140,Shadow Escape,Weapon,,0,False,False,Partial,STRUCTURALLY_CLEAR,
+13033,Smoke Bomb (thief skill),Weapon,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13080,Vanish in the Deep,Weapon,,0,False,False,Partial,STRUCTURALLY_CLEAR,
+1175,Bandage,Weapon,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+65179,Rescue Protocol (skill),Weapon,,0,False,False,Partial,STRUCTURALLY_CLEAR,
+37873,Channeled Agony,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76702,Exalted Hammer,Artifact,4,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76633,Forged Surfer Dash,Artifact,4,4,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+76674,Holo-Dancer Decoy,Artifact,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76582,Metal Legion Guitar,Artifact,4,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+77277,Mistburn Mortar,Artifact,1,4,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+77192,Summon Kryptis Turret,Artifact,16,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+50466,Malicious Sneak Attack,Stealth Attack,5,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13115,Sneak Attack,Stealth Attack,10,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13084,Vital Shot,Weapon,2,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13008,Bola Shot,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13111,Repeater (offhand empty),Weapon,5,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+59526,Repeater,Weapon,5,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13010,Shadow Strike,Weapon,2,2,False,False,Partial,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13011,Unload,Weapon,16,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13012,Head Shot,Weapon,2,0,False,False,Partial,STRUCTURALLY_CLEAR,
+13113,Black Powder,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+41422,Brutal Aim,Weapon,2,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+40710,Deadly Aim,Weapon,2,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+69316,Death's Judgment,Stealth Attack,4,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+44087,Malicious Death's Judgment,Stealth Attack,4,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+41494,Skirmisher's Shot,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+44591,Spotter's Shot,Weapon,2,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+43916,Double Tap,Weapon,4,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+44695,Three Round Burst,Weapon,6,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+40436,Death's Advance,Weapon,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+41937,Death's Retreat,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+68600,Sniper's Cover,Weapon,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+41068,Free Action,Weapon,,0,False,False,Partial,STRUCTURALLY_CLEAR,
+40600,Kneel,Weapon,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63182,Double Bolt,Weapon,4,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+69173,Malicious Shadowsquall,Stealth Attack,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63066,Shadow Bolt,Weapon,3,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+63314,Shadowsquall,Stealth Attack,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+63134,Triple Bolt,Weapon,4,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+63351,Shadow Sap,Weapon,4,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63128,Endless Night,Weapon,2,5,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+63267,Measured Shot,Weapon,3,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+63154,Triple Threat,Weapon,3,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+63254,Twilight Combo,Weapon,6,8,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+50451,Malicious Surprise Shot,Stealth Attack,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+13129,Surprise Shot,Stealth Attack,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+13022,Trick Shot,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13041,Cluster Bomb,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13043,Detonate Cluster,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13083,Disabling Shot (thief short bow skill),Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13024,Choking Gas,Weapon,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13025,Infiltrator's Arrow,Weapon,,1,False,False,Partial,REVIEW,condition skill has no verified hit/application mapping
+13125,Deadly Strike,Stealth Attack,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13120,Jab (thief skill),Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+72924,Malicious Ashen Assault,Stealth Attack,12,6,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+50417,Malicious Deadly Strike,Stealth Attack,1,2,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13121,Poison Tip Strike,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13119,Stab (thief spear skill),Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13069,Flanking Dive,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13130,Break Stance,Weapon,,0,False,False,Partial,STRUCTURALLY_CLEAR,
+13122,Nine-Tailed Strike,Weapon,9,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+50379,Hooked Spear,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13070,Tow Line,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13068,Shadow Assault,Weapon,3,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+50449,Malicious Ripper,Stealth Attack,1,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping
+13072,Piercing Shot,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13126,The Ripper,Stealth Attack,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13073,Deluge,Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13074,Escape,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+13075,Crippling Shot (thief harpoon gun skill),Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13076,Ink Shot,Weapon,1,1,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13078,Smoke Trail,Weapon,,0,False,False,Partial,STRUCTURALLY_CLEAR,
+63362,Haunt Shot,Shroud,3,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+30210,Hook Strike,Stealth Attack,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+69250,Malicious Hook Strike,Stealth Attack,2,0,False,False,Partial,STRUCTURALLY_CLEAR,
+30434,Punishing Strikes,Weapon,8,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+30135,Staff Bash,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+30614,Staff Strike,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+63107,Grasping Shadows (underwater),Shroud,2,2,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+63167,Grasping Shadows,Shroud,2,3,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+29911,Weakening Whirl,Weapon,6,2,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+63220,Dawn's Repose,Shroud,5,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+63227,Dawn's Repose (underwater),Shroud,4,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+30520,Debilitating Arc,Weapon,2,1,False,False,Partial,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+71802,Helmet Breaker,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+30775,Dust Strike,Weapon,2,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+63160,Eternal Night,Shroud,6,4,False,False,Partial — condition events unverified,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+63249,Mind Shock,Shroud,3,1,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+30597,Vault,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13116,Crippling Strike,Weapon,2,2,False,False,Partial — condition events unverified,REVIEW,multi-hit condition skill lacks per-hit/per-cast mapping
+50484,Malicious Tactical Strike,Stealth Attack,3,4,False,False,Partial,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13088,Slash (thief skill),Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13009,Slice (thief skill),Weapon,2,0,False,False,Partial,STRUCTURALLY_CLEAR,
+13114,Tactical Strike,Stealth Attack,3,4,False,False,Partial,REVIEW,repeated condition rows lack explicit event mapping | multi-hit condition skill lacks per-hit/per-cast mapping
+13128,Infiltrator's Return,Weapon,,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13015,Infiltrator's Strike,Weapon,2,0,False,False,Partial,STRUCTURALLY_CLEAR,
+13016,Flanking Strike,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+80244,Flawless Execution,Weapon,20,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13007,Larcenous Strike,Weapon,2,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+13112,Stab (thief sword skill),Weapon,1,0,False,False,Wiki verified,STRUCTURALLY_CLEAR,
+76601,,Artifact,,0,False,False,API only,STRUCTURALLY_CLEAR,
+76800,,Artifact,,0,False,False,API only,STRUCTURALLY_CLEAR,
+76591,,Artifact,,0,False,False,API only,STRUCTURALLY_CLEAR,
+76733,,Artifact,,0,False,False,API only,STRUCTURALLY_CLEAR,
+78309,,Artifact,,0,False,False,API only,STRUCTURALLY_CLEAR,
+79285,,Artifact,,0,False,False,API only,STRUCTURALLY_CLEAR,

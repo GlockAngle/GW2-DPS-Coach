@@ -1,0 +1,10 @@
+^D:\ONEDRIVE\DESKTOP\GW2-DPS-COACH\VENDOR\GW2COMBAT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

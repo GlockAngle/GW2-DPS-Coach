@@ -1,0 +1,11 @@
+Shared Build State & Persistent Presets
+======================================
+- Unified the Traits page and Gear Simulator on utils/thief_traits.py.
+- Selected traits now feed the shared effect registry used by Gear Simulator,
+  Spider Venom, Skill Library and future rotation pages.
+- Gear saved builds now include the selected trait lines/major traits.
+- Saved gear builds and trait presets are stored outside the extracted ZIP:
+  Windows: %LOCALAPPDATA%/ThiefLab
+  Other systems: ~/.thief_lab
+  Existing project-local presets are migrated automatically on first run.
+- Default unique conditions on target is now 10.0.

@@ -1,0 +1,8 @@
+SKILL LIBRARY — PHASE 1
+
+Added a new Skill Library page and persistent master database architecture.
+
+The page synchronizes all current Thief-relevant skill records from the official GW2 API and stores them locally. It includes filters, a spreadsheet-style overview, a skill inspector, API facts, event-hook previews, and live damage columns for skills whose coefficients have been verified in the enrichment database.
+
+Important accuracy boundary:
+The official API does not expose activation time or power coefficient for most skills. These values remain visibly marked as needing wiki enrichment rather than being guessed.

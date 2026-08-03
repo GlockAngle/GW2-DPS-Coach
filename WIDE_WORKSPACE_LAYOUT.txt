@@ -1,0 +1,8 @@
+Wide workspace layout experiment
+
+- Gear Simulator now uses nearly the full browser width on large displays.
+- Loadout and buff setup columns were rebalanced to use horizontal space.
+- Combat & trait assumptions moved into a quick-access popover beside Buffs.
+- Resulting stats condensed from three rows to two wide rows.
+- Stat source audit is collapsed by default as a developer audit.
+- Calculation logic and session-state keys were not changed.

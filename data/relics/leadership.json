@@ -1,0 +1,16 @@
+{
+  "name": "Relic of the Leadership",
+  "short_name": "Leadership",
+  "slug": "leadership",
+  "game_mode": "PvE",
+  "model": "unsupported",
+  "implemented": false,
+  "effect_type": "conditional",
+  "description": "Effect data imported by name only. A dedicated combat model has not been implemented yet.",
+  "static_stats": {},
+  "damage_modifiers": {},
+  "uptime_model": null,
+  "source_status": "workbook_name_only",
+  "last_verified": null,
+  "notes": []
+}

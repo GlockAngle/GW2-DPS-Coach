@@ -1,0 +1,10 @@
+^D:\ONEDRIVE\DESKTOP\GW2-DPS-COACH\VENDOR\GW2COMBAT\BUILD-WINDOWS\_DEPS\BOOST-SUBBUILD\CMAKEFILES\4A63A478EF1DCD656BE2FEBC29F2557F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/boost-populate.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

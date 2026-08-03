@@ -1,0 +1,16 @@
+SKILL VERIFICATION PHASE UPDATE
+
+This build uses strict simulation-readiness instead of treating "Wiki verified" as proof of an executable combat model.
+
+Changes
+- Events tab now displays explicit stored condition events as the authoritative combat model.
+- Condition-bearing skills without explicit event mapping are visibly blocked.
+- Validation now checks classification, coefficient, hit count, cast time, condition packets and condition-event mapping separately.
+- State-dependent skills such as Recall Axes are labelled separately from ordinary casts.
+- Aftercast/animation lock remains a global blocker for exact rotation timing.
+- Venomous Volley remains exactly one skill: three thrown axes, one 2-second Poison application per axe. Recall Axes remains separate.
+
+Audit policy
+- Tooltip/API facts are source material only.
+- Explicit combat events are required for exact simulation.
+- Wiki verification does not override unresolved event ambiguity.

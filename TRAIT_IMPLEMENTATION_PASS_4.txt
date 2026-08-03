@@ -1,0 +1,7 @@
+TRAIT IMPLEMENTATION PASS 4
+
+- Connected Leeching Venoms life-siphon damage and healing to Spider Venom.
+- Siphons count consumed venom strikes, not poison ticks.
+- Registered verified PvE event packets for Serpent's Touch, Mug, Even the Odds, Panic Strike, Unrelenting Strikes, Thrill of the Crime, Quick Pockets, Sleight of Hand, Magpie's Defense and Panaku's Ambition.
+- Event packets remain Partial until the rotation/event engine supplies trigger timing.
+- Combat High remains +3% strike and +2% condition damage per PvE stack.

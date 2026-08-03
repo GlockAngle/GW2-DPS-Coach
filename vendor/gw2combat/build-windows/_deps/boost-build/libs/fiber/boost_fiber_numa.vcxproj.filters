@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\fiber\src\numa\windows\pin_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\fiber\src\numa\windows\topology.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\fiber\src\numa\algo\work_stealing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\fiber\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6EC0E471-78FB-3D94-8609-096110767F7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

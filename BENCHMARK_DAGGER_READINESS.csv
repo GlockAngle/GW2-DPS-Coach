@@ -1,0 +1,28 @@
+﻿id,name,casts,logged_hits,status,effective_action_time,timing_basis,notes
+723,Poison,0,94,Aggregate condition output,,not_a_cast,"Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+736,Bleeding,0,94,Aggregate condition output,,not_a_cast,"Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+737,Burning,0,91,Aggregate condition output,,not_a_cast,"Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+861,Confusion,0,18,Aggregate condition output,,not_a_cast,"Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+13004,Double Strike,31,49,Ready,0.361,benchmark_effective_action_time,"Corrected a game-mode parsing error: 0.4 is the competitive value, not an additional PvE packet."
+13005,Backstab,3,3,Ready,0.362,benchmark_effective_action_time,"Benchmark target is defiant, so the PvE back/defiant coefficient is used. Alternative front and competitive facts are not summed."
+13006,Death Blossom,39,117,Ready,1.042,benchmark_effective_action_time,The former 3 stacks for 10s row was another game-mode fact and has been removed from the PvE model.
+13026,Prepare Thousand Needles,4,0,Ready,0.601,benchmark_effective_action_time,Automatically synchronized from structured GW2 Wiki infobox and skill-fact parameters. Manual overrides take precedence.
+13028,Caltrops,5,0,Ready,0.923,benchmark_effective_action_time,Ten one-second pulses. Bleeding stacks; Cripple overwrites its own duration.
+13037,Spider Venom,5,0,Ready,0.0,benchmark_effective_action_time,Mode and recipient facts are not summed. The player receives six charges; each successful attack consumes one charge and applies one 3s Poison stack. Ally contribution remains a separate simulator input.
+13087,Wild Strike,24,23,Ready,0.397,benchmark_effective_action_time,"The 0.433 coefficient and 1-stack bleed are competitive values, not a second PvE hit."
+13108,Lotus Strike,22,22,Ready,0.438,benchmark_effective_action_time,The 0.733 coefficient is the competitive split and is excluded from PvE.
+19426,Torment,0,88,Aggregate condition output,,not_a_cast,"Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+56897,Thousand Needles,0,25,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+56898,Thousand Needles,4,0,Ready,0.0,benchmark_effective_action_time,Prepare Thousand Needles (13026) and activation Thousand Needles (56898) remain separate skills.
+76582,Metal Legion Guitar (Rockout),1,4,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+76596,Metal Legion Guitar (Smash),1,1,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+76633,Forged Surfer Dash,3,3,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+76674,Holo-Dancer Decoy,3,0,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+76816,Chak Shield,0,3,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+76895,Zephyrite Sun Crystal,1,1,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+77028,Holo-Dancer Decoy,0,2,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+77192,Summon Kryptis Turret,12,88,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+77255,Skritt Scuffle,3,0,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+77277,Mistburn Mortar,7,35,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+77397,Skritt Swipe,5,0,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+78440,Forged Surfer Dash (Additional Bombs),0,12,State-dependent artifact / child effect,,observed_only,"Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."

@@ -1,0 +1,10 @@
+TRAIT PERSISTENCE STATE MODEL FIX
+
+- Trait widgets are no longer treated as the source of truth outside the Traits page.
+- A durable persistent_trait_selection snapshot is now the only shared state read by Gear Simulator and other calculators.
+- Returning to Traits restores all specialization and major-trait widget values unconditionally from the durable snapshot.
+- Specialization changes now create valid default major traits before saving the snapshot.
+- Major-trait changes continue to update the durable snapshot immediately.
+- The loaded trait preset name is kept separately as active_trait_preset so it survives navigation.
+- Preset loading writes both widget state and durable shared state.
+- Saved gear builds continue to restore the same durable trait selection.

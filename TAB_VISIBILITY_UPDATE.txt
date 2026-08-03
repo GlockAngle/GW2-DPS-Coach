@@ -1,0 +1,7 @@
+Gear Simulator tab visibility update
+
+- Restyled the main Gear Simulator tab row as a clear segmented navigation bar.
+- Added visible inactive, hover, and selected states.
+- Styled the nested Build setup / Simulation & results / Developer audits tabs as a quieter secondary row.
+- Removed the nearly invisible default active underline.
+- Added horizontal overflow protection for narrower windows.

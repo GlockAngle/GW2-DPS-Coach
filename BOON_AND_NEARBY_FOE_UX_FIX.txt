@@ -1,0 +1,8 @@
+Boon and nearby-foe UX fix
+
+- Added Stability and Resistance to Full Benchmark Boons and Custom boon editing.
+- Both boons persist in saved builds, current-build autosave and custom profile snapshots.
+- Both boons contribute to the derived average unique-boon count.
+- Nearby foe uptime was removed from the generic Encounter state inputs.
+- The setting is now shown under Advanced uptimes only when Marauder's Resilience is selected.
+- Its label explains the 360 range, the 10% incoming strike-damage reduction and that it never increases outgoing DPS.

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\encoding\codepage.cpp">
+      <Filter>sources\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\date_time.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\format.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\formatting.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\generator.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\iconv_codecvt.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\ids.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\localization_backend.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\message.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\mo_lambda.cpp">
+      <Filter>sources\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\codecvt_converter.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\default_locale.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\encoding.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\info.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\locale_data.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\std\codecvt.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\std\collate.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\std\converter.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\std\numeric.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\std\std_backend.cpp">
+      <Filter>sources\std</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\collate.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\converter.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\numeric.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\win_backend.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\lcid.cpp">
+      <Filter>sources\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\gregorian.cpp">
+      <Filter>sources\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\encoding\iconv_converter.hpp">
+      <Filter>sources\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\encoding\uconv_converter.hpp">
+      <Filter>sources\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\encoding\wconv_converter.hpp">
+      <Filter>sources\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\shared\iconv_codecvt.hpp">
+      <Filter>sources\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\encoding.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\foreach_char.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\make_std_unique.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\numeric.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\timezone.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\boundary.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\boundary\boundary_point.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\boundary\facets.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\boundary\index.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\boundary\segment.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\boundary\types.hpp">
+      <Filter>headers\boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\collator.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\config.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\conversion.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\date_time.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\date_time_facet.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\detail\encoding.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\detail\facet_id.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\detail\is_supported_char.hpp">
+      <Filter>headers\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\encoding.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\encoding_errors.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\encoding_utf.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\format.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\formatting.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\generator.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\generic_codecvt.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\gnu_gettext.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\hold_ptr.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\info.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\localization_backend.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\message.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\time_zone.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\utf.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\utf8_codecvt.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\util.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\util\locale_data.hpp">
+      <Filter>headers\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\include\boost\locale\util\string.hpp">
+      <Filter>headers\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\std\all_generator.hpp">
+      <Filter>sources\std</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\std\std_backend.hpp">
+      <Filter>sources\std</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\all_generator.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\api.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\win_backend.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\win32\lcid.hpp">
+      <Filter>sources\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\src\boost\locale\util\gregorian.hpp">
+      <Filter>sources\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\locale\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{0D2206B5-DF1F-3817-94D0-39C277663218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\boundary">
+      <UniqueIdentifier>{8BC2C56F-D183-3496-A984-A4B6E3865DE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\detail">
+      <UniqueIdentifier>{6F65CEF3-3E8B-3CFD-9B58-8BB0DF9112A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\util">
+      <UniqueIdentifier>{C31ECC2A-1C1C-32DB-9C45-B60B715767CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{FCBDA24F-36DE-3ABB-B86B-66BEC7D4E7AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\encoding">
+      <UniqueIdentifier>{6BF0E8B4-EB09-39D2-87CE-876841D56D30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\shared">
+      <UniqueIdentifier>{C17E174F-0BDA-3BCC-8179-C2DB1F7981C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\std">
+      <UniqueIdentifier>{159AF13A-7B8F-36E5-8A98-1F08090B5EE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\util">
+      <UniqueIdentifier>{9B3FE4DF-6688-3FA8-93A3-1C2C2C1E2131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\win32">
+      <UniqueIdentifier>{3E0E2E7A-AAC6-354F-8362-E1B63B8C64EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

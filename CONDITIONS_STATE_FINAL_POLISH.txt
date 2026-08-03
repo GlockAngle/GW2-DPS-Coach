@@ -1,0 +1,9 @@
+Conditions & State final polish
+
+- Renamed Modified stack-seconds to Total condition duration.
+- Added an explanatory tooltip defining stack-seconds.
+- Renamed Estimated full damage to Estimated maximum damage.
+- Added Average DPS over decay, calculated across the longest modified condition duration and explicitly labelled as not rotation DPS.
+- Added a plain-text Source type column to modifier interactions without decorative iconography.
+- Simplified runtime statuses to Ready, Preview, and Event engine required.
+- No damage formulas were changed.

@@ -1,0 +1,10 @@
+SURVIVABILITY STATS UPDATE
+
+Added to Resulting stats:
+- Vitality
+- Health (Thief level-80 formula: 1,645 + 10 x Vitality)
+- Toughness
+- Defense
+- Armor (Toughness + Defense)
+
+Added a collapsed "Vitality, Health & Armor audit" that lists every source contribution, including Jade Bot Core, runes, food, equipment, and Reinforced Armor.

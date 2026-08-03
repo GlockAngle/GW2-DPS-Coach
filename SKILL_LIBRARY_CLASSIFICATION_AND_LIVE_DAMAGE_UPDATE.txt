@@ -1,0 +1,14 @@
+Skill Library classification and live damage update
+
+- Specter Shadow Shroud skills are no longer listed as Staff weapon skills.
+- Shadow Shroud land/underwater variants are separated correctly.
+- Antiquary artifact skills are categorized as Artifact skills.
+- Specialization capitalization is normalized.
+- Norn transformation subskills and internal blank records no longer pollute normal weapon filters.
+- Added classification, damage-ready, and unresolved coverage counters.
+- Added optional current-equipped-weapon filtering.
+- Skill strike values now show non-critical, critical, and crit-weighted expected strike damage.
+- Damage values are linked live to Gear Simulator Power, Precision, Ferocity, selected weapon-strength roll, enemy armor, and Vulnerability.
+- Profession, Shroud, and Artifact skills use the currently selected build weapon strength instead of being treated as Dagger.
+- Added a Skill Inspector damage summary and transparent damage audit.
+- Conditions remain listed separately until the future skill-event engine models condition applications over time.

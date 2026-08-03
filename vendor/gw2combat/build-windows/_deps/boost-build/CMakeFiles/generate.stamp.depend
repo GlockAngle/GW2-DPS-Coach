@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/GNUInstallDirs.cmake
+C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake
+D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/CMakeFiles/cmake.verify_globs
+D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/CMakeLists.txt
+D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/tools/cmake/include/BoostInstall.cmake
+D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/tools/cmake/include/BoostMessage.cmake
+D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/tools/cmake/include/BoostRoot.cmake

@@ -1,0 +1,11 @@
+EFFECT ENGINE FOUNDATION
+
+- Added utils/effect_engine.py as the shared typed effect registry.
+- Every active trait effect is now registered with its exact trait source,
+  target bucket, value, destination, and condition metadata.
+- The registry remains compatible with the existing stat/damage formulas by
+  generating the legacy stats/modifiers dictionaries.
+- Damage modifier audits now receive individual trait source names instead of
+  one combined "Selected traits" source.
+- Future runes, sigils, relics, skills, and rotation effects can register into
+  the same engine without adding page-specific formulas.

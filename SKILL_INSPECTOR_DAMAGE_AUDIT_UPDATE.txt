@@ -1,0 +1,12 @@
+Skill Inspector damage audit update
+
+- Renamed the live result section to Current build damage.
+- Added a Total coefficient card with clarification that the stored value is the full-cast coefficient.
+- Added a per-skill comparison baseline for before/after build changes.
+- Expanded Damage audit into a transparent step-by-step strike calculation.
+- Added a readable formula output for non-crit and expected damage.
+- Improved Conditions & state with application count and duration columns while keeping unmodelled condition totals explicit.
+- Added a preview event timeline and preserved event tags for the future event engine.
+- Expanded Provenance to show field-level sources for API, Wiki enrichment, resolver output and live calculations.
+
+No skill coefficients or combat formulas were changed in this pass.

@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{317423C5-528D-3044-A2FF-3EF71D6D37A5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>boost_json</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">boost_json.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libboost_json-vc145-mt-gd-x64-1_83</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">boost_json.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libboost_json-vc145-mt-x64-1_83</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">boost_json.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libboost_json-vc145-mt-x64-1_83</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">boost_json.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libboost_json-vc145-mt-x64-1_83</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\Debug\libboost_json-vc145-mt-gd-x64-1_83.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\Release\libboost_json-vc145-mt-x64-1_83.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\MinSizeRel\libboost_json-vc145-mt-x64-1_83.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\RelWithDebInfo\libboost_json-vc145-mt-x64-1_83.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;BOOST_JSON_NO_LIB=1;BOOST_JSON_STATIC_LINK=1;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\src;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\align\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\config\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\core\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\static_assert\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\throw_exception\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\intrusive\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\container_hash\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\describe\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\mp11\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\type_traits\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\move\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\system\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\variant2\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\winapi\include;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\predef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/libs/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/libs/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/libs/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/libs/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/libs/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/libs/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-src/libs/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat -BD:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows --check-stamp-file D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-build/libs/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\array.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\basic_parser.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\basic_parser_impl.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\conversion.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\array.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\buffer.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\chars_format.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\compute_float64.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\config.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\emulated128.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\ascii_number.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\bigint.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\constexpr_feature_detect.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\decimal_to_binary.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\digit_comparison.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\fast_float.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\fast_table.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\float_common.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\parse_number.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\from_chars_float_impl.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\from_chars_integer_impl.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\from_chars_result.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\integer_search_trees.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\parser.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\significand_tables.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\from_chars.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\impl\from_chars.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\limits.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\config.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\default_resource.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\digest.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\except.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\format.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\handler.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\array.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\default_resource.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\except.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\format.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\handler.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\shared_resource.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\stack.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\string_impl.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\object.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\common.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\d2s.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\d2s_full_table.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\d2s_intrinsics.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\digit_table.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\impl\d2s.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\ryu.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\sbo_buffer.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\shared_resource.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\sse2.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\stack.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\stream.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\string_impl.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\utf8.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\value.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\value_from.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\value_to.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\error.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\fwd.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\array.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\array.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\conversion.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\error.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\error.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\kind.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\monotonic_resource.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\null_resource.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\object.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\object.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\parse.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\parser.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\pointer.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\serialize.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\serializer.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\static_resource.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\stream_parser.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\string.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\string.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value_ref.hpp" />
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value_ref.ipp">
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value_stack.ipp">
+    </None>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\visit.hpp" />
+    <Natvis Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\json.natvis">
+    </Natvis>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\kind.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\memory_resource.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\monotonic_resource.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\null_resource.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\object.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\parse.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\parse_options.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\parser.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\pilfer.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\serialize.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\serialize_options.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\serializer.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\set_pointer_options.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\src.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\static_resource.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\storage_ptr.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\stream_parser.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\string.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\string_view.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\system_error.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_from.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_ref.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_stack.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_to.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\visit.hpp" />
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\src\src.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\ZERO_CHECK.vcxproj">
+      <Project>{8626DE2E-AC62-3189-AEEC-0B847E1A962F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\assert\boost_assert.vcxproj">
+      <Project>{931FC5DD-7D41-3AC1-8112-2E0D002433A5}</Project>
+      <Name>boost_assert</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\container\boost_container.vcxproj">
+      <Project>{95058124-91F4-349D-9A04-D87BEF2AB6C0}</Project>
+      <Name>boost_container</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\core\boost_core.vcxproj">
+      <Project>{44A4984A-26EC-3069-BD35-AC2FE91F8822}</Project>
+      <Name>boost_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\system\boost_system.vcxproj">
+      <Project>{23C64803-D211-3566-B687-C57A3E97DB9D}</Project>
+      <Name>boost_system</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-build\libs\variant2\boost_variant2.vcxproj">
+      <Project>{717E9766-FF66-3F17-85B9-9A7546B61D60}</Project>
+      <Name>boost_variant2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

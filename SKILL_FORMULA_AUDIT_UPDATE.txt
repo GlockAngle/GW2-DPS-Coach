@@ -1,0 +1,9 @@
+SKILL FORMULA AUDIT UPDATE
+
+- Split the Skill Inspector damage audit into two explicit sections:
+  1. Active effects used by this strike calculation.
+  2. Formula audit with the running result after every operation.
+- Shows each trait source, modifier group, amount, condition and note.
+- Separates additive strike, multiplicative strike, stolen-skill, critical-chance and critical-damage groups.
+- Shows the exact running value after weapon strength, Power, coefficient, armor, Vulnerability and each outgoing modifier group.
+- The plain-text formula now exposes all modifier groups instead of one opaque outgoing multiplier.

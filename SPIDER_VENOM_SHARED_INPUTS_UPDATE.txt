@@ -1,0 +1,10 @@
+Spider Venom shared-input cleanup
+
+- Renamed the tab to Spider Venom estimate.
+- Separated Build inputs, Shared trait assumptions, Venom setup and Spider Venom output.
+- Spider Venom now reads Condition Damage, vulnerability, fight duration, Lead Attacks and Combat High from the shared simulator state.
+- Added shared assumptions for Distracting Throw average stacks and Lotus Training uptime.
+- Added those assumptions to saved-build serialization and loading.
+- Kept only allied recipients and effective casts as Spider Venom-specific controls.
+- Python syntax validation passed.
+- Regression tests: 5 passed.

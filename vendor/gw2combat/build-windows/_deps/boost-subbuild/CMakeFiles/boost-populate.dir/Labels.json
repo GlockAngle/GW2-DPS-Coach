@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/boost-populate"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/4a63a478ef1dcd656be2febc29f2557f/boost-populate.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/b23ff43315a00a2e181ffd806e49c3fb/boost-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-build.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-download.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-install.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-test.rule"
+		},
+		{
+			"file" : "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows/_deps/boost-subbuild/CMakeFiles/ca259ce6b17bee6701430ec2ae2b91bb/boost-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"boost-populate"
+		],
+		"name" : "boost-populate"
+	}
+}

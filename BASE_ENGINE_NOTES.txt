@@ -1,0 +1,22 @@
+GW2 DPS Coach - class-neutral base engine update
+================================================
+
+The Gear Simulator calculation is now split into explicit layers:
+
+1. Level-80 base attributes
+2. Equipment (armor, trinkets and active weapon set)
+3. Six-rune static bonuses
+4. Infusions
+5. Food
+6. Static sigil attributes
+7. Jade Bot Core vitality
+8. Might attributes
+9. Utility conversion calculated from the pre-utility total
+10. Derived stats (critical chance, critical damage, condition duration,
+    boon duration and effective power)
+
+No Thief, Mesmer or other profession traits are applied to these base values.
+Profession-specific effects should be implemented after this neutral pipeline.
+
+Two-handed weapons use two one-handed weapon stat blocks from the imported
+workbook and skip Weapon 2. Main-hand + off-hand counts each weapon once.

@@ -1,0 +1,8 @@
+Spider Venom contribution update
+
+- Renamed the tab from "Spider Venom DPS" to "Spider Venom".
+- Renamed the page output to "Spider Venom contribution".
+- Removed the standalone Venom DPS metric and fight-duration card from this module.
+- Kept contribution per full cast, effective casts, and total contribution.
+- Replaced raw debug JSON with a human-readable calculation audit.
+- Spider Venom remains a contribution module, not a complete personal DPS estimate.

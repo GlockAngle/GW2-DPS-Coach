@@ -1,0 +1,10 @@
+BUFF PROFILE UPDATE
+
+- Added Full Benchmark Boons and Custom buff profiles.
+- Full Benchmark Boons is the default for a fresh setup.
+- It applies 25 Might and 100% uptime for Alacrity, Quickness, Fury,
+  Protection, Regeneration, Resolution, Swiftness, and Vigor.
+- Any manual boon toggle, uptime, or Might-stack change switches the profile to Custom.
+- The active buff profile is stored inside saved builds and current_build.json.
+- Loading a saved build restores its linked buff profile and boon values.
+- The active build manager now shows the linked Trait preset and Buff profile.

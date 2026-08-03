@@ -1,0 +1,7 @@
+Trait page navigation persistence fix
+
+- Trait specialization and major-trait selections are now copied from Streamlit widget keys into a durable session-state snapshot.
+- Returning to Traits restores all three specialization lines and selected major traits.
+- Gear Simulator, Skill Library, Spider Venom and future rotation pages read the durable selection even while Traits widgets are not rendered.
+- Loading a saved trait preset or saved gear build updates both widget state and the durable shared selection.
+- This fixes Streamlit removing widget-owned keys when navigating away from the Traits page.

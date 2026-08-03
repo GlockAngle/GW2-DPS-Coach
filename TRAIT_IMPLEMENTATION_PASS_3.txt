@@ -1,0 +1,9 @@
+Trait implementation pass 3
+
+Implemented:
+- Invigorating Precision healing ratio
+- Unhindered Combatant configured mitigation uptime
+- One in the Chamber stolen-skill damage
+- Skill Library shared trait modifier integration
+
+Event-driven portions remain explicitly pending.

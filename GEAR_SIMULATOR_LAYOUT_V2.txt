@@ -1,0 +1,6 @@
+
+Gear Simulator layout v2
+- Added Build setup, Simulation & results, and Developer audits tabs.
+- Uses three wide setup columns for equipment, upgrades, and buffs.
+- Reduced normal-page scrolling by moving audits to a separate tab.
+- No calculation formulas changed.

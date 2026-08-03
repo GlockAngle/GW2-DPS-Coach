@@ -1,0 +1,11 @@
+WEAPON CONFIG + AUTOMATIC MODIFIERS UPDATE
+
+- Removed user-editable strike and condition damage modifier fields.
+- Added a read-only Calculated damage modifiers breakdown.
+- Modifier buckets now default to neutral and are intended to be populated automatically by traits, relics, sigils and profession mechanics.
+- Added proper weapon loadout inputs for the neutral damage test:
+  * Two-handed: one weapon selector.
+  * Main hand + off hand: separate selectors plus a damage-source choice.
+- The neutral strike test uses the selected source weapon's minimum, midpoint or maximum weapon strength.
+- Saved builds now store the two-handed, main-hand, off-hand and selected damage-source fields.
+- Older saved builds with a single weapon_type field remain loadable.

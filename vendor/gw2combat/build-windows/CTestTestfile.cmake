@@ -1,0 +1,37 @@
+# CMake generated Testfile for 
+# Source directory: D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat
+# Build directory: D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(gw2combat_test_build "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "--build" "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows" "--config" "Release" "--target" "gw2combat_test")
+  set_tests_properties(gw2combat_test_build PROPERTIES  _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;64;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(gw2combat_test_build "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "--build" "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows" "--config" "Release" "--target" "gw2combat_test")
+  set_tests_properties(gw2combat_test_build PROPERTIES  _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;64;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(gw2combat_test_build "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "--build" "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows" "--config" "Release" "--target" "gw2combat_test")
+  set_tests_properties(gw2combat_test_build PROPERTIES  _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;64;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(gw2combat_test_build "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "--build" "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/build-windows" "--config" "Release" "--target" "gw2combat_test")
+  set_tests_properties(gw2combat_test_build PROPERTIES  _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;64;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+else()
+  add_test(gw2combat_test_build NOT_AVAILABLE)
+endif()
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(gw2combat_test_run "gw2combat_test")
+  set_tests_properties(gw2combat_test_run PROPERTIES  DEPENDS "gw2combat_test_build" _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;72;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(gw2combat_test_run "gw2combat_test")
+  set_tests_properties(gw2combat_test_run PROPERTIES  DEPENDS "gw2combat_test_build" _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;72;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(gw2combat_test_run "gw2combat_test")
+  set_tests_properties(gw2combat_test_run PROPERTIES  DEPENDS "gw2combat_test_build" _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;72;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(gw2combat_test_run "gw2combat_test")
+  set_tests_properties(gw2combat_test_run PROPERTIES  DEPENDS "gw2combat_test_build" _BACKTRACE_TRIPLES "D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;72;add_test;D:/Onedrive/Desktop/GW2-DPS-Coach/vendor/gw2combat/CMakeLists.txt;0;")
+else()
+  add_test(gw2combat_test_run NOT_AVAILABLE)
+endif()
+subdirs("_deps/boost-build")

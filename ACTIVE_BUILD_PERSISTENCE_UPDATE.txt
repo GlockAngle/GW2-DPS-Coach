@@ -1,0 +1,7 @@
+Active build persistence refactor
+
+- The currently active gear build is autosaved to %LOCALAPPDATA%/ThiefLab/current_build.json.
+- The active gear preset and trait preset names are stored alongside the build.
+- Gear, buffs, enemy settings, combat assumptions, Spider Venom inputs, and trait selections restore after page changes and script restarts.
+- Streamlit widget keys are treated as temporary UI state; the disk snapshot restores keys removed when another page is rendered.
+- Existing saved builds and trait presets remain in %LOCALAPPDATA%/ThiefLab and survive replacing the project ZIP.

@@ -1,0 +1,7 @@
+Trait preset load priority fix
+
+- Loading an older gear build no longer resets a currently selected Trait preset to None.
+- The visible Trait preset selection is captured before the saved build snapshot is applied.
+- A valid currently selected Trait preset takes priority over an old/missing None link.
+- If no preset is currently selected, a valid trait preset linked to the saved build is restored.
+- The effective trait preset is reapplied and autosaved after loading the gear build.

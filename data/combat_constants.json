@@ -1,0 +1,17 @@
+{
+  "last_reviewed": "2026-08-01",
+  "spider_venom": {
+    "condition_coefficient": 0.06,
+    "base_damage": 33.5,
+    "ticks": 6.0,
+    "applications_per_recipient": 6.0,
+    "poison_master_multiplier": 1.33,
+    "vulnerability_per_stack": 0.01
+  },
+  "traits": {
+    "lead_attacks_per_stack": 0.01,
+    "combat_high_per_stack": 0.02,
+    "distracting_throw_per_stack": 0.1,
+    "lotus_training": 0.15
+  }
+}

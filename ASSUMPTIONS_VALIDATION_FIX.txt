@@ -1,0 +1,8 @@
+Combat assumptions validation fix
+
+- Custom player-boon values are stored separately from Full Benchmark Boons and restored when switching back to Custom.
+- Unique boons on player are explicitly separated from unique conditions on target.
+- Nearby foe uptime is documented as a Marauder's Resilience survivability input only.
+- Distracting Throw is modeled as a non-stacking +10% condition modifier with an uptime percentage.
+- Lead Attacks, Combat High, and Lotus Training assumptions affect Spider Venom only when their traits are selected.
+- Existing saved builds migrate old Distracting Throw stack values to 0%/100% uptime.

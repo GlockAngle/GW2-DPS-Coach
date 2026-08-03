@@ -1,0 +1,9 @@
+COMBAT ASSUMPTIONS CLEANUP
+
+- Reorganized Combat & trait assumptions into Encounter state, Rotation averages, and Advanced uptimes.
+- Removed the duplicate manual Unique boons input.
+- Average unique boons is now derived from the active Buff profile and boon uptimes.
+- Added source labels explaining which values are manual now, derived automatically, or planned for log/rotation automation.
+- Added field-specific help text and an assumption dependency reference table.
+- Preserved all existing persistent state keys and saved-build compatibility.
+- Legacy saved unique-boon values are ignored in favor of the active Buff profile.

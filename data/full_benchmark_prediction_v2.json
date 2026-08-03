@@ -1,0 +1,404 @@
+{
+  "summary": {
+    "label": "TIMELINE-CONDITIONED PREDICTION v2 \u2014 calculated from formulas, not observed damage",
+    "fight_duration_s": 94.013,
+    "observed_ei_dps": 42040,
+    "observed_in_game_dps": 42406,
+    "observed_damage": 3952297,
+    "predicted_supported_damage": 3012781,
+    "predicted_supported_dps": 32046.43,
+    "predicted_strike_damage": 587129,
+    "predicted_condition_damage": 2425652,
+    "cast_coverage_pct": 94.22,
+    "unsupported_sources": 7,
+    "full_prediction_ready": false,
+    "full_prediction_rule": "This v2 subtotal includes benchmark traits, Earth Sigil, Fractal Relic and timeline stack modifiers. Remaining unsupported child coefficients stay explicit.",
+    "event_count": 926
+  },
+  "profile": {
+    "power": 2923.0,
+    "condition_damage": 2677.1800000000003,
+    "precision": 1633.0,
+    "ferocity": 0.0,
+    "weapon_strength": 1000.0,
+    "enemy_armor": 2597.0,
+    "vulnerability_stacks": 25,
+    "critical_chance": 0.6014285714285714,
+    "critical_damage": 1.5,
+    "resolved_critical_chance": 0.6014285714285714,
+    "resolved_critical_damage": 1.5,
+    "condition_duration_bonus": {
+      "Bleeding": 0.922,
+      "Burning": 0.572,
+      "Confusion": 0.572,
+      "Poison": 0.902,
+      "Torment": 0.572
+    },
+    "confirmed_modifiers": [
+      "Potent Poison: +33% Poison damage and duration",
+      "Deadly Ambition: +180 Condition Damage and 2 Poison stacks for 3s per dual-wield use with Potent Poison",
+      "Lead Attacks and Combat High: timeline stack states from Elite Insights",
+      "Exposed Weakness, Twin Fangs, Ferocious Strikes, Executioner: benchmark trait rules",
+      "Superior Sigil of Earth: 1 Bleeding for 6s, 2s ICD",
+      "Relic of the Fractal: 2 Burning + 3 Torment for 8s, 20s ICD"
+    ],
+    "unresolved_modifiers": [
+      "Artifact child strike coefficients without explicit skill records remain unsupported",
+      "Exact per-hit timestamps are unavailable; Earth Sigil and strike modifiers use cast-time reconstruction"
+    ],
+    "stat_sources": {
+      "Equipment": {
+        "Power": 1173.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 633.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 1173.0,
+        "Expertise": 633.0,
+        "Concentration": 0.0,
+        "Defense": 967.0,
+        "Healing Power": 0.0
+      },
+      "Food": {
+        "Power": 0.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 0.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 70.0,
+        "Expertise": 0.0,
+        "Concentration": 0.0,
+        "Defense": 0.0,
+        "Healing Power": 0.0
+      },
+      "Infusions": {
+        "Power": 0.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 0.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 90.0,
+        "Expertise": 0.0,
+        "Concentration": 0.0,
+        "Defense": 0.0,
+        "Healing Power": 0.0
+      },
+      "Rune": {
+        "Power": 0.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 0.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 300.0,
+        "Expertise": 0.0,
+        "Concentration": 0.0,
+        "Defense": 0.0,
+        "Healing Power": 0.0
+      },
+      "Sigils": {
+        "Power": 0.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 0.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 0.0,
+        "Expertise": 0.0,
+        "Concentration": 0.0,
+        "Defense": 0.0,
+        "Healing Power": 0.0
+      },
+      "Utility": {
+        "Power": 0.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 0.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 114.17999999999999,
+        "Expertise": 0.0,
+        "Concentration": 0.0,
+        "Defense": 0.0,
+        "Healing Power": 0.0
+      },
+      "Might": {
+        "Power": 750.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 0.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 750.0,
+        "Expertise": 0.0,
+        "Concentration": 0.0,
+        "Defense": 0.0,
+        "Healing Power": 0.0
+      },
+      "Deadly Ambition": {
+        "Power": 0.0,
+        "Toughness": 0.0,
+        "Vitality": 0.0,
+        "Precision": 0.0,
+        "Ferocity": 0.0,
+        "Condition Damage": 180.0,
+        "Expertise": 0.0,
+        "Concentration": 0.0,
+        "Defense": 0.0,
+        "Healing Power": 0.0
+      }
+    }
+  },
+  "sources": [
+    {
+      "skill_id": 13006,
+      "name": "Death Blossom",
+      "casts": 39,
+      "predicted_strike": 85697.56,
+      "predicted_condition": 743077.21,
+      "predicted_total": 828774.77,
+      "status": "supported",
+      "predicted_dps": 8815.53
+    },
+    {
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "casts": 12,
+      "predicted_strike": 107517.05,
+      "predicted_condition": 209259.87,
+      "predicted_total": 316776.92,
+      "status": "supported",
+      "predicted_dps": 3369.5
+    },
+    {
+      "skill_id": 13108,
+      "name": "Lotus Strike",
+      "casts": 22,
+      "predicted_strike": 86783.27,
+      "predicted_condition": 164103.83,
+      "predicted_total": 250887.1,
+      "status": "supported",
+      "predicted_dps": 2668.64
+    },
+    {
+      "skill_id": 56898,
+      "name": "Thousand Needles",
+      "casts": 4,
+      "predicted_strike": 19564.11,
+      "predicted_condition": 226000.02,
+      "predicted_total": 245564.13,
+      "status": "supported",
+      "predicted_dps": 2612.02
+    },
+    {
+      "skill_id": 13028,
+      "name": "Caltrops",
+      "casts": 5,
+      "predicted_strike": 0.0,
+      "predicted_condition": 230906.73,
+      "predicted_total": 230906.73,
+      "status": "supported",
+      "predicted_dps": 2456.11
+    },
+    {
+      "skill_id": -1003,
+      "name": "Relic of the Fractal",
+      "casts": 5,
+      "predicted_strike": 0.0,
+      "predicted_condition": 181436.93,
+      "predicted_total": 181436.93,
+      "status": "supported",
+      "predicted_dps": 1929.91
+    },
+    {
+      "skill_id": -1001,
+      "name": "Deadly Ambition",
+      "casts": 39,
+      "predicted_strike": 0.0,
+      "predicted_condition": 178022.81,
+      "predicted_total": 178022.81,
+      "status": "supported",
+      "predicted_dps": 1893.6
+    },
+    {
+      "skill_id": 13087,
+      "name": "Wild Strike",
+      "casts": 24,
+      "predicted_strike": 62180.64,
+      "predicted_condition": 77072.57,
+      "predicted_total": 139253.2,
+      "status": "supported",
+      "predicted_dps": 1481.21
+    },
+    {
+      "skill_id": -1002,
+      "name": "Superior Sigil of Earth",
+      "casts": 42,
+      "predicted_strike": 0.0,
+      "predicted_condition": 129935.23,
+      "predicted_total": 129935.23,
+      "status": "supported",
+      "predicted_dps": 1382.1
+    },
+    {
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "casts": 7,
+      "predicted_strike": 11400.41,
+      "predicted_condition": 118236.46,
+      "predicted_total": 129636.87,
+      "status": "supported",
+      "predicted_dps": 1378.92
+    },
+    {
+      "skill_id": 76633,
+      "name": "Forged Surfer Dash",
+      "casts": 3,
+      "predicted_strike": 26267.67,
+      "predicted_condition": 83384.39,
+      "predicted_total": 109652.06,
+      "status": "supported",
+      "predicted_dps": 1166.35
+    },
+    {
+      "skill_id": 13037,
+      "name": "Spider Venom",
+      "casts": 5,
+      "predicted_strike": 0.0,
+      "predicted_condition": 69593.61,
+      "predicted_total": 69593.61,
+      "status": "supported",
+      "predicted_dps": 740.26
+    },
+    {
+      "skill_id": 13004,
+      "name": "Double Strike",
+      "casts": 31,
+      "predicted_strike": 67116.58,
+      "predicted_condition": 0.0,
+      "predicted_total": 67116.58,
+      "status": "supported",
+      "predicted_dps": 713.91
+    },
+    {
+      "skill_id": 77255,
+      "name": "Skritt Scuffle",
+      "casts": 3,
+      "predicted_strike": 49546.79,
+      "predicted_condition": 0.0,
+      "predicted_total": 49546.79,
+      "status": "supported",
+      "predicted_dps": 527.02
+    },
+    {
+      "skill_id": 13005,
+      "name": "Backstab",
+      "casts": 3,
+      "predicted_strike": 33481.78,
+      "predicted_condition": 0.0,
+      "predicted_total": 33481.78,
+      "status": "supported",
+      "predicted_dps": 356.14
+    },
+    {
+      "skill_id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "casts": 3,
+      "predicted_strike": 21898.13,
+      "predicted_condition": 0.0,
+      "predicted_total": 21898.13,
+      "status": "supported",
+      "predicted_dps": 232.93
+    },
+    {
+      "skill_id": 76582,
+      "name": "Metal Legion Guitar (Rockout)",
+      "casts": 1,
+      "predicted_strike": 12480.66,
+      "predicted_condition": 9193.51,
+      "predicted_total": 21674.17,
+      "status": "supported",
+      "predicted_dps": 230.54
+    },
+    {
+      "skill_id": 76895,
+      "name": "Zephyrite Sun Crystal",
+      "casts": 1,
+      "predicted_strike": 3194.61,
+      "predicted_condition": 5428.45,
+      "predicted_total": 8623.07,
+      "status": "supported",
+      "predicted_dps": 91.72
+    },
+    {
+      "skill_id": 13026,
+      "name": "Prepare Thousand Needles",
+      "casts": 4,
+      "predicted_strike": 0.0,
+      "predicted_condition": 0.0,
+      "predicted_total": 0.0,
+      "status": "unsupported",
+      "predicted_dps": 0.0
+    },
+    {
+      "skill_id": 77397,
+      "name": "Skritt Swipe",
+      "casts": 5,
+      "predicted_strike": 0.0,
+      "predicted_condition": 0.0,
+      "predicted_total": 0.0,
+      "status": "unsupported",
+      "predicted_dps": 0.0
+    },
+    {
+      "skill_id": 76596,
+      "name": "Metal Legion Guitar (Smash)",
+      "casts": 1,
+      "predicted_strike": 0.0,
+      "predicted_condition": 0.0,
+      "predicted_total": 0.0,
+      "status": "unsupported",
+      "predicted_dps": 0.0
+    }
+  ],
+  "unsupported": [
+    {
+      "skill_id": 13026,
+      "name": "Prepare Thousand Needles",
+      "kind": "skill",
+      "reason": "No independent strike coefficient or condition packet"
+    },
+    {
+      "skill_id": 77397,
+      "name": "Skritt Swipe",
+      "kind": "skill",
+      "reason": "No independent strike coefficient or condition packet"
+    },
+    {
+      "skill_id": 76596,
+      "name": "Metal Legion Guitar (Smash)",
+      "kind": "strike",
+      "reason": "1 observed hits but no verified coefficient"
+    },
+    {
+      "skill_id": 76596,
+      "name": "Metal Legion Guitar (Smash)",
+      "kind": "skill",
+      "reason": "No independent strike coefficient or condition packet"
+    },
+    {
+      "skill_id": 56897,
+      "name": "Thousand Needles",
+      "kind": "child_damage",
+      "reason": "25 observed child/proc hits without a standalone verified coefficient"
+    },
+    {
+      "skill_id": 78440,
+      "name": "Forged Surfer Dash (Additional Bombs)",
+      "kind": "child_damage",
+      "reason": "12 observed child/proc hits without a standalone verified coefficient"
+    },
+    {
+      "skill_id": 77028,
+      "name": "Holo-Dancer Decoy",
+      "kind": "child_damage",
+      "reason": "2 observed child/proc hits without a standalone verified coefficient"
+    }
+  ]
+}

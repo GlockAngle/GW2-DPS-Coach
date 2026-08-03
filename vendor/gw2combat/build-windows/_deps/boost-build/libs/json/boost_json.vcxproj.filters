@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\src\src.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json.hpp" />
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\array.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\basic_parser.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\basic_parser_impl.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\conversion.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\array.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\buffer.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\chars_format.hpp">
+      <Filter>json\detail\charconv</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\compute_float64.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\config.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\emulated128.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\ascii_number.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\bigint.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\constexpr_feature_detect.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\decimal_to_binary.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\digit_comparison.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\fast_float.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\fast_table.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\float_common.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\fast_float\parse_number.hpp">
+      <Filter>json\detail\charconv\detail\fast_float</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\from_chars_float_impl.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\from_chars_integer_impl.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\from_chars_result.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\integer_search_trees.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\parser.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\detail\significand_tables.hpp">
+      <Filter>json\detail\charconv\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\from_chars.hpp">
+      <Filter>json\detail\charconv</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\limits.hpp">
+      <Filter>json\detail\charconv</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\config.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\default_resource.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\digest.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\except.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\format.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\handler.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\array.hpp">
+      <Filter>json\detail\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\object.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\common.hpp">
+      <Filter>json\detail\ryu\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\d2s.hpp">
+      <Filter>json\detail\ryu\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\d2s_full_table.hpp">
+      <Filter>json\detail\ryu\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\d2s_intrinsics.hpp">
+      <Filter>json\detail\ryu\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\detail\digit_table.hpp">
+      <Filter>json\detail\ryu\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\ryu.hpp">
+      <Filter>json\detail\ryu</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\sbo_buffer.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\shared_resource.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\sse2.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\stack.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\stream.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\string_impl.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\utf8.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\value.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\value_from.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\value_to.hpp">
+      <Filter>json\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\error.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\fwd.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\array.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\conversion.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\error.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\object.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\string.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value_ref.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\visit.hpp">
+      <Filter>json\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\kind.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\memory_resource.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\monotonic_resource.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\null_resource.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\object.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\parse.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\parse_options.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\parser.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\pilfer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\serialize.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\serialize_options.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\serializer.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\set_pointer_options.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\src.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\static_resource.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\storage_ptr.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\stream_parser.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\string.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\string_view.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\system_error.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_from.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_ref.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_stack.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\value_to.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\visit.hpp">
+      <Filter>json</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\json.natvis">
+      <Filter>json</Filter>
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\charconv\impl\from_chars.ipp">
+      <Filter>json\detail\charconv\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\default_resource.ipp">
+      <Filter>json\detail\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\except.ipp">
+      <Filter>json\detail\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\format.ipp">
+      <Filter>json\detail\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\handler.ipp">
+      <Filter>json\detail\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\shared_resource.ipp">
+      <Filter>json\detail\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\stack.ipp">
+      <Filter>json\detail\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\impl\string_impl.ipp">
+      <Filter>json\detail\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\detail\ryu\impl\d2s.ipp">
+      <Filter>json\detail\ryu\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\array.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\error.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\kind.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\monotonic_resource.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\null_resource.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\object.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\parse.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\parser.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\pointer.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\serialize.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\serializer.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\static_resource.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\stream_parser.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\string.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value_ref.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+    <None Include="D:\Onedrive\Desktop\GW2-DPS-Coach\vendor\gw2combat\build-windows\_deps\boost-src\libs\json\include\boost\json\impl\value_stack.ipp">
+      <Filter>json\impl</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="json">
+      <UniqueIdentifier>{A4FD5596-E92A-3C54-B0A5-3C1D35024E33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail">
+      <UniqueIdentifier>{C3546454-6851-32FC-A926-0B6692F1E64B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\charconv">
+      <UniqueIdentifier>{1B23BCA1-904F-3DFF-8990-3E2399835207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\charconv\detail">
+      <UniqueIdentifier>{C7412277-54E6-3585-972E-BC95A39BB9DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\charconv\detail\fast_float">
+      <UniqueIdentifier>{6460FB6E-BA41-3FFE-95FC-E74559F89842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\charconv\impl">
+      <UniqueIdentifier>{0934B92F-32A3-3767-92C0-117964B20D1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\impl">
+      <UniqueIdentifier>{BEB50ED2-7A56-3718-B3F9-8E529F3F0105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\ryu">
+      <UniqueIdentifier>{627F32EC-D04E-3EFD-B15E-11E0D68234FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\ryu\detail">
+      <UniqueIdentifier>{19E252C6-49B3-338F-BD60-BD8D0DB0DC83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\detail\ryu\impl">
+      <UniqueIdentifier>{5E07BE01-CA53-32B7-BFC1-D656BED316DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\impl">
+      <UniqueIdentifier>{E63BDC4F-FB66-36AD-9093-0877B23D7F5A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+{
+  "damage": 3952297,
+  "elite_insights": {
+    "dps": 42040,
+    "raw_dps": 42039.89873740866,
+    "duration_s": 94.013,
+    "label": "Elite Insights fight-window DPS",
+    "source": "Uploaded Elite Insights JSON"
+  },
+  "ingame": {
+    "dps": 42406,
+    "duration_s_implied": 93.20136301466773,
+    "label": "In-game golem DPS",
+    "source": "Player-reported in-game benchmark display"
+  },
+  "comparison": {
+    "window_difference_s": 0.8116369853322709,
+    "dps_difference": 366.1012625913427,
+    "dps_difference_pct": 0.870842398736732,
+    "same_damage_basis": true,
+    "interpretation": "The values use the same player damage total but different effective timing windows. Use Elite Insights for JSON replay validation and retain the in-game value as the player's benchmark score."
+  }
+}

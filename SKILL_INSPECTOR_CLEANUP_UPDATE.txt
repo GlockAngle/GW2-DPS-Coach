@@ -1,0 +1,9 @@
+Skill Inspector cleanup
+
+- Removed the proposed Dependencies tab; no dependency-specific tab or code remains.
+- Kept the useful information inside Damage audit and Validation instead.
+- Renamed Save comparison baseline to Save current result.
+- Clarified total coefficient, hit count, and average coefficient per hit.
+- Added explicit Validation tab with exact missing reasons.
+- Aftercast remains planned and is excluded from Skill Library v1 readiness.
+- Preserved the cleaned sidebar from the previous update.

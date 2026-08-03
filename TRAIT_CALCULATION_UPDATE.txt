@@ -1,0 +1,18 @@
+TRAIT CALCULATION UPDATE
+
+Changes:
+- Selected major traits now show calculator contributions rather than repeating long official descriptions.
+- Added a bottom "Selected trait calculations" audit table with:
+  Trait, Applied now, Engine destination, Still required, Official values.
+- Added combined active trait totals.
+- Connected verified PvE trait effects:
+  * Dagger Training: +80 Power, plus +80 Power when a dagger is selected.
+  * Potent Poison: +33% poison damage and +33% poison duration.
+  * No Quarter: +250 Ferocity weighted by configured Fury uptime; Fury extension remains pending skill-event timing.
+- Potent Poison now feeds both the poison damage modifier and poison-duration audit.
+- Trait stat effects continue to appear in the Selected traits row of the stat source audit.
+- Traits without implemented mappings remain visible as not applied, with official API values and the missing engine requirement.
+
+Validation:
+- Python syntax checked for utils/thief_traits.py and utils/gear_simulator.py.
+- Existing rune regression suite: 5 passed.

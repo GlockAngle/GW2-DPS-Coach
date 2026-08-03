@@ -1,0 +1,9 @@
+Combat & trait assumptions update
+
+- Moved Combat & trait assumptions out of the Buffs popover.
+- It now renders as a normal full-width expander directly below Equipment, Upgrades & consumables, and Buffs.
+- The expander opens downward into the available page space.
+- Percentage and average inputs now accept three decimal places.
+- Unique conditions on target and unique boons on player now accept fractional averages such as 10.3.
+- Saved builds preserve fractional condition and boon averages instead of rounding them to integers.
+- Aftercast work remains unchanged and on the rotation-engine to-do list.

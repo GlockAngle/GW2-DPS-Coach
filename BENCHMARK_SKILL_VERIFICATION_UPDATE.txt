@@ -1,0 +1,20 @@
+BENCHMARK SKILL VERIFICATION UPDATE
+===================================
+
+Base project: GW2-DPS-Coach(15).zip
+Reference log: benchmark dagger.json
+
+Added:
+- Reproducible Elite Insights benchmark reference under data/reference/.
+- Strict dagger-Antiquary benchmark skill audit JSON and CSV.
+- New Antiquary Benchmark > Skill Audit tab.
+- Separation between observed log evidence and verified skill mechanics.
+- Whole-library structural rotation-readiness audit.
+- Regression tests for benchmark cast counts and Venomous Volley / Recall Axes separation.
+
+Important:
+- Aggregate condition ticks cannot prove their originating cast by themselves.
+- Skills with conditions but no explicit condition event mapping remain blocked.
+- Exact rotations remain disabled until used skills have verified event and timing models.
+
+Tests: 33 passed.

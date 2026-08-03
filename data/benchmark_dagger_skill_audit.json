@@ -1,0 +1,3777 @@
+{
+  "summary": {
+    "source_log": {
+      "fight_name": "Standard Kitty Golem",
+      "duration_ms": 94013,
+      "game_build": 204489,
+      "elite_insights_version": "3.26.0.0",
+      "player": "Glock Angle",
+      "profession": "Antiquary"
+    },
+    "benchmark_skill_count": 27,
+    "benchmark_cast_skill_count": 18,
+    "benchmark_damage_source_count": 20,
+    "simulation_candidates": 0,
+    "needs_verification": 22,
+    "whole_library_records": 306,
+    "whole_library_rotation_ready": 0,
+    "whole_library_blocked": 306
+  },
+  "benchmark_skills": [
+    {
+      "id": 723,
+      "name": "Poison",
+      "cast_count": 0,
+      "logged_hits": 94,
+      "logged_damage": 618976,
+      "indirect_damage": true,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Observed in benchmark",
+      "missing_or_blockers": [],
+      "evidence": [
+        "94 logged damage events"
+      ]
+    },
+    {
+      "id": 736,
+      "name": "Bleeding",
+      "cast_count": 0,
+      "logged_hits": 94,
+      "logged_damage": 1848857,
+      "indirect_damage": true,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Observed in benchmark",
+      "missing_or_blockers": [],
+      "evidence": [
+        "94 logged damage events"
+      ]
+    },
+    {
+      "id": 737,
+      "name": "Burning",
+      "cast_count": 0,
+      "logged_hits": 91,
+      "logged_damage": 465491,
+      "indirect_damage": true,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Observed in benchmark",
+      "missing_or_blockers": [],
+      "evidence": [
+        "91 logged damage events"
+      ]
+    },
+    {
+      "id": 861,
+      "name": "Confusion",
+      "cast_count": 0,
+      "logged_hits": 18,
+      "logged_damage": 15597,
+      "indirect_damage": true,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Observed in benchmark",
+      "missing_or_blockers": [],
+      "evidence": [
+        "18 logged damage events"
+      ]
+    },
+    {
+      "id": 13004,
+      "name": "Double Strike",
+      "cast_count": 31,
+      "logged_hits": 49,
+      "logged_damage": 57363,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 1.581,
+      "median_logged_cast_seconds": 0.361,
+      "library_hits": 4,
+      "library_coefficient": 1.2000000000000002,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "No activation time stored on the wiki infobox",
+        "skill-library record",
+        "verified cast time"
+      ],
+      "evidence": [
+        "31 casts in benchmark",
+        "49 logged damage events",
+        "1.58 observed hits/cast"
+      ]
+    },
+    {
+      "id": 13005,
+      "name": "Backstab",
+      "cast_count": 3,
+      "logged_hits": 3,
+      "logged_damage": 30352,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 1.0,
+      "median_logged_cast_seconds": 0.362,
+      "library_hits": 4,
+      "library_coefficient": 7.5,
+      "library_cast_time": 0.25,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "skill-library record"
+      ],
+      "evidence": [
+        "3 casts in benchmark",
+        "3 logged damage events",
+        "1.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 13006,
+      "name": "Death Blossom",
+      "cast_count": 39,
+      "logged_hits": 117,
+      "logged_damage": 78049,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 3.0,
+      "median_logged_cast_seconds": 1.042,
+      "library_hits": 3,
+      "library_coefficient": 0.63,
+      "library_cast_time": 0.5,
+      "library_conditions": [
+        {
+          "condition": "Bleeding",
+          "stacks": 6,
+          "duration": 6.0
+        },
+        {
+          "condition": "Bleeding",
+          "stacks": 3,
+          "duration": 10.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "39 casts in benchmark",
+        "117 logged damage events",
+        "3.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 13026,
+      "name": "Prepare Thousand Needles",
+      "cast_count": 4,
+      "logged_hits": 0,
+      "logged_damage": 0,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": 0.601,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": 0.5,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "skill-library record"
+      ],
+      "evidence": [
+        "4 casts in benchmark"
+      ]
+    },
+    {
+      "id": 13028,
+      "name": "Caltrops",
+      "cast_count": 5,
+      "logged_hits": 0,
+      "logged_damage": 0,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": 0.923,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": 1.0,
+      "library_conditions": [
+        {
+          "condition": "Bleeding",
+          "stacks": 1,
+          "duration": 10.0
+        },
+        {
+          "condition": "Cripple",
+          "stacks": 1,
+          "duration": 10.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: condition skill has no verified hit/application mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "5 casts in benchmark"
+      ]
+    },
+    {
+      "id": 13037,
+      "name": "Spider Venom",
+      "cast_count": 5,
+      "logged_hits": 0,
+      "logged_damage": 0,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": 0.0,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [
+        {
+          "condition": "Poison",
+          "stacks": 1,
+          "duration": 3.0
+        },
+        {
+          "condition": "Poison",
+          "stacks": 1,
+          "duration": 6.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: condition skill has no verified hit/application mapping",
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "5 casts in benchmark"
+      ]
+    },
+    {
+      "id": 13087,
+      "name": "Wild Strike",
+      "cast_count": 24,
+      "logged_hits": 23,
+      "logged_damage": 55237,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 0.958,
+      "median_logged_cast_seconds": 0.397,
+      "library_hits": 2,
+      "library_coefficient": 1.233,
+      "library_cast_time": null,
+      "library_conditions": [
+        {
+          "condition": "Bleeding",
+          "stacks": 2,
+          "duration": 3.0
+        },
+        {
+          "condition": "Bleeding",
+          "stacks": 1,
+          "duration": 3.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "No activation time stored on the wiki infobox",
+        "condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record",
+        "verified cast time"
+      ],
+      "evidence": [
+        "24 casts in benchmark",
+        "23 logged damage events",
+        "0.96 observed hits/cast"
+      ]
+    },
+    {
+      "id": 13108,
+      "name": "Lotus Strike",
+      "cast_count": 22,
+      "logged_hits": 22,
+      "logged_damage": 82126,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 1.0,
+      "median_logged_cast_seconds": 0.438,
+      "library_hits": 2,
+      "library_coefficient": 1.9329999999999998,
+      "library_cast_time": 0.25,
+      "library_conditions": [
+        {
+          "condition": "Poison",
+          "stacks": 2,
+          "duration": 5.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "22 casts in benchmark",
+        "22 logged damage events",
+        "1.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 19426,
+      "name": "Torment",
+      "cast_count": 0,
+      "logged_hits": 88,
+      "logged_damage": 348823,
+      "indirect_damage": true,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Observed in benchmark",
+      "missing_or_blockers": [],
+      "evidence": [
+        "88 logged damage events"
+      ]
+    },
+    {
+      "id": 56897,
+      "name": "Thousand Needles",
+      "cast_count": 0,
+      "logged_hits": 25,
+      "logged_damage": 13600,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "hit model",
+        "skill-library record"
+      ],
+      "evidence": [
+        "25 logged damage events"
+      ]
+    },
+    {
+      "id": 56898,
+      "name": "Thousand Needles",
+      "cast_count": 4,
+      "logged_hits": 0,
+      "logged_damage": 0,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": 0.0,
+      "library_hits": 2,
+      "library_coefficient": 0.7,
+      "library_cast_time": null,
+      "library_conditions": [
+        {
+          "condition": "Immobilize",
+          "stacks": 1,
+          "duration": 3.0
+        },
+        {
+          "condition": "Poison",
+          "stacks": 1,
+          "duration": 8.0
+        },
+        {
+          "condition": "Bleeding",
+          "stacks": 2,
+          "duration": 5.0
+        },
+        {
+          "condition": "Cripple",
+          "stacks": 1,
+          "duration": 2.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "4 casts in benchmark"
+      ]
+    },
+    {
+      "id": 76582,
+      "name": "Metal Legion Guitar (Rockout)",
+      "cast_count": 1,
+      "logged_hits": 4,
+      "logged_damage": 14814,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 4.0,
+      "median_logged_cast_seconds": 1.402,
+      "library_hits": 4,
+      "library_coefficient": 3.86,
+      "library_cast_time": 2.0,
+      "library_conditions": [
+        {
+          "condition": "Confusion",
+          "stacks": 1,
+          "duration": 8.0
+        },
+        {
+          "condition": "Stun",
+          "stacks": 1,
+          "duration": 2.0
+        },
+        {
+          "condition": "Stun",
+          "stacks": 1,
+          "duration": 1.5
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "1 casts in benchmark",
+        "4 logged damage events",
+        "4.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 76596,
+      "name": "Metal Legion Guitar (Smash)",
+      "cast_count": 1,
+      "logged_hits": 1,
+      "logged_damage": 10671,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 1.0,
+      "median_logged_cast_seconds": 0.472,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "hit model",
+        "skill-library record",
+        "verified cast time"
+      ],
+      "evidence": [
+        "1 casts in benchmark",
+        "1 logged damage events",
+        "1.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 76633,
+      "name": "Forged Surfer Dash",
+      "cast_count": 3,
+      "logged_hits": 3,
+      "logged_damage": 27346,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 1.0,
+      "median_logged_cast_seconds": 0.195,
+      "library_hits": 4,
+      "library_coefficient": 5.6,
+      "library_cast_time": 1.0,
+      "library_conditions": [
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 3.5
+        },
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 2.0
+        },
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 6.0
+        },
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 4.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "3 casts in benchmark",
+        "3 logged damage events",
+        "1.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "cast_count": 3,
+      "logged_hits": 0,
+      "logged_damage": 0,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": 0.6,
+      "library_hits": 2,
+      "library_coefficient": 2.03,
+      "library_cast_time": 0.5,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "skill-library record"
+      ],
+      "evidence": [
+        "3 casts in benchmark"
+      ]
+    },
+    {
+      "id": 76816,
+      "name": "Chak Shield",
+      "cast_count": 0,
+      "logged_hits": 3,
+      "logged_damage": 4102,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": 7,
+      "library_coefficient": 1.62,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "skill-library record"
+      ],
+      "evidence": [
+        "3 logged damage events"
+      ]
+    },
+    {
+      "id": 76895,
+      "name": "Zephyrite Sun Crystal",
+      "cast_count": 1,
+      "logged_hits": 1,
+      "logged_damage": 4472,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 1.0,
+      "median_logged_cast_seconds": 0.16,
+      "library_hits": 1,
+      "library_coefficient": 1.2,
+      "library_cast_time": 1.0,
+      "library_conditions": [
+        {
+          "condition": "Burning",
+          "stacks": 2,
+          "duration": 4.0
+        },
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 4.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "1 casts in benchmark",
+        "1 logged damage events",
+        "1.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 77028,
+      "name": "Holo-Dancer Decoy",
+      "cast_count": 0,
+      "logged_hits": 2,
+      "logged_damage": 15720,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "hit model",
+        "skill-library record"
+      ],
+      "evidence": [
+        "2 logged damage events"
+      ]
+    },
+    {
+      "id": 77192,
+      "name": "Summon Kryptis Turret",
+      "cast_count": 12,
+      "logged_hits": 88,
+      "logged_damage": 136060,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 7.333,
+      "median_logged_cast_seconds": 0.438,
+      "library_hits": 16,
+      "library_coefficient": 5.199999999999999,
+      "library_cast_time": 0.5,
+      "library_conditions": [
+        {
+          "condition": "Torment",
+          "stacks": 1,
+          "duration": 4.0
+        },
+        {
+          "condition": "Torment",
+          "stacks": 1,
+          "duration": 3.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "12 casts in benchmark",
+        "88 logged damage events",
+        "7.33 observed hits/cast"
+      ]
+    },
+    {
+      "id": 77255,
+      "name": "Skritt Scuffle",
+      "cast_count": 3,
+      "logged_hits": 0,
+      "logged_damage": 0,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": 0.562,
+      "library_hits": 2,
+      "library_coefficient": 5.0,
+      "library_cast_time": 0.5,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "skill-library record"
+      ],
+      "evidence": [
+        "3 casts in benchmark"
+      ]
+    },
+    {
+      "id": 77277,
+      "name": "Mistburn Mortar",
+      "cast_count": 7,
+      "logged_hits": 35,
+      "logged_damage": 68862,
+      "indirect_damage": false,
+      "observed_hits_per_cast": 5.0,
+      "median_logged_cast_seconds": 0.598,
+      "library_hits": 1,
+      "library_coefficient": 0.5,
+      "library_cast_time": 0.75,
+      "library_conditions": [
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 1.0
+        },
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 6.0
+        },
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 1.5
+        },
+        {
+          "condition": "Burning",
+          "stacks": 1,
+          "duration": 2.0
+        }
+      ],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "condition audit: repeated condition rows lack explicit event mapping",
+        "explicit condition events",
+        "skill-library record"
+      ],
+      "evidence": [
+        "7 casts in benchmark",
+        "35 logged damage events",
+        "5.00 observed hits/cast"
+      ]
+    },
+    {
+      "id": 77397,
+      "name": "Skritt Swipe",
+      "cast_count": 5,
+      "logged_hits": 0,
+      "logged_damage": 0,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": 0.201,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "skill-library record",
+        "verified cast time"
+      ],
+      "evidence": [
+        "5 casts in benchmark"
+      ]
+    },
+    {
+      "id": 78440,
+      "name": "Forged Surfer Dash (Additional Bombs)",
+      "cast_count": 0,
+      "logged_hits": 12,
+      "logged_damage": 55779,
+      "indirect_damage": false,
+      "observed_hits_per_cast": null,
+      "median_logged_cast_seconds": null,
+      "library_hits": null,
+      "library_coefficient": null,
+      "library_cast_time": null,
+      "library_conditions": [],
+      "has_explicit_condition_events": false,
+      "status": "Needs verification",
+      "missing_or_blockers": [
+        "hit model",
+        "skill-library record"
+      ],
+      "evidence": [
+        "12 logged damage events"
+      ]
+    }
+  ],
+  "whole_library_audit": [
+    {
+      "id": 73145,
+      "name": "Barbed Spear",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:Ranged variant not modelled separately",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 73005,
+      "name": "Ashen Assault",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 73041,
+      "name": "Mantis Sting",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 72896,
+      "name": "Entangling Asp",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 73076,
+      "name": "Falling Spider",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:Verify conditional extra stacks"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 72986,
+      "name": "Unsuspecting Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 73063,
+      "name": "Vampiric Slash",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:Life siphon base formula needs manual verification"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 72904,
+      "name": "Shattering Assault",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 72927,
+      "name": "Distracting Throw",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 72991,
+      "name": "Shadow Veil",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5842,
+      "name": "Bomb",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12433,
+      "name": "Brutal Swipe",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 40229,
+      "name": "Double Lava Axe",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5752,
+      "name": "Electrified Tornado",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12345,
+      "name": "Fire Rocket",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5928,
+      "name": "Flame Jet",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5532,
+      "name": "Flame Wave",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5541,
+      "name": "Lava Axe",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30371,
+      "name": "Mortar Shot",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5595,
+      "name": "Water Arrow",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5603,
+      "name": "Whirlpool (Whirlpool skill)",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 10661,
+      "name": "Withering Plague",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5753,
+      "name": "Dust Tornado",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5593,
+      "name": "Explosive Lava Axe",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5533,
+      "name": "Fiery Eruption",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5823,
+      "name": "Fire Bomb",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5931,
+      "name": "Flame Blast",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5720,
+      "name": "Frost Volley",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12434,
+      "name": "Heavy Swipe",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 10662,
+      "name": "Plague of Darkness",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30885,
+      "name": "Poison Gas Shell",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12348,
+      "name": "Rocket Spray",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5930,
+      "name": "Air Blast",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5717,
+      "name": "Burning Retreat (Lava Axe skill)",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5754,
+      "name": "Debris Tornado",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30307,
+      "name": "Endothermic Shell",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5697,
+      "name": "Fiery Whirl",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5568,
+      "name": "Frost Fan",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5822,
+      "name": "Galvanic Bomb",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12349,
+      "name": "Heat Seeker",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 10663,
+      "name": "Plague of Pestilence",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 35224,
+      "name": "Elemental Requiem",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5517,
+      "name": "Fiery Rush",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30121,
+      "name": "Flash Shell",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5723,
+      "name": "Frost Storm",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76530,
+      "name": "Magnetic Bomb",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5718,
+      "name": "Ring of Fire (Lava Axe skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12435,
+      "name": "Roar",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12347,
+      "name": "Rocket Jump",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76493,
+      "name": "Stoke the Flames",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5813,
+      "name": "Big Ol' Bomb",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5721,
+      "name": "Deep Freeze",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 35304,
+      "name": "Dust Charge",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30032,
+      "name": "Elixir Shell",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12346,
+      "name": "Fire Rocket Barrage",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5531,
+      "name": "Firestorm",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5719,
+      "name": "Flame Leap",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 5929,
+      "name": "Napalm",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12343,
+      "name": "Artillery Barrage",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12373,
+      "name": "Avatar of Melandru",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13132,
+      "name": "Basilisk Venom",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12385,
+      "name": "Become the Bear",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12403,
+      "name": "Become the Raven",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12401,
+      "name": "Become the Snow Leopard",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12391,
+      "name": "Become the Wolf",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12344,
+      "name": "Charrzooka",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13085,
+      "name": "Dagger Storm",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 29639,
+      "name": "Finishing Blow",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12363,
+      "name": "Hounds of Balthazar",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 29516,
+      "name": "Impact Strike",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 10800,
+      "name": "Mistfire Wolf",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12367,
+      "name": "Reaper of Grenth",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12372,
+      "name": "Remove Avatar of Melandru",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 45508,
+      "name": "Shadow Meld",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 63275,
+      "name": "Shadowfall",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 77255,
+      "name": "Skritt Scuffle",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12323,
+      "name": "Summon 7-Series Golem",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12324,
+      "name": "Summon D-Series Golem",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12447,
+      "name": "Summon Druid Spirit",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12325,
+      "name": "Summon Power Suit",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12450,
+      "name": "Summon Sylvan Hound",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12457,
+      "name": "Take Root",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13082,
+      "name": "Thieves Guild",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 30077,
+      "name": "Uppercut (Daredevil skill)",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12340,
+      "name": "Warband Support",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76886,
+      "name": "Antivenom Draught",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76881,
+      "name": "Antivenom Draught: Backfired",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 30400,
+      "name": "Channeled Vigor",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12440,
+      "name": "Healing Seed",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13027,
+      "name": "Hide in Shadows",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 45088,
+      "name": "Malicious Restoration",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12360,
+      "name": "Prayer to Dwayna",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13050,
+      "name": "Signet of Malice",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 21778,
+      "name": "Skelk Venom",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 63292,
+      "name": "Well of Gloom",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13021,
+      "name": "Withdraw",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 43390,
+      "name": "Deadeye's Mark",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 63067,
+      "name": "Siphon",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 77397,
+      "name": "Skritt Swipe",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13014,
+      "name": "Steal",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76816,
+      "name": "Chak Shield",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 63155,
+      "name": "Enter Shadow Shroud",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 63251,
+      "name": "Exit Shadow Shroud",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76550,
+      "name": "Forged Surfer Dash (underwater)",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 77288,
+      "name": "Mistburn Mortar (underwater)",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 43768,
+      "name": "Steal Defenses",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 43373,
+      "name": "Steal Durability",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 40903,
+      "name": "Steal Health",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 44526,
+      "name": "Steal Mobility",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 40888,
+      "name": "Steal Precision",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 40133,
+      "name": "Steal Resistance",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 40904,
+      "name": "Steal Strength",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 42863,
+      "name": "Steal Time",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 39960,
+      "name": "Steal Warmth",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76900,
+      "name": "Summon Kryptis Turret (underwater)",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76909,
+      "name": "Unstable Skritt Bomb",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76895,
+      "name": "Zephyrite Sun Crystal",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13046,
+      "name": "Assassin's Signet",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 30661,
+      "name": "Bandit's Defense",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12338,
+      "name": "Battle Roar",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 41205,
+      "name": "Binding Shadow",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13044,
+      "name": "Blinding Powder",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12387,
+      "name": "Call Owl",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12417,
+      "name": "Call Wurm",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13028,
+      "name": "Caltrops",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76744,
+      "name": "Canach-Coin Toss (backfired)",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 77230,
+      "name": "Canach-Coin Toss",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13093,
+      "name": "Devourer Venom",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 30568,
+      "name": "Distracting Daggers",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76784,
+      "name": "Emergency Jade Shield (backfired)",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76879,
+      "name": "Emergency Jade Shield",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 30868,
+      "name": "Fist Flurry",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12453,
+      "name": "Grasping Vines",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13066,
+      "name": "Haste",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12339,
+      "name": "Hidden Pistol",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13096,
+      "name": "Ice Drake Venom",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30369,
+      "name": "Impairing Daggers",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13064,
+      "name": "Infiltrator's Signet",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76808,
+      "name": "Inquest Portal Device",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 77361,
+      "name": "Inquest Portal Device: Backfired",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 41372,
+      "name": "Mercy",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12320,
+      "name": "Pain Inverter",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30693,
+      "name": "Palm Strike",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 56880,
+      "name": "Pitfall",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 12361,
+      "name": "Prayer to Kormir",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12362,
+      "name": "Prayer to Lyssa",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13057,
+      "name": "Prepare Pitfall",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13056,
+      "name": "Prepare Seal Area",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13038,
+      "name": "Prepare Shadow Portal",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13026,
+      "name": "Prepare Thousand Needles",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12319,
+      "name": "Radiation Field",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30519,
+      "name": "Reflexive Strike",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13035,
+      "name": "Roll for Initiative",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13020,
+      "name": "Scorpion Wire",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13099,
+      "name": "Seal Area",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12456,
+      "name": "Seed Turret",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 41158,
+      "name": "Shadow Flare",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 46335,
+      "name": "Shadow Gust",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 16435,
+      "name": "Shadow Portal",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13117,
+      "name": "Shadow Refuge",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13106,
+      "name": "Shadow Return",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 45672,
+      "name": "Shadow Swap",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13002,
+      "name": "Shadowstep",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12337,
+      "name": "Shrapnel Mine",
+      "status": "Wiki verified",
+      "blockers": [
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13062,
+      "name": "Signet of Agility",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13060,
+      "name": "Signet of Shadows",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 13055,
+      "name": "Skale Venom",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13065,
+      "name": "Smoke Screen",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13037,
+      "name": "Spider Venom",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76725,
+      "name": "Stone Summit Cannon",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 77092,
+      "name": "Stone Summit Cannon (backfired)",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 12318,
+      "name": "Technobabble",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 56898,
+      "name": "Thousand Needles",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63323,
+      "name": "Well of Bounty",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 63230,
+      "name": "Well of Silence",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63276,
+      "name": "Well of Sorrow",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63294,
+      "name": "Well of Tears",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 72034,
+      "name": "Cunning Salvo",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 71835,
+      "name": "Malicious Cunning Salvo",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 71854,
+      "name": "Spinning Axe",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 71852,
+      "name": "Venomous Volley",
+      "status": "Manually verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 71864,
+      "name": "Harrowing Storm",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 71965,
+      "name": "Orchestrated Assault",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 71895,
+      "name": "Recall Axes",
+      "status": "State-dependent verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:dynamic recalled-axe count and source mixture require rotation state"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13005,
+      "name": "Backstab",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13004,
+      "name": "Double Strike",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13108,
+      "name": "Lotus Strike",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 50481,
+      "name": "Malicious Backstab",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13087,
+      "name": "Wild Strike",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13097,
+      "name": "Heartseeker",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13006,
+      "name": "Death Blossom",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13040,
+      "name": "Shadow Shot",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13110,
+      "name": "Twisting Fangs",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13019,
+      "name": "Dancing Dagger",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 16432,
+      "name": "Cloak and Dagger",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13079,
+      "name": "Diving Knife",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13003,
+      "name": "Trail of Knives",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13138,
+      "name": "Venomous Knife",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13081,
+      "name": "Cheap Shot",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13140,
+      "name": "Shadow Escape",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13033,
+      "name": "Smoke Bomb (thief skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13080,
+      "name": "Vanish in the Deep",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 1175,
+      "name": "Bandage",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 65179,
+      "name": "Rescue Protocol (skill)",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 37873,
+      "name": "Channeled Agony",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76702,
+      "name": "Exalted Hammer",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76633,
+      "name": "Forged Surfer Dash",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "status": "Wiki verified",
+      "blockers": [],
+      "rotation_ready": false
+    },
+    {
+      "id": 76582,
+      "name": "Metal Legion Guitar",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 77277,
+      "name": "Mistburn Mortar",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 77192,
+      "name": "Summon Kryptis Turret",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 50466,
+      "name": "Malicious Sneak Attack",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13115,
+      "name": "Sneak Attack",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13084,
+      "name": "Vital Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13008,
+      "name": "Bola Shot",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13111,
+      "name": "Repeater (offhand empty)",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 59526,
+      "name": "Repeater",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13010,
+      "name": "Shadow Strike",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13011,
+      "name": "Unload",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13012,
+      "name": "Head Shot",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13113,
+      "name": "Black Powder",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 41422,
+      "name": "Brutal Aim",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 40710,
+      "name": "Deadly Aim",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 69316,
+      "name": "Death's Judgment",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 44087,
+      "name": "Malicious Death's Judgment",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 41494,
+      "name": "Skirmisher's Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 44591,
+      "name": "Spotter's Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 43916,
+      "name": "Double Tap",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 44695,
+      "name": "Three Round Burst",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 40436,
+      "name": "Death's Advance",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 41937,
+      "name": "Death's Retreat",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 68600,
+      "name": "Sniper's Cover",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 41068,
+      "name": "Free Action",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 40600,
+      "name": "Kneel",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63182,
+      "name": "Double Bolt",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 69173,
+      "name": "Malicious Shadowsquall",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63066,
+      "name": "Shadow Bolt",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63314,
+      "name": "Shadowsquall",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63134,
+      "name": "Triple Bolt",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63351,
+      "name": "Shadow Sap",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63128,
+      "name": "Endless Night",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63267,
+      "name": "Measured Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63154,
+      "name": "Triple Threat",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63254,
+      "name": "Twilight Combo",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 50451,
+      "name": "Malicious Surprise Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13129,
+      "name": "Surprise Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13022,
+      "name": "Trick Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13041,
+      "name": "Cluster Bomb",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13043,
+      "name": "Detonate Cluster",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13083,
+      "name": "Disabling Shot (thief short bow skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13024,
+      "name": "Choking Gas",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13025,
+      "name": "Infiltrator's Arrow",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: condition skill has no verified hit/application mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13125,
+      "name": "Deadly Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13120,
+      "name": "Jab (thief skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 72924,
+      "name": "Malicious Ashen Assault",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 50417,
+      "name": "Malicious Deadly Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13121,
+      "name": "Poison Tip Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13119,
+      "name": "Stab (thief spear skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13069,
+      "name": "Flanking Dive",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13130,
+      "name": "Break Stance",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13122,
+      "name": "Nine-Tailed Strike",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 50379,
+      "name": "Hooked Spear",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13070,
+      "name": "Tow Line",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13068,
+      "name": "Shadow Assault",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 50449,
+      "name": "Malicious Ripper",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13072,
+      "name": "Piercing Shot",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13126,
+      "name": "The Ripper",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13073,
+      "name": "Deluge",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13074,
+      "name": "Escape",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13075,
+      "name": "Crippling Shot (thief harpoon gun skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13076,
+      "name": "Ink Shot",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13078,
+      "name": "Smoke Trail",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63362,
+      "name": "Haunt Shot",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30210,
+      "name": "Hook Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 69250,
+      "name": "Malicious Hook Strike",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30434,
+      "name": "Punishing Strikes",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30135,
+      "name": "Staff Bash",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30614,
+      "name": "Staff Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63107,
+      "name": "Grasping Shadows (underwater)",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63167,
+      "name": "Grasping Shadows",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 29911,
+      "name": "Weakening Whirl",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63220,
+      "name": "Dawn's Repose",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63227,
+      "name": "Dawn's Repose (underwater)",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30520,
+      "name": "Debilitating Arc",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 71802,
+      "name": "Helmet Breaker",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30775,
+      "name": "Dust Strike",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63160,
+      "name": "Eternal Night",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 63249,
+      "name": "Mind Shock",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 30597,
+      "name": "Vault",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13116,
+      "name": "Crippling Strike",
+      "status": "Partial \u2014 condition events unverified",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 50484,
+      "name": "Malicious Tactical Strike",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13088,
+      "name": "Slash (thief skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13009,
+      "name": "Slice (thief skill)",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13114,
+      "name": "Tactical Strike",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "conditions_without_explicit_events",
+        "multi_hit_condition_mapping_unknown",
+        "review:No activation time stored on the wiki infobox",
+        "review:condition audit: multi-hit condition skill lacks per-hit/per-cast mapping",
+        "review:condition audit: repeated condition rows lack explicit event mapping"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13128,
+      "name": "Infiltrator's Return",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13015,
+      "name": "Infiltrator's Strike",
+      "status": "Partial",
+      "blockers": [
+        "aftercast_unverified",
+        "review:No activation time stored on the wiki infobox"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13016,
+      "name": "Flanking Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 80244,
+      "name": "Flawless Execution",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13007,
+      "name": "Larcenous Strike",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 13112,
+      "name": "Stab (thief sword skill)",
+      "status": "Wiki verified",
+      "blockers": [
+        "aftercast_unverified"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76601,
+      "name": "Exalted Hammer",
+      "status": "API only",
+      "blockers": [
+        "review:Wiki enrichment still required"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76800,
+      "name": "Holo-Dancer Decoy",
+      "status": "API only",
+      "blockers": [
+        "review:Wiki enrichment still required"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76591,
+      "name": "Metal Legion Guitar",
+      "status": "API only",
+      "blockers": [
+        "review:Wiki enrichment still required"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 76733,
+      "name": "Zephyrite Sun Crystal",
+      "status": "API only",
+      "blockers": [
+        "review:Wiki enrichment still required"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 78309,
+      "name": "Zephyrite Sun Crystal",
+      "status": "API only",
+      "blockers": [
+        "review:Wiki enrichment still required"
+      ],
+      "rotation_ready": false
+    },
+    {
+      "id": 79285,
+      "name": "Zephyrite Sun Crystal",
+      "status": "API only",
+      "blockers": [
+        "review:Wiki enrichment still required"
+      ],
+      "rotation_ready": false
+    }
+  ]
+}

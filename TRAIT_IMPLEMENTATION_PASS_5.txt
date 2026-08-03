@@ -1,0 +1,10 @@
+Trait Implementation Pass 5
+===========================
+
+- Every one of the 108 Thief traits now has a calculator/event-engine mapping.
+- Static effects remain fully connected to the shared Gear, Skill Library and Spider Venom calculation state.
+- Conditional effects that can be represented by current assumptions are marked Assumption-ready and remain active through their existing controls.
+- Event-only traits now contain a structured trigger plus an official effect packet generated from the cached Guild Wars 2 API facts.
+- Trait Progress now separates Implemented, Assumption-ready, Event-ready and Waiting.
+- Waiting is now zero; event-ready does not mean the trait contributes DPS before the future combat-event/rotation engine supplies trigger frequency.
+- Added coverage tests ensuring all 108 traits are mapped and no trait remains data-only.

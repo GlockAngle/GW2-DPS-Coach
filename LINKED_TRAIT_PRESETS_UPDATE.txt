@@ -1,0 +1,8 @@
+Linked Trait Presets Update
+
+- Gear Simulator build manager now shows a Trait preset selector.
+- Trait presets are still created and edited on the Traits page.
+- Load traits applies the selected trait preset without changing equipment.
+- Saved gear builds now remember the linked trait preset name as well as the trait selection snapshot.
+- Loading a saved build restores its linked trait preset and trait selections.
+- Active trait preset remains part of current_build.json persistence under %LOCALAPPDATA%\ThiefLab.

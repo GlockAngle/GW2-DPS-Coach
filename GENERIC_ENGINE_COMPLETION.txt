@@ -1,0 +1,19 @@
+Generic engine completion pass
+
+Completed/refined:
+- Clear status legend: complete, partially connected, test input, unused.
+- Added Quickness uptime and its average action-time multiplier.
+- Generic Protection, Resolution, Regeneration, Swiftness and Vigor outputs are now treated as complete generic effects.
+- Weapon selectors are no longer marked unused; they feed the neutral weapon-strength calculation.
+- Moving uptime and attacks-per-second are marked partially connected rather than unused.
+- Added explicit active sigil stack and triggered-sigil uptime assumptions.
+- Bloodlust and Cruelty no longer silently assume maximum stacks.
+- Severance uses the configured uptime instead of silently assuming permanent uptime.
+- Malice, Agony, Demons, Smoldering, Venom and Concentration duration bonuses now feed the duration engine.
+- Added selected-sigil support feedback and an Engine status panel.
+- Saved builds now retain Quickness and sigil stack/uptime assumptions.
+
+Still intentionally unresolved:
+- Fight duration, Slow uptime and interruptible state need traits/procs/rotation events.
+- Proc/conditional sigils not listed as supported need dedicated event models.
+- Most relic effects need individual implementations.

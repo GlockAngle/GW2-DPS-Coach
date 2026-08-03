@@ -1,0 +1,8 @@
+CONDITION DURATION MAPPING FIX
+
+- Fixed the Skill Library Conditions & State tab so condition-specific duration totals are read with the same canonical keys produced by Gear Simulator.
+- Potent Poison's +33% poison duration now appears in poison skill previews.
+- The same resolver covers Bleeding, Burning, Confusion, Poison and Torment duration bonuses.
+- Supports canonical keys (for example "Poison Duration") plus legacy aliases (for example "Poison" and "Poisoned").
+- Specific duration can never fall below generic duration and remains capped at +100%.
+- Added regression tests for all five damaging conditions and the Potent Poison 67.2% + 33% cap example.

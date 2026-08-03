@@ -1,0 +1,27 @@
+SKILL LIBRARY COMPLETE SYNC
+===========================
+
+This update replaces the spear-only enrichment workflow with a complete data pipeline.
+
+Skill Library now has one primary button:
+  Sync complete Thief skill database
+
+The workflow:
+1. Downloads all current Thief-relevant skill metadata from the official GW2 API.
+2. Maps skill IDs to exact GW2 Wiki pages through Semantic MediaWiki.
+3. Downloads the current page source in batches.
+4. Parses structured Skill infobox and skill-fact values for PvE:
+   - classification, specialization, weapon and slot
+   - activation time
+   - initiative and recharge
+   - power coefficient and strike count
+   - conditions, stacks and durations
+   - initial event tags
+5. Preserves existing hand-verified overrides over automatically synced fields.
+6. Flags same-name ID mismatches, missing coefficients and missing activation values for review.
+
+Accuracy boundary:
+- Structured wiki values are imported; values are never invented.
+- Aftercast is not automatically available from most wiki infoboxes and remains blank unless manually verified.
+- Skills with ambiguous variants stay Partial/Needs review.
+- Current and expected hit values only appear when a coefficient is present.

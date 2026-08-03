@@ -1,0 +1,13 @@
+Condition duration runtime-source fix
+=====================================
+
+- Skill Library now re-resolves the currently selected trait effects before
+  rendering condition duration and damage previews.
+- Condition-specific duration uses the greater of:
+  1. the final Gear Simulator metrics total, and
+  2. generic duration plus currently active trait-specific duration.
+- This keeps Gear Simulator as the preferred source while preventing an empty
+  or stale metrics snapshot from dropping Potent Poison and similar effects
+  after page navigation or an application restart.
+- max() is used instead of adding both totals, so already-resolved traits are
+  not counted twice.

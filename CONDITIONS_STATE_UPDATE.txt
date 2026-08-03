@@ -1,0 +1,7 @@
+# Conditions & State update
+
+- Added live condition summary cards for applications, unique conditions, modified stack-seconds, and estimated full damage.
+- Added current-build duration calculations using Gear Simulator condition-duration metrics.
+- Added full-potential condition damage previews using Condition Damage, Vulnerability, and active trait condition modifiers.
+- Added duration breakdown, trait/modifier interactions, future event preview, and runtime readiness sections.
+- Exact event timing, cleanses, phase cut-offs, and rotation DPS remain explicitly reserved for the future event engine.

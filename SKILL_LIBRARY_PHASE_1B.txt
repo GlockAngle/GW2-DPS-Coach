@@ -1,0 +1,8 @@
+Skill Library Phase 1B
+
+- Added a default usable-PvE scope and clearer category/weapon/specialization filters.
+- Added field-level data status: Wiki verified, Partial, API only.
+- Added provenance, event tags, conditional effects and manual-review flags.
+- Seeded current PvE land-spear enrichment for the ten core spear skills.
+- Uncertain values are deliberately flagged instead of guessed.
+- Damage columns only activate when a verified coefficient exists.

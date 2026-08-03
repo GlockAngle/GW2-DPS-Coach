@@ -1,0 +1,8 @@
+Full Benchmark Boons update
+
+- Stability defaults to off.
+- Resolution defaults to off.
+- Aegis defaults to 100% for the profile.
+- Resistance remains enabled.
+- Derived baseline unique-boon count is 10.
+- Custom mode still exposes all boons independently.

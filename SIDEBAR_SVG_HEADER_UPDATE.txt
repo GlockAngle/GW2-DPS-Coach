@@ -1,0 +1,7 @@
+GW2 DPS Coach - SVG sidebar/header redesign
+
+- Replaced the emoji header with a compact branded SVG shield/dagger mark.
+- Replaced all navigation emojis with local SVG icons.
+- Added a cleaner active-page state, hover state, spacing, typography, and sidebar divider.
+- Removed emoji text from page labels; navigation names remain unchanged.
+- SVG assets are stored locally under assets/sidebar/ and do not require internet access.

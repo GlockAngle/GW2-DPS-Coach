@@ -1,0 +1,16 @@
+TRAIT EFFECT-LEVEL MODEL UPDATE
+
+- Every one of the 108 Thief traits now stores an explicit effects array.
+- Each effect has one of three user-facing states:
+  * applied_now
+  * event_engine
+  * needs_implementation
+- Mixed traits can now expose passive effects separately from triggered effects.
+- Deadly Ambition is explicitly split into +180 Condition Damage (applied now) and Poison on qualifying dual-wield attacks (event engine).
+- Trait dropdown/status icons are standardized:
+  * green check = all modelled effects applied now
+  * yellow = mixed applied + event effects
+  * hourglass = waiting for event engine
+  * gray = needs implementation
+- Trait Progress now reports effect-level counts and offers effect and trait summary views.
+- Selected Trait status is also counted per effect.

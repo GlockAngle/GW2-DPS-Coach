@@ -1,0 +1,28 @@
+id,name,cast_count,logged_hits,logged_damage,indirect_damage,observed_hits_per_cast,median_logged_cast_seconds,library_hits,library_coefficient,library_cast_time,has_explicit_condition_events,status,missing_or_blockers
+723,Poison,0,94,618976,True,,,,,,False,Observed in benchmark,
+736,Bleeding,0,94,1848857,True,,,,,,False,Observed in benchmark,
+737,Burning,0,91,465491,True,,,,,,False,Observed in benchmark,
+861,Confusion,0,18,15597,True,,,,,,False,Observed in benchmark,
+13004,Double Strike,31,49,57363,False,1.581,0.361,4,1.2000000000000002,,False,Needs verification,No activation time stored on the wiki infobox | skill-library record | verified cast time
+13005,Backstab,3,3,30352,False,1.0,0.362,4,7.5,0.25,False,Needs verification,skill-library record
+13006,Death Blossom,39,117,78049,False,3.0,1.042,3,0.63,0.5,False,Needs verification,condition audit: multi-hit condition skill lacks per-hit/per-cast mapping | condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record
+13026,Prepare Thousand Needles,4,0,0,False,,0.601,,,0.5,False,Needs verification,skill-library record
+13028,Caltrops,5,0,0,False,,0.923,,,1.0,False,Needs verification,condition audit: condition skill has no verified hit/application mapping | explicit condition events | skill-library record
+13037,Spider Venom,5,0,0,False,,0.0,,,,False,Needs verification,condition audit: condition skill has no verified hit/application mapping | condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record
+13087,Wild Strike,24,23,55237,False,0.958,0.397,2,1.233,,False,Needs verification,No activation time stored on the wiki infobox | condition audit: multi-hit condition skill lacks per-hit/per-cast mapping | condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record | verified cast time
+13108,Lotus Strike,22,22,82126,False,1.0,0.438,2,1.9329999999999998,0.25,False,Needs verification,condition audit: multi-hit condition skill lacks per-hit/per-cast mapping | explicit condition events | skill-library record
+19426,Torment,0,88,348823,True,,,,,,False,Observed in benchmark,
+56897,Thousand Needles,0,25,13600,False,,,,,,False,Needs verification,hit model | skill-library record
+56898,Thousand Needles,4,0,0,False,,0.0,2,0.7,,False,Needs verification,condition audit: multi-hit condition skill lacks per-hit/per-cast mapping | explicit condition events | skill-library record
+76582,Metal Legion Guitar (Rockout),1,4,14814,False,4.0,1.402,4,3.86,2.0,False,Needs verification,condition audit: multi-hit condition skill lacks per-hit/per-cast mapping | condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record
+76596,Metal Legion Guitar (Smash),1,1,10671,False,1.0,0.472,,,,False,Needs verification,hit model | skill-library record | verified cast time
+76633,Forged Surfer Dash,3,3,27346,False,1.0,0.195,4,5.6,1.0,False,Needs verification,condition audit: multi-hit condition skill lacks per-hit/per-cast mapping | condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record
+76674,Holo-Dancer Decoy,3,0,0,False,,0.6,2,2.03,0.5,False,Needs verification,skill-library record
+76816,Chak Shield,0,3,4102,False,,,7,1.62,,False,Needs verification,skill-library record
+76895,Zephyrite Sun Crystal,1,1,4472,False,1.0,0.16,1,1.2,1.0,False,Needs verification,condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record
+77028,Holo-Dancer Decoy,0,2,15720,False,,,,,,False,Needs verification,hit model | skill-library record
+77192,Summon Kryptis Turret,12,88,136060,False,7.333,0.438,16,5.199999999999999,0.5,False,Needs verification,condition audit: multi-hit condition skill lacks per-hit/per-cast mapping | condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record
+77255,Skritt Scuffle,3,0,0,False,,0.562,2,5.0,0.5,False,Needs verification,skill-library record
+77277,Mistburn Mortar,7,35,68862,False,5.0,0.598,1,0.5,0.75,False,Needs verification,condition audit: repeated condition rows lack explicit event mapping | explicit condition events | skill-library record
+77397,Skritt Swipe,5,0,0,False,,0.201,,,,False,Needs verification,skill-library record | verified cast time
+78440,Forged Surfer Dash (Additional Bombs),0,12,55779,False,,,,,,False,Needs verification,hit model | skill-library record
