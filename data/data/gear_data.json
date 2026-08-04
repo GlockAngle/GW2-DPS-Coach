@@ -1,0 +1,2566 @@
+{
+  "source": "test.xlsx",
+  "slots": {
+    "Weapon 1": "Weapon - Prefixes",
+    "Weapon 2": "Weapon - Prefixes",
+    "Head": "Headpiece - Prefixes",
+    "Shoulders": "Shoulders - Prefixes",
+    "Chest": "Chest - Prefixes",
+    "Gloves": "Gloves - Prefixes",
+    "Leggings": "Leggings - Prefixes",
+    "Boots": "Boots - Prefixes",
+    "Amulet": "Amulet - Prefixes",
+    "Backpiece": "Backpiece - Prefixes",
+    "Accessory 1": "Accessory - Prefixes",
+    "Accessory 2": "Accessory - Prefixes",
+    "Ring 1": "Ring - Prefixes",
+    "Ring 2": "Ring - Prefixes"
+  },
+  "prefix_tables": {
+    "Accessory - Prefixes": {
+      "Assassin": {
+        "Power": 74,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 110,
+        "Ferocity": 74,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 110,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 74,
+        "Ferocity": 74,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 50,
+        "Toughness": 50,
+        "Vitality": 50,
+        "Precision": 50,
+        "Ferocity": 50,
+        "Condition Damage": 50,
+        "Expertise": 50,
+        "Concentration": 50,
+        "Healing Power": 50
+      },
+      "Diviner": {
+        "Power": 92,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 49,
+        "Ferocity": 49,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 92,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 92,
+        "Toughness": 0,
+        "Vitality": 49,
+        "Precision": 49,
+        "Ferocity": 92,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 92,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 49,
+        "Ferocity": 49,
+        "Condition Damage": 92,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 74,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 110,
+        "Ferocity": 0,
+        "Condition Damage": 74,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 92,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 92,
+        "Expertise": 49,
+        "Concentration": 49,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 74,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 74,
+        "Ferocity": 0,
+        "Condition Damage": 110,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 92,
+        "Vitality": 49,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 92,
+        "Expertise": 49,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 92,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 49,
+        "Ferocity": 0,
+        "Condition Damage": 92,
+        "Expertise": 49,
+        "Concentration": 0,
+        "Healing Power": 0
+      }
+    },
+    "Amulet - Prefixes": {
+      "Assassin": {
+        "Power": 108,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 157,
+        "Ferocity": 108,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 157,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 108,
+        "Ferocity": 108,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 72,
+        "Toughness": 72,
+        "Vitality": 72,
+        "Precision": 72,
+        "Ferocity": 72,
+        "Condition Damage": 72,
+        "Expertise": 59,
+        "Concentration": 59,
+        "Healing Power": 72
+      },
+      "Diviner": {
+        "Power": 133,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 71,
+        "Ferocity": 71,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 133,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 133,
+        "Toughness": 0,
+        "Vitality": 71,
+        "Precision": 71,
+        "Ferocity": 133,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 133,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 71,
+        "Ferocity": 71,
+        "Condition Damage": 133,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 108,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 157,
+        "Ferocity": 0,
+        "Condition Damage": 108,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 133,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 133,
+        "Expertise": 71,
+        "Concentration": 71,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 108,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 108,
+        "Ferocity": 0,
+        "Condition Damage": 157,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 133,
+        "Vitality": 71,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 133,
+        "Expertise": 71,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 133,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 71,
+        "Ferocity": 0,
+        "Condition Damage": 133,
+        "Expertise": 71,
+        "Concentration": 0,
+        "Healing Power": 0
+      }
+    },
+    "Backpiece - Prefixes": {
+      "Assassin": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 63,
+        "Ferocity": 40,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 63,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 40,
+        "Ferocity": 40,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 28,
+        "Toughness": 28,
+        "Vitality": 28,
+        "Precision": 28,
+        "Ferocity": 28,
+        "Condition Damage": 28,
+        "Expertise": 28,
+        "Concentration": 28,
+        "Healing Power": 28
+      },
+      "Diviner": {
+        "Power": 52,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 27,
+        "Ferocity": 27,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 52,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 52,
+        "Toughness": 0,
+        "Vitality": 27,
+        "Precision": 27,
+        "Ferocity": 52,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 52,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 27,
+        "Ferocity": 27,
+        "Condition Damage": 52,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 63,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 52,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 52,
+        "Expertise": 27,
+        "Concentration": 27,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 40,
+        "Ferocity": 0,
+        "Condition Damage": 63,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 52,
+        "Vitality": 27,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 52,
+        "Expertise": 27,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 52,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 27,
+        "Ferocity": 0,
+        "Condition Damage": 52,
+        "Expertise": 27,
+        "Concentration": 0,
+        "Healing Power": 0
+      }
+    },
+    "Boots - Prefixes": {
+      "Assassin": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 47,
+        "Ferocity": 34,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 47,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 34,
+        "Ferocity": 34,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 22,
+        "Toughness": 22,
+        "Vitality": 22,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 22,
+        "Expertise": 22,
+        "Concentration": 22,
+        "Defense": 140,
+        "Healing Power": 22
+      },
+      "Diviner": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 40,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 22,
+        "Precision": 22,
+        "Ferocity": 40,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 40,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 47,
+        "Ferocity": 0,
+        "Condition Damage": 34,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 40,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 22,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 34,
+        "Ferocity": 0,
+        "Condition Damage": 47,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 40,
+        "Vitality": 22,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      }
+    },
+    "Chest - Prefixes": {
+      "Assassin": {
+        "Power": 101,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 141,
+        "Ferocity": 101,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 141,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 101,
+        "Ferocity": 101,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 67,
+        "Toughness": 67,
+        "Vitality": 67,
+        "Precision": 67,
+        "Ferocity": 67,
+        "Condition Damage": 67,
+        "Expertise": 67,
+        "Concentration": 67,
+        "Defense": 330,
+        "Healing Power": 67
+      },
+      "Diviner": {
+        "Power": 121,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 67,
+        "Ferocity": 67,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 121,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 121,
+        "Toughness": 0,
+        "Vitality": 67,
+        "Precision": 67,
+        "Ferocity": 121,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 121,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 67,
+        "Ferocity": 67,
+        "Condition Damage": 121,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 101,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 141,
+        "Ferocity": 0,
+        "Condition Damage": 101,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 121,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 121,
+        "Expertise": 67,
+        "Concentration": 67,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 101,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 101,
+        "Ferocity": 0,
+        "Condition Damage": 141,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 121,
+        "Vitality": 67,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 121,
+        "Expertise": 67,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 121,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 67,
+        "Ferocity": 0,
+        "Condition Damage": 121,
+        "Expertise": 67,
+        "Concentration": 0,
+        "Defense": 330,
+        "Healing Power": 0
+      }
+    },
+    "Gloves - Prefixes": {
+      "Assassin": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 47,
+        "Ferocity": 34,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 47,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 34,
+        "Ferocity": 34,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 22,
+        "Toughness": 22,
+        "Vitality": 22,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 22,
+        "Expertise": 22,
+        "Concentration": 22,
+        "Defense": 140,
+        "Healing Power": 22
+      },
+      "Diviner": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 40,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 22,
+        "Precision": 22,
+        "Ferocity": 40,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 40,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 47,
+        "Ferocity": 0,
+        "Condition Damage": 34,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 40,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 22,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 34,
+        "Ferocity": 0,
+        "Condition Damage": 47,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 40,
+        "Vitality": 22,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 0,
+        "Defense": 140,
+        "Healing Power": 0
+      }
+    },
+    "Headpiece - Prefixes": {
+      "Assassin": {
+        "Power": 45,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 63,
+        "Ferocity": 45,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 63,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 45,
+        "Ferocity": 45,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 30,
+        "Toughness": 30,
+        "Vitality": 30,
+        "Precision": 30,
+        "Ferocity": 30,
+        "Condition Damage": 30,
+        "Expertise": 30,
+        "Concentration": 30,
+        "Defense": 77,
+        "Healing Power": 30
+      },
+      "Diviner": {
+        "Power": 54,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 30,
+        "Ferocity": 30,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 54,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 54,
+        "Toughness": 0,
+        "Vitality": 30,
+        "Precision": 30,
+        "Ferocity": 54,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 54,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 30,
+        "Ferocity": 30,
+        "Condition Damage": 54,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 45,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 63,
+        "Ferocity": 0,
+        "Condition Damage": 45,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 54,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 54,
+        "Expertise": 30,
+        "Concentration": 30,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 45,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 45,
+        "Ferocity": 0,
+        "Condition Damage": 63,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 54,
+        "Vitality": 30,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 54,
+        "Expertise": 30,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 54,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 30,
+        "Ferocity": 0,
+        "Condition Damage": 54,
+        "Expertise": 30,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      }
+    },
+    "Leggings - Prefixes": {
+      "Assassin": {
+        "Power": 67,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 94,
+        "Ferocity": 67,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 94,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 67,
+        "Ferocity": 67,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 44,
+        "Toughness": 44,
+        "Vitality": 44,
+        "Precision": 44,
+        "Ferocity": 44,
+        "Condition Damage": 44,
+        "Expertise": 44,
+        "Concentration": 44,
+        "Defense": 203,
+        "Healing Power": 44
+      },
+      "Diviner": {
+        "Power": 81,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 44,
+        "Ferocity": 44,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 81,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 81,
+        "Toughness": 0,
+        "Vitality": 44,
+        "Precision": 44,
+        "Ferocity": 81,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 81,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 44,
+        "Ferocity": 44,
+        "Condition Damage": 81,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 67,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 94,
+        "Ferocity": 0,
+        "Condition Damage": 67,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 81,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 81,
+        "Expertise": 44,
+        "Concentration": 44,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 67,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 67,
+        "Ferocity": 0,
+        "Condition Damage": 94,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 81,
+        "Vitality": 44,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 81,
+        "Expertise": 44,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 81,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 44,
+        "Ferocity": 0,
+        "Condition Damage": 81,
+        "Expertise": 44,
+        "Concentration": 0,
+        "Defense": 203,
+        "Healing Power": 0
+      }
+    },
+    "Ring - Prefixes": {
+      "Assassin": {
+        "Power": 85,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 126,
+        "Ferocity": 85,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 126,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 85,
+        "Ferocity": 85,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 57,
+        "Toughness": 57,
+        "Vitality": 57,
+        "Precision": 57,
+        "Ferocity": 57,
+        "Condition Damage": 57,
+        "Expertise": 57,
+        "Concentration": 57,
+        "Healing Power": 57
+      },
+      "Diviner": {
+        "Power": 106,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 56,
+        "Ferocity": 56,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 106,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 106,
+        "Toughness": 0,
+        "Vitality": 56,
+        "Precision": 56,
+        "Ferocity": 106,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 106,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 56,
+        "Ferocity": 56,
+        "Condition Damage": 106,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 85,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 126,
+        "Ferocity": 0,
+        "Condition Damage": 85,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 106,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 106,
+        "Expertise": 56,
+        "Concentration": 56,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 85,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 85,
+        "Ferocity": 0,
+        "Condition Damage": 126,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 106,
+        "Vitality": 56,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 106,
+        "Expertise": 56,
+        "Concentration": 0,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 106,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 56,
+        "Ferocity": 0,
+        "Condition Damage": 106,
+        "Expertise": 56,
+        "Concentration": 0,
+        "Healing Power": 0
+      }
+    },
+    "Shoulders - Prefixes": {
+      "Assassin": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 47,
+        "Ferocity": 34,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 47,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 34,
+        "Ferocity": 34,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 22,
+        "Toughness": 22,
+        "Vitality": 22,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 22,
+        "Expertise": 22,
+        "Concentration": 22,
+        "Defense": 77,
+        "Healing Power": 22
+      },
+      "Diviner": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 40,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 22,
+        "Precision": 22,
+        "Ferocity": 40,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 22,
+        "Condition Damage": 40,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 47,
+        "Ferocity": 0,
+        "Condition Damage": 34,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 40,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 22,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 34,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 34,
+        "Ferocity": 0,
+        "Condition Damage": 47,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 40,
+        "Vitality": 22,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 40,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 22,
+        "Ferocity": 0,
+        "Condition Damage": 40,
+        "Expertise": 22,
+        "Concentration": 0,
+        "Defense": 77,
+        "Healing Power": 0
+      }
+    },
+    "Weapon - Prefixes": {
+      "Assassin": {
+        "Power": 90,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 125,
+        "Ferocity": 90,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Berserker": {
+        "Power": 125,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 90,
+        "Ferocity": 90,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Celestial": {
+        "Power": 59,
+        "Toughness": 59,
+        "Vitality": 59,
+        "Precision": 59,
+        "Ferocity": 59,
+        "Condition Damage": 59,
+        "Expertise": 59,
+        "Concentration": 59,
+        "Defense": 0,
+        "Healing Power": 59
+      },
+      "Diviner": {
+        "Power": 108,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 59,
+        "Ferocity": 59,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 108,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Dragon": {
+        "Power": 108,
+        "Toughness": 0,
+        "Vitality": 59,
+        "Precision": 59,
+        "Ferocity": 108,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Grieving": {
+        "Power": 108,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 59,
+        "Ferocity": 59,
+        "Condition Damage": 108,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "None": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 0,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Rampager": {
+        "Power": 90,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 125,
+        "Ferocity": 0,
+        "Condition Damage": 90,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Ritualist": {
+        "Power": 0,
+        "Toughness": 0,
+        "Vitality": 108,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 108,
+        "Expertise": 59,
+        "Concentration": 59,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Sinister": {
+        "Power": 90,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 90,
+        "Ferocity": 0,
+        "Condition Damage": 125,
+        "Expertise": 0,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Trailblazer": {
+        "Power": 0,
+        "Toughness": 108,
+        "Vitality": 59,
+        "Precision": 0,
+        "Ferocity": 0,
+        "Condition Damage": 108,
+        "Expertise": 59,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      },
+      "Viper": {
+        "Power": 108,
+        "Toughness": 0,
+        "Vitality": 0,
+        "Precision": 59,
+        "Ferocity": 0,
+        "Condition Damage": 108,
+        "Expertise": 59,
+        "Concentration": 0,
+        "Defense": 0,
+        "Healing Power": 0
+      }
+    }
+  },
+  "food": {
+    "Bowl of Curry Butternut Squash Soup": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 100,
+      "Ferocity": 70,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "Bowl of Fancy Potato and Leek Soup": {
+      "Precision": 100,
+      "Condition Damage": 70,
+      "Lifesteal": "N"
+    },
+    "Bowl of Sweet and Spicy Butternut Squash Soup": {
+      "Power": 100,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 70,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "Cilantro Lime Sous-Vide Steak": {
+      "Power": 100,
+      "Ferocity": 70,
+      "Lifesteal": "Y"
+    },
+    "Koi Cake": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 70,
+      "Expertise": 100,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "None": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "Plate of Beef Rendang": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 100,
+      "Expertise": 70,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "Plate of Coq-Au Vin with Salsa": {
+      "Power": 100,
+      "Precision": 70,
+      "Lifesteal": "Y"
+    },
+    "Plate of Kimchi Pancakes": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 70,
+      "Expertise": 0,
+      "Bleeding Duration": 0.15,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "Plate of Truffle Steak": {
+      "Power": 100,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 70,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "Soul Pastry": {
+      "Power": 70,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 100,
+      "Healing Power": 0,
+      "Lifesteal": "N"
+    },
+    "Cilantro and Cured Meat Flatbread": {
+      "Condition Damage": 100,
+      "Expertise": 70,
+      "Lifesteal": "Y"
+    },
+    "Salsa-Topped Veggie Flatbread": {
+      "Condition Damage": 70,
+      "Expertise": 100,
+      "Lifesteal": "Y"
+    },
+    "Spherified Cilantro Oyster Soup": {
+      "Power": 45,
+      "Toughness": 45,
+      "Vitality": 45,
+      "Precision": 45,
+      "Ferocity": 45,
+      "Condition Damage": 45,
+      "Expertise": 45,
+      "Concentration": 45,
+      "Healing Power": 45,
+      "Lifesteal": "Y"
+    },
+    "Meaty Asparagus Skewer": {
+      "Condition Damage": 70,
+      "Torment Duration": 0.15
+    },
+    "Birthday Cake": {
+      "Power": 40,
+      "Toughness": 40,
+      "Vitality": 40,
+      "Precision": 40,
+      "Ferocity": 40,
+      "Condition Damage": 40,
+      "Expertise": 40,
+      "Concentration": 40,
+      "Healing Power": 40
+    }
+  },
+  "utility": {
+    "Furious Sharpening Stone": {
+      "Power": 48.99,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 48.99,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "_formulas": {
+        "Power": "PrecisionConverted* 0.03",
+        "Ferocity": "PrecisionConverted* 0.03"
+      }
+    },
+    "Master Tuning Crystal": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 107.63,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "_formulas": {
+        "Condition Damage": "PrecisionConverted * 0.03 + ExpertiseConverted * 0.08"
+      }
+    },
+    "None": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0
+    },
+    "Potent Lucent Oil": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 114.18,
+      "Healing Power": 0,
+      "_formulas": {
+        "Concentration": "PowerConverted * 0.03 + PrecisionConverted * 0.03"
+      }
+    },
+    "Superior Sharpening Stone": {
+      "Power": 48.99,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "_formulas": {
+        "Power": "PrecisionConverted * 0.03 + FerocityConverted * 0.06"
+      }
+    },
+    "Toxic Focusing Crystal": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 114.18,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "_formulas": {
+        "Condition Damage": "PowerConverted * 0.03 + PrecisionConverted * 0.03"
+      }
+    },
+    "Toxic Maintenance Oil": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 173.97,
+      "Healing Power": 0,
+      "_formulas": {
+        "Concentration": "PowerConverted * 0.03 + ConditionDamageConverted * 0.06"
+      }
+    },
+    "Writ of Masterful Accuracy": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 200,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "_formulas": {
+        "Precision": "200 * UtilityUptime"
+      }
+    },
+    "Writ of Masterful Malice": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 200,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "_formulas": {
+        "Condition Damage": "200 * UtilityUptime"
+      }
+    },
+    "Writ of Masterful Strength": {
+      "Power": 200,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0,
+      "_formulas": {
+        "Power": "200 * UtilityUptime"
+      }
+    },
+    "Magnanimous Maintenance Oil": {
+      "Concentration": 67.05,
+      "_formulas": {
+        "Concentration": "VitalityConverted * 0.03 + ToughnessConverted * 0.03"
+      }
+    },
+    "Snow Diamond Ornament": {
+      "Power": 65.19,
+      "Toughness": 30,
+      "Vitality": 37.05,
+      "Precision": 48.99,
+      "Ferocity": 0,
+      "Condition Damage": 54.39,
+      "Expertise": 21.99,
+      "Concentration": 7.5,
+      "Healing Power": 0,
+      "_formulas": {
+        "Power": "PowerConverted * 0.03",
+        "Toughness": "ToughnessConverted * 0.03",
+        "Vitality": "VitalityConverted * 0.03",
+        "Precision": "PrecisionConverted* 0.03",
+        "Ferocity": "FerocityConverted * 0.03",
+        "Condition Damage": "ConditionDamageConverted * 0.03",
+        "Expertise": "ExpertiseConverted * 0.03",
+        "Concentration": "ConcentrationConverted * 0.03",
+        "Healing Power": "HealingPowerConverted * 0.03"
+      }
+    }
+  },
+  "sigils": {
+    "Accuracy": {
+      "Add. Strike Modifier": 0,
+      "Critical Chance": 0.07,
+      "_formulas": {
+        "Critical Chance": "7% "
+      }
+    },
+    "Agony": {
+      "Add. Strike Modifier": 0,
+      "Bleeding Duration": 0.2
+    },
+    "Air": {
+      "Add. Strike Modifier": 0
+    },
+    "Blight": {
+      "Add. Strike Modifier": 0
+    },
+    "Blood": {
+      "Add. Strike Modifier": 0
+    },
+    "Bloodlust": {
+      "Power": 250,
+      "Add. Strike Modifier": 0,
+      "_formulas": {
+        "Power": "10 * ActiveSigilStacks"
+      }
+    },
+    "Bursting": {
+      "Add. Strike Modifier": 0,
+      "Condition Modifier": 0.05
+    },
+    "Concentration": {
+      "Add. Strike Modifier": 0,
+      "Boon Duration": 0.1
+    },
+    "Demons": {
+      "Add. Strike Modifier": 0,
+      "Torment Duration": 0.2
+    },
+    "Doom": {
+      "Add. Strike Modifier": 0
+    },
+    "Draining": {
+      "Add. Strike Modifier": 0
+    },
+    "Earth": {
+      "Add. Strike Modifier": 0
+    },
+    "Energy": {
+      "Add. Strike Modifier": 0
+    },
+    "Fire": {
+      "Add. Strike Modifier": 0
+    },
+    "Force": {
+      "Add. Strike Modifier": 0.05,
+      "_formulas": {
+        "Add. Strike Modifier": "5%"
+      }
+    },
+    "Geomancy": {
+      "Add. Strike Modifier": 0
+    },
+    "Hydromancy": {
+      "Add. Strike Modifier": 0
+    },
+    "Impact": {
+      "Add. Strike Modifier": 0.03,
+      "_formulas": {
+        "Add. Strike Modifier": "3% "
+      }
+    },
+    "Leeching": {
+      "Add. Strike Modifier": 0
+    },
+    "Malice": {
+      "Add. Strike Modifier": 0,
+      "Condition Duration": 0.1
+    },
+    "Mischief": {
+      "Add. Strike Modifier": 0
+    },
+    "Night": {
+      "Add. Strike Modifier": 0.03,
+      "Mult. Strike Modifer": 1.07
+    },
+    "None": {
+      "Add. Strike Modifier": 0
+    },
+    "Severance": {
+      "Add. Strike Modifier": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "_formulas": {
+        "Precision": "250 * ActiveSigilsUptime",
+        "Ferocity": "250 * ActiveSigilsUptime"
+      }
+    },
+    "Smoldering": {
+      "Add. Strike Modifier": 0,
+      "Burning Duration": 0.2
+    },
+    "Torment": {
+      "Add. Strike Modifier": 0
+    },
+    "Transference": {
+      "Add. Strike Modifier": 0,
+      "Healing Modifier": 0.1
+    },
+    "Venom": {
+      "Add. Strike Modifier": 0,
+      "Poison Duration": 0.2
+    },
+    "Ruby Orb": {
+      "Power": 20,
+      "Add. Strike Modifier": 0,
+      "Precision": 14,
+      "Ferocity": 14
+    },
+    "Cruelty": {
+      "Add. Strike Modifier": 0,
+      "Ferocity": 250,
+      "_formulas": {
+        "Ferocity": "10 * ActiveSigilStacks"
+      }
+    }
+  },
+  "infusions": {
+    "Healing": {
+      "Healing Power": 5
+    },
+    "Malign": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 5,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0
+    },
+    "Mighty": {
+      "Power": 5,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0
+    },
+    "Mystical": {
+      "Concentration": 5
+    },
+    "None": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0
+    },
+    "Precise": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 5,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 0,
+      "Concentration": 0,
+      "Healing Power": 0
+    },
+    "Resilient": {
+      "Toughness": 5
+    },
+    "Spiteful": {
+      "Power": 0,
+      "Toughness": 0,
+      "Vitality": 0,
+      "Precision": 0,
+      "Ferocity": 0,
+      "Condition Damage": 0,
+      "Expertise": 5,
+      "Concentration": 0,
+      "Healing Power": 0
+    },
+    "Vital": {
+      "Vitality": 5
+    }
+  },
+  "runes": {
+    "Pack": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Power": "IFERROR(IFS(M3>=5,175,M3>=3,75,M3>=1,25),\"\")",
+        "Precision": "IFERROR(IFS(M3=6,125),\"\")",
+        "Boon Duration": "IFERROR(IFS(M3>=4,0.15,M3>=2,0.05),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A3)"
+      }
+    },
+    "Deadeye": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Power": "IFERROR(IFS($M4>=5,175,$M4>=3,75,$M4>=1,25),\"\")",
+        "Ferocity": "IFERROR(IFS(M4>=4,100,M4>=2,35),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A4)"
+      }
+    },
+    "Infiltration": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Power": "IFERROR(IFS(M5>=5,175,M5>=3,75,M5>=1,25),\"\")",
+        "Precision": "IFERROR(IFS(M5=6,225,M5>=4,100,M5>=2,35),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A5)"
+      }
+    },
+    "Scholar": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Ferocity": "IFERROR(IFS(M6>=6,225,M6>=4,100,M6>=2,35),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A6)"
+      }
+    },
+    "Eagle": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Precision": "IFERROR(IFS(M7>=5,175,M7>=3,75,M7>=1,25),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A7)"
+      }
+    },
+    "Ranger": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Precision": "IFERROR(IFS(M8=6,300,M8>=5,175,M8>=3,75,M8>=1,25),\"\")",
+        "Ferocity": "IFERROR(IFS(M8>=4,100,M8>=2,35),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A8)"
+      }
+    },
+    "Golemancer": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Precision": "IFERROR(IFS(M9>=3,100,M9>=1,35),\"\")",
+        "Ferocity": "IFERROR(IFS(M9=6,300,M9>=5,175,M9>=3,75,M9>=1,25),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A9)"
+      }
+    },
+    "Dragonhunter": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Power": "IFERROR(IFS(M10>=4,100,M10>=2,35),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A10)"
+      },
+      "Power": 100,
+      "Ferocity": 300
+    },
+    "Thief": {
+      "Boon Duration": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Precision": "IFERROR(IFS(M11=6,300,M11>=5,175,M11>=3,75,M11>=1,25),\"\")",
+        "Condition Damage": "IFERROR(IFS(M11>=4,100,M11>=2,35),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A11)"
+      }
+    },
+    "Trapper": {
+      "Condition Damage": 300,
+      "Condition Duration": 0.15,
+      "Equip  Check": 6,
+      "_formulas": {
+        "Condition Damage": "IFERROR(IFS(M12=6,300,M12>=5,175,M12>=3,75,M12=1,25),\"\")",
+        "Condition Duration": "IFERROR(IFS(M12>=4,0.15,M12>=2,0.05),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A12)"
+      }
+    },
+    "Krait": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Condition Damage": "IFERROR(IFS(M13>=5,175,M13>=3,75,M13=1,25),\"\")",
+        "Bleeding Duration": "IFERROR(IFS(M13=6,0.5,M13>=4,0.3,M13>=2,0.1),\"\")",
+        "Equip  Check": "COUNTIF(RunesEquipped,\"=\"&A13)"
+      }
+    }
+  },
+  "relics": {
+    "Adventurer": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B3,1,0)"
+      }
+    },
+    "Afflicted": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B4,1,0)"
+      }
+    },
+    "Akeem": {
+      "Equip  Check": 1,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B5,1,0)"
+      }
+    },
+    "Antitoxin": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B6,1,0)"
+      }
+    },
+    "Aristocracy": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B7,1,0)"
+      }
+    },
+    "Astral Ward": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B8,1,0)"
+      }
+    },
+    "Brawler": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B9,1,0)"
+      }
+    },
+    "Cavalier": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B10,1,0)"
+      }
+    },
+    "Centaur": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B11,1,0)"
+      }
+    },
+    "Cerus": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B12,1,0)"
+      }
+    },
+    "Chronomancer": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B13,1,0)"
+      }
+    },
+    "Citadel": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B14,1,0)"
+      }
+    },
+    "Dagda": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B15,1,0)"
+      }
+    },
+    "Daredevil": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B16,1,0)"
+      }
+    },
+    "Deadeye": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B17,1,0)"
+      }
+    },
+    "Defender": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B18,1,0)"
+      }
+    },
+    "Dragonhunter": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B19,1,0)"
+      }
+    },
+    "Durability": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B20,1,0)"
+      }
+    },
+    "Dwayna": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B21,1,0)"
+      }
+    },
+    "Evasion": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B22,1,0)"
+      }
+    },
+    "Firebrand": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B23,1,0)"
+      }
+    },
+    "Fireworks": {
+      "Equipment": "#REF!",
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equipment": "IMAGE(\"https://wiki.guildwars2.com/images/6/6c/Relic_of_Fireworks.png\")",
+        "Strike Modifier": "IF(O24,0.07 * RelicUptimeVariable,\"\")",
+        "Equip  Check": "IF(RelicEquipped=B24,1,0)"
+      }
+    },
+    "Flock": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B25,1,0)"
+      }
+    },
+    "Fractal": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B26,1,0)"
+      }
+    },
+    "Herald": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B27,1,0)"
+      }
+    },
+    "Ice": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B28,1,0)"
+      }
+    },
+    "Isgarren": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B29,1,0)"
+      }
+    },
+    "Krait": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B30,1,0)"
+      }
+    },
+    "Leadership": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B31,1,0)"
+      }
+    },
+    "Lyhr": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B32,1,0)"
+      }
+    },
+    "Mabon": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B33,1,0)"
+      }
+    },
+    "Mercy": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B34,1,0)"
+      }
+    },
+    "Mirage": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B35,1,0)"
+      }
+    },
+    "Monk": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B36,1,0)"
+      }
+    },
+    "Nightmare": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B37,1,0)"
+      }
+    },
+    "Pack": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B38,1,0)"
+      }
+    },
+    "Peitha": {
+      "Equipment": "#REF!",
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equipment": "IMAGE(\"https://wiki.guildwars2.com/images/4/4f/Relic_of_Peitha.png\")",
+        "Strike Modifier": "IF(O38,0.1 * RelicUptimeVariable,\"\")",
+        "Equip  Check": "IF(RelicEquipped=B39,1,0)"
+      }
+    },
+    "Reaper": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B40,1,0)"
+      }
+    },
+    "Resistancxe": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B41,1,0)"
+      }
+    },
+    "Scourge": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B42,1,0)"
+      }
+    },
+    "Speed": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B43,1,0)"
+      }
+    },
+    "Sunless": {
+      "Equip  Check": 0,
+      "Implemented": "N",
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B44,1,0)"
+      }
+    },
+    "Thief": {
+      "Equipment": "#REF!",
+      "Strike Modifier": 0,
+      "Equip  Check": 0,
+      "Implemented": "Y",
+      "_formulas": {
+        "Equipment": "IMAGE(\"https://wiki.guildwars2.com/images/0/04/Relic_of_the_Thief.png\")",
+        "Strike Modifier": "IF(O45,0.01 * RelicStacks * RelicUptimeVariable,0)",
+        "Equip  Check": "IF(RelicEquipped=B45,1,0)"
+      }
+    },
+    "Trooper": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B46,1,0)"
+      }
+    },
+    "Unseen Invasion": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B47,1,0)"
+      }
+    },
+    "Vass": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B48,1,0)"
+      }
+    },
+    "Warrior": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B49,1,0)"
+      }
+    },
+    "Water": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B50,1,0)"
+      }
+    },
+    "Weaver": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B51,1,0)"
+      }
+    },
+    "Wizard's Tower": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B52,1,0)"
+      }
+    },
+    "Zephyrite": {
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equip  Check": "IF(RelicEquipped=B53,1,0)"
+      }
+    },
+    "Claw": {
+      "Equipment": "#REF!",
+      "Strike Modifier": 0,
+      "Equip  Check": 0,
+      "_formulas": {
+        "Equipment": "IMAGE(\"https://wiki.guildwars2.com/images/7/7f/Relic_of_the_Claw.png\")",
+        "Strike Modifier": "IF(O54,0.07 * RelicStacks * RelicUptimeVariable,0)",
+        "Equip  Check": "IF(RelicEquipped=B54,1,0)"
+      }
+    }
+  }
+}

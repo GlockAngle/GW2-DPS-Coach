@@ -1,0 +1,83 @@
+{
+  "summary": {
+    "verified_categories": 7,
+    "total_categories": 9,
+    "overall_progress_pct": 88.1,
+    "blocking_categories": 1,
+    "simulation_ready": false,
+    "status": "NOT READY \u2014 verification blockers remain",
+    "observed_dps": 42040,
+    "observed_dps_is_prediction": false
+  },
+  "categories": [
+    {
+      "category": "Benchmark input",
+      "status": "VERIFIED",
+      "progress_pct": 100,
+      "evidence": "Uploaded Elite Insights JSON is bundled and parsed.",
+      "blocker": ""
+    },
+    {
+      "category": "Cast timeline",
+      "status": "VERIFIED",
+      "progress_pct": 95.4,
+      "evidence": "173 observed casts; reconstructed uptime 98.632%.",
+      "blocker": "Unmodeled cast roles remain"
+    },
+    {
+      "category": "Core dagger skills",
+      "status": "VERIFIED",
+      "progress_pct": 100,
+      "evidence": "9 benchmark core records use explicit PvE hit/condition packets.",
+      "blocker": ""
+    },
+    {
+      "category": "Artifact use/follow-ups",
+      "status": "VERIFIED",
+      "progress_pct": 100,
+      "evidence": "30 root uses and 6 follow-ups; 0 invalid transitions.",
+      "blocker": ""
+    },
+    {
+      "category": "Initiative affordability",
+      "status": "VERIFIED",
+      "progress_pct": 100,
+      "evidence": "Spent 156.0; confirmed artifact gain +52.0; aggregate unexplained income 0.0.",
+      "blocker": ""
+    },
+    {
+      "category": "Cooldown/state legality",
+      "status": "VERIFIED",
+      "progress_pct": 100.0,
+      "evidence": "Holo-Dancer consumption events: 2.",
+      "blocker": ""
+    },
+    {
+      "category": "Direct-damage mapping",
+      "status": "PARTIAL",
+      "progress_pct": 97.9,
+      "evidence": "640,953 observed direct damage mapped.",
+      "blocker": "Remaining direct rows lack an independent coefficient/stat calculation."
+    },
+    {
+      "category": "Condition source mapping",
+      "status": "VERIFIED",
+      "progress_pct": 100.0,
+      "evidence": "5/5 observed condition types have explicit packet sources; packet attribution covers 100.0% of condition damage.",
+      "blocker": ""
+    },
+    {
+      "category": "Independent damage formulas",
+      "status": "BLOCKED",
+      "progress_pct": 0,
+      "evidence": "Observed damage and attribution are available, but they are not predictions.",
+      "blocker": "Freeze the exact stat snapshot, weapon strength, target armor, modifier timeline, condition formulas, and event timestamps."
+    }
+  ],
+  "next_actions": [
+    "Cooldown legality now applies alacrity, Holo-Dancer, Repeat Ransacker, preparation sequencing, and Double Edge recharge.",
+    "Burning, Torment, and Confusion now have explicit benchmark PvE packets; validate trait variants when changing build presets.",
+    "Freeze the benchmark stat/modifier snapshot before calculating any predicted damage.",
+    "Run an event-time simulation and compare predicted damage per source against Elite Insights."
+  ]
+}

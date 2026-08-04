@@ -3,7 +3,8 @@ import json
 from datetime import date, datetime
 from pathlib import Path
 from utils.skill_library import render_skill_library_page, live_damage_ready_skills, simulate_live_skill
-from utils.gw2combat_adapter import engine_status, run_encounter, run_bundled_example, audit_summary, VENDOR_ROOT
+from utils.gw2combat_adapter import engine_status, run_encounter, run_bundled_example, analyze_audit, VENDOR_ROOT
+from utils.antiquary_reference import load_elite_insights_reference, compare_reference_to_engine, build_completion_gate
 from utils.gw2combat_antiquary import build_antiquary_benchmark_package
 
 import pandas as pd
@@ -32,7 +33,9 @@ from utils.thief_traits import render_traits_page, render_trait_progress_page
 # Local benchmark history
 # --------------------------------------------------
 
-HISTORY_FILE = Path(__file__).with_name("antiquary_history.json")
+PROJECT_ROOT = Path(__file__).resolve().parent
+DATA_DIR = PROJECT_ROOT / "data"
+HISTORY_FILE = PROJECT_ROOT / "antiquary_history.json"
 
 
 def load_benchmark_history():
@@ -3658,143 +3661,128 @@ elif selected_page == "Compare":
 
 elif selected_page == "Simulation":
     st.markdown("## Simulation")
-    st.caption("gw2combat integration — Step 2: generated Dagger/Dagger Antiquary benchmark package and full log rotation.")
+    st.caption("Raw, uncalibrated gw2combat replay compared directly with the Elite Insights reference log.")
     status = engine_status()
+    package = build_antiquary_benchmark_package()
+    coverage = package.coverage
 
-    top1, top2, top3 = st.columns(3)
+    top1, top2, top3, top4 = st.columns(4)
     top1.metric("Engine", "Ready" if status.available else "Setup required")
-    top2.metric("Backend", "gw2combat")
-    top3.metric("Integration", "Step 2")
-
-    if status.available:
-        st.success(status.message)
+    top2.metric("Rotation", f"{coverage['casts']:,} casts")
+    top3.metric("Definitions", f"{coverage['supported_unique_skills']}/{coverage['unique_skills']}")
+    top4.metric("Coverage", f"{coverage['support_pct']:.1f}%")
+    if status.available: st.success(f"gw2combat ready: {status.executable}")
     else:
-        st.warning(status.message)
-        st.code(r".\scripts\build_gw2combat.ps1", language="powershell")
-        st.caption("One-time setup: Visual Studio 2022 Build Tools with Desktop development with C++ and CMake tools.")
+        st.warning(status.message); st.code(r".\scripts\build_gw2combat.ps1", language="powershell")
 
-    overview_tab, run_tab, diagnostics_tab = st.tabs(["Overview", "Run configuration", "Diagnostics"])
+    run_col, clear_col = st.columns([3, 1])
+    with run_col:
+        run_requested = st.button("Run raw Antiquary benchmark simulation", type="primary", disabled=not status.available, use_container_width=True, key="run_antiquary_benchmark")
+    with clear_col:
+        if st.button("Clear result", use_container_width=True, key="clear_antiquary_result"):
+            st.session_state.pop("gw2combat_antiquary_audit", None); st.session_state.pop("gw2combat_antiquary_analysis", None); st.rerun()
 
-    with overview_tab:
-        st.markdown("### Generated Antiquary benchmark")
-        package = build_antiquary_benchmark_package()
-        coverage = package.coverage
-        a, b, c, d = st.columns(4)
-        a.metric("Rotation casts", f"{coverage['casts']:,}")
-        b.metric("Unique skills", coverage['unique_skills'])
-        c.metric("Mapped skills", coverage['supported_unique_skills'])
-        d.metric("Definition coverage", f"{coverage['support_pct']:.1f}%")
-        st.write(
-            "The complete cast timeline from your benchmark JSON is now converted into a gw2combat rotation. "
-            "Verified Thief skill records generate strike and condition events; unmapped artifact/child skills remain zero-damage placeholders so the engine can expose exactly what is still missing."
-        )
-        if coverage['placeholder_names']:
-            with st.expander(f"Unmapped skill definitions ({coverage['placeholder_unique_skills']})"):
-                st.write(coverage['placeholder_names'])
+    if run_requested:
+        try:
+            with st.spinner("Running the 173 logged casts through raw gw2combat..."):
+                result = run_encounter(package.encounter, package.files, timeout_s=240)
+                analysis = analyze_audit(result, source_actor="player")
+            st.session_state["gw2combat_antiquary_audit"] = result
+            st.session_state["gw2combat_antiquary_analysis"] = analysis
+            # Persist the exact audit used for the displayed result. This avoids
+            # stale Downloads-folder audits and makes every run reproducible.
+            audit_path = DATA_DIR / "last_simulation_audit.json"
+            audit_path.write_text(json.dumps(result, indent=2), encoding="utf-8")
+            metadata_path = DATA_DIR / "last_simulation_audit_meta.json"
+            metadata_path.write_text(
+                json.dumps({
+                    "raw_dps": analysis.get("dps"),
+                    "total_damage": analysis.get("total_damage"),
+                    "combat_time_s": analysis.get("combat_time_s"),
+                    "damage_events": analysis.get("damage_events"),
+                    "audit_path": str(audit_path),
+                }, indent=2),
+                encoding="utf-8",
+            )
+            st.success(f"Raw simulation completed and saved to {audit_path}. No calibration was applied.")
+        except Exception as exc:
+            st.session_state.pop("gw2combat_antiquary_analysis", None); st.error(str(exc))
 
-        if st.button("Run Antiquary benchmark simulation", type="primary", disabled=not status.available, use_container_width=True):
-            try:
-                with st.spinner("Running the generated Dagger/Dagger Antiquary rotation in gw2combat..."):
-                    result = run_encounter(package.encounter, package.files)
-                st.session_state["gw2combat_antiquary_audit"] = result
-                st.success("Antiquary benchmark simulation completed.")
-            except Exception as exc:
-                st.error(str(exc))
+    antiquary_audit = st.session_state.get("gw2combat_antiquary_audit")
+    analysis = st.session_state.get("gw2combat_antiquary_analysis")
+    if antiquary_audit is not None and analysis is None:
+        analysis = analyze_audit(antiquary_audit, source_actor="player"); st.session_state["gw2combat_antiquary_analysis"] = analysis
 
-        antiquary_audit = st.session_state.get("gw2combat_antiquary_audit")
-        if antiquary_audit is not None:
-            summary = audit_summary(antiquary_audit)
-            x, y, z = st.columns(3)
-            x.metric("Audit objects", f"{summary['events']:,}")
-            y.metric("Damage events", f"{summary['damage_events']:,}")
-            z.metric("Parsed damage", f"{summary['total_damage']:,.0f}")
-            st.caption("This is the first gw2combat subtotal, not yet a final 42k prediction. Placeholder definitions are intentionally visible above.")
-            with st.expander("Raw Antiquary audit JSON"):
-                st.json(antiquary_audit)
+    if analysis is not None:
+        reference = load_elite_insights_reference(DATA_DIR / "benchmark_dagger.json")
+        comparison = compare_reference_to_engine(reference, analysis)
+        gate = build_completion_gate(reference, analysis, coverage, comparison)
+        st.markdown("### Raw engine result")
+        cards = st.columns(5)
+        cards[0].metric("Raw gw2combat DPS", f"{analysis['dps']:,.0f}")
+        cards[1].metric("EI reference DPS", f"{reference['dps']:,.0f}")
+        cards[2].metric("Difference", f"{comparison['dps_difference']:+,.0f}", f"{comparison['dps_difference_pct']:+.2%}")
+        cards[3].metric("Combat time", f"{analysis['combat_time_s']:.3f}s")
+        cards[4].metric("Damage events", f"{analysis['damage_events']:,}")
+        st.info("This page now uses only the raw audit. No learned factors, reference scaling, or calibrated totals affect the result.")
+        audit_path = DATA_DIR / "last_simulation_audit.json"
+        dl_col, path_col = st.columns([1, 3])
+        with dl_col:
+            st.download_button(
+                "Download latest audit JSON",
+                data=json.dumps(antiquary_audit, indent=2),
+                file_name="antiquary-gw2combat-latest-audit.json",
+                mime="application/json",
+                key="download_antiquary_latest_audit_top",
+                use_container_width=True,
+            )
+        with path_col:
+            st.code(str(audit_path), language=None)
 
-        st.markdown("### Live build sensitivity test")
-        st.caption("Select a damage-ready skill, save a baseline, then change gear/traits/sigils/relics and return here. The calculation uses the same shared build state as Skill Inspector.")
-        live_skills = live_damage_ready_skills()
-        if not st.session_state.get("gear_sim_total_stats"):
-            st.warning("Open **Gear Simulator** once first so the active build stats are calculated.")
-        elif live_skills:
-            test_cols = st.columns([2.2, 1.0, 1.0])
-            with test_cols[0]:
-                live_skill = st.selectbox("Test skill", live_skills, key="simulation_live_skill")
-            with test_cols[1]:
-                live_casts = st.number_input("Casts", min_value=1.0, value=10.0, step=1.0, key="simulation_live_casts")
-            current = simulate_live_skill(live_skill, live_casts)
-            baseline_key = f"{current['skill_id']}:{live_casts:g}"
-            with test_cols[2]:
-                st.write("")
-                st.write("")
-                if st.button("Save baseline", use_container_width=True):
-                    st.session_state["simulation_live_baseline"] = {"key": baseline_key, "result": current}
-            baseline_record = st.session_state.get("simulation_live_baseline", {})
-            baseline = baseline_record.get("result") if baseline_record.get("key") == baseline_key else None
-            delta = current["expected_total"] - baseline["expected_total"] if baseline else None
-            cards = st.columns(4)
-            cards[0].metric("Expected / cast", f"{current['expected_per_cast']:,.0f}")
-            cards[1].metric("Expected total", f"{current['expected_total']:,.0f}", f"{delta:+,.0f}" if delta is not None else None)
-            cards[2].metric("Outgoing multiplier", f"×{current['outgoing_modifier']:.4f}")
-            cards[3].metric("Power", f"{current['power']:,.0f}")
-            rows = []
-            for group, effects in current.get("modifier_effects", {}).items():
-                for effect in effects:
-                    rows.append({"Source": getattr(effect, "source", "Unknown"), "Group": group, "Amount": f"{float(getattr(effect, 'value', 0.0)):+.2%}"})
-            if rows:
-                st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
-            else:
-                st.caption("No direct strike modifiers are active for this skill. Proc-only relics appear as separate events and do not alter this per-cast strike value.")
+        gate_df = pd.DataFrame(gate); passed = int(gate_df['Passed'].sum())
+        st.markdown(f"### Accuracy gate — {passed}/{len(gate)} checks passed")
+        gate_df['Status'] = gate_df['Passed'].map(lambda v: "✅ Pass" if v else "❌ Fail")
+        st.dataframe(gate_df[['Status','Check','Observed']], hide_index=True, use_container_width=True)
 
-        if st.button("Test gw2combat backend", disabled=not status.available, use_container_width=True):
-            try:
-                with st.spinner("Running bundled gw2combat example..."):
-                    result = run_bundled_example()
-                st.session_state["gw2combat_last_audit"] = result
-                st.success("Backend test passed. The C++ engine executed and returned an audit file.")
-            except Exception as exc:
-                st.error(str(exc))
-
-    with run_tab:
-        st.markdown("### Run a gw2combat configuration")
-        st.caption("Advanced/manual mode for testing encounter, build and rotation definitions.")
-        encounter_upload = st.file_uploader("Encounter JSON", type=["json"], key="gw2combat_encounter")
-        build_uploads = st.file_uploader(
-            "Referenced build, rotation and recipe files",
-            accept_multiple_files=True,
-            key="gw2combat_files",
-        )
-        if st.button("Run simulation", type="primary", disabled=not status.available or encounter_upload is None):
-            try:
-                encounter = json.loads(encounter_upload.getvalue().decode("utf-8"))
-                supplied = {upload.name: upload.getvalue() for upload in (build_uploads or [])}
-                result = run_encounter(encounter, supplied)
-                st.session_state["gw2combat_last_audit"] = result
-                st.success("Simulation completed.")
-            except Exception as exc:
-                st.error(str(exc))
-
-        audit = st.session_state.get("gw2combat_last_audit")
-        if audit is not None:
-            summary = audit_summary(audit)
-            x, y, z = st.columns(3)
-            x.metric("Audit objects", f"{summary['events']:,}")
-            y.metric("Damage events", f"{summary['damage_events']:,}")
-            z.metric("Parsed damage", f"{summary['total_damage']:,.0f}")
-            with st.expander("Raw audit JSON"):
-                st.json(audit)
-
-    with diagnostics_tab:
-        st.markdown("### Engine diagnostics")
-        st.json({
-            "available": status.available,
-            "executable": str(status.executable) if status.executable else None,
-            "source_present": status.source_present,
-            "example_present": status.example_present,
-            "vendor_root": str(VENDOR_ROOT),
-        })
-        st.markdown("The upstream source and MIT license are included in `vendor/gw2combat`.")
+        skill_tab,type_tab,raw_tab,timeline_tab,cast_tab,diag_tab=st.tabs(["EI comparable sources", "EI vs engine by type", "Raw engine breakdown", "Timeline", "Cast audit", "Diagnostics"])
+        with skill_tab:
+            st.caption("Direct skills are compared by (skill, damage type). Elite Insights exposes condition damage here only as fight-wide condition totals, so Bleeding/Poison/Burning/Torment/Confusion are compared as damage-type aggregates. Per-source engine condition attribution remains in Raw engine breakdown.")
+            df=pd.DataFrame(comparison['skill_comparison'])
+            if not df.empty:
+                show=df.copy()
+                for col in ['EI damage','Engine damage','Difference']: show[col]=show[col].round().astype(int)
+                show['Difference %']=show['Difference %'].map(lambda v:"—" if pd.isna(v) else f"{v:+.1%}")
+                st.dataframe(show,hide_index=True,use_container_width=True)
+                chart=df[df['EI damage']>0].head(20)
+                if not chart.empty:
+                    long=chart.melt(id_vars=['Skill'],value_vars=['EI damage','Engine damage'],var_name='Source',value_name='Damage')
+                    st.plotly_chart(px.bar(long,x='Damage',y='Skill',color='Source',barmode='group',orientation='h'),use_container_width=True)
+        with type_tab:
+            df=pd.DataFrame(comparison['type_comparison'])
+            if not df.empty:
+                show=df.copy()
+                for col in ['EI damage','Engine damage','Difference']: show[col]=show[col].round().astype(int)
+                show['Difference %']=show['Difference %'].map(lambda v:"—" if pd.isna(v) else f"{v:+.1%}")
+                st.dataframe(show,hide_index=True,use_container_width=True)
+                long=df.melt(id_vars=['Damage type'],value_vars=['EI damage','Engine damage'],var_name='Source',value_name='Damage')
+                st.plotly_chart(px.bar(long,x='Damage type',y='Damage',color='Source',barmode='group'),use_container_width=True)
+        with raw_tab:
+            df=pd.DataFrame(analysis['by_skill'])
+            if not df.empty:
+                show=df.copy(); show['Damage']=show['Damage'].round().astype(int); show['DPS']=show['DPS'].round().astype(int); show['Share']=show['Share'].map(lambda v:f"{v:.1%}")
+                st.dataframe(show,hide_index=True,use_container_width=True)
+        with timeline_tab:
+            df=pd.DataFrame(analysis['timeline'])
+            if not df.empty: st.plotly_chart(px.line(df,x='Time (s)',y='Cumulative DPS',title='Raw cumulative engine DPS'),use_container_width=True)
+        with cast_tab:
+            expected=coverage.get('expected_cast_counts',{}); actual=analysis['cast_counts']; skills=sorted(set(expected)|set(actual))
+            df=pd.DataFrame([{"Skill":x,"Expected":int(expected.get(x,0)),"Executed":int(actual.get(x,0)),"Difference":int(actual.get(x,0))-int(expected.get(x,0))} for x in skills])
+            st.dataframe(df,hide_index=True,use_container_width=True)
+            if not df.empty and (df['Difference']==0).all(): st.success(f"Exact replay verified: all {int(df['Expected'].sum())} logged casts executed.")
+            else: st.error("Missing or extra casts remain; damage accuracy is not yet valid.")
+        with diag_tab:
+            st.json({"raw_engine":{"dps":analysis['dps'],"damage":analysis['total_damage'],"duration_s":analysis['combat_time_s']},"elite_insights":{"dps":reference['dps'],"damage":reference['total_damage'],"duration_s":reference['duration_ms']/1000},"coverage":coverage})
+            st.download_button("Download raw audit JSON",data=json.dumps(antiquary_audit,indent=2),file_name="antiquary-gw2combat-raw-audit.json",mime="application/json",key="download_antiquary_raw_audit")
 
 elif selected_page == "Build":
     st.markdown("## Build")

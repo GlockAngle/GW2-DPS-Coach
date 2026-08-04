@@ -1,0 +1,446 @@
+{
+  "summary": {
+    "fight_duration_ms": 94013,
+    "root_artifact_casts": 30,
+    "follow_up_casts": 6,
+    "artifact_families_observed": 7,
+    "timeline_violations": 0,
+    "rotation_engine_status": "ARTIFACT EVENTS READY; generation probabilities/timing remain an explicit external input",
+    "important_limit": "Elite Insights records artifact use and damage, but does not prove the hidden random roll or inventory grant event. The engine therefore never invents generation timestamps."
+  },
+  "records": [
+    {
+      "id": 76633,
+      "name": "Forged Surfer Dash",
+      "family": "Forged Surfer",
+      "role": "offensive",
+      "casts": 3,
+      "cast_times_ms": [
+        445,
+        20444,
+        56679
+      ],
+      "median_action_ms": 195,
+      "direct_hits": 3,
+      "direct_damage": 27346,
+      "observed_direct_hits_per_cast": 1.0,
+      "children": [
+        {
+          "id": 78440,
+          "name": "Forged Surfer Dash (Additional Bombs)",
+          "hits": 12,
+          "damage": 55779
+        }
+      ],
+      "follow_up_ids": [],
+      "notes": "Dash plus a delayed bomb trail.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 77277,
+      "name": "Mistburn Mortar",
+      "family": "Mistburn Mortar",
+      "role": "offensive",
+      "casts": 7,
+      "cast_times_ms": [
+        681,
+        2882,
+        18444,
+        23806,
+        37798,
+        43603,
+        49922
+      ],
+      "median_action_ms": 598,
+      "direct_hits": 35,
+      "direct_damage": 68862,
+      "observed_direct_hits_per_cast": 5.0,
+      "children": [],
+      "follow_up_ids": [],
+      "notes": "Multi-hit offensive artifact.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 77255,
+      "name": "Skritt Scuffle",
+      "family": "Skritt",
+      "role": "setup",
+      "casts": 3,
+      "cast_times_ms": [
+        1279,
+        41999,
+        83002
+      ],
+      "median_action_ms": 562,
+      "direct_hits": 0,
+      "direct_damage": 0,
+      "observed_direct_hits_per_cast": 0.0,
+      "children": [],
+      "follow_up_ids": [
+        77397
+      ],
+      "notes": "Creates a temporary Skritt Swipe follow-up window.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 77397,
+      "name": "Skritt Swipe",
+      "family": "Skritt",
+      "role": "follow_up",
+      "casts": 5,
+      "cast_times_ms": [
+        19042,
+        36443,
+        55519,
+        72920,
+        91162
+      ],
+      "median_action_ms": 201,
+      "direct_hits": 0,
+      "direct_damage": 0,
+      "observed_direct_hits_per_cast": 0.0,
+      "children": [],
+      "follow_up_ids": [],
+      "notes": "Follow-up charge created by Skritt Scuffle; not an independent random draw.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 77192,
+      "name": "Summon Kryptis Turret",
+      "family": "Kryptis Turret",
+      "role": "offensive",
+      "casts": 12,
+      "cast_times_ms": [
+        5563,
+        9125,
+        11841,
+        14563,
+        46159,
+        55082,
+        56242,
+        59117,
+        74357,
+        88003,
+        90718,
+        92162
+      ],
+      "median_action_ms": 438,
+      "direct_hits": 88,
+      "direct_damage": 136060,
+      "observed_direct_hits_per_cast": 7.333,
+      "children": [],
+      "follow_up_ids": [],
+      "notes": "Persistent turret with a variable number of attacks before expiry or fight end.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "family": "Holo-Dancer",
+      "role": "offensive",
+      "casts": 3,
+      "cast_times_ms": [
+        39444,
+        52360,
+        93641
+      ],
+      "median_action_ms": 600,
+      "direct_hits": 0,
+      "direct_damage": 0,
+      "observed_direct_hits_per_cast": 0.0,
+      "children": [
+        {
+          "id": 77028,
+          "name": "Holo-Dancer Decoy",
+          "hits": 2,
+          "damage": 15720
+        }
+      ],
+      "follow_up_ids": [],
+      "notes": "The cast and its decoy damage are separate log rows.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 76582,
+      "name": "Metal Legion Guitar (Rockout)",
+      "family": "Metal Legion Guitar",
+      "role": "channel",
+      "casts": 1,
+      "cast_times_ms": [
+        74802
+      ],
+      "median_action_ms": 1402,
+      "direct_hits": 4,
+      "direct_damage": 14814,
+      "observed_direct_hits_per_cast": 4.0,
+      "children": [],
+      "follow_up_ids": [
+        76596
+      ],
+      "notes": "Channel/pulse phase; Smash is a separate follow-up skill.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 76596,
+      "name": "Metal Legion Guitar (Smash)",
+      "family": "Metal Legion Guitar",
+      "role": "follow_up",
+      "casts": 1,
+      "cast_times_ms": [
+        76204
+      ],
+      "median_action_ms": 472,
+      "direct_hits": 1,
+      "direct_damage": 10671,
+      "observed_direct_hits_per_cast": 1.0,
+      "children": [],
+      "follow_up_ids": [],
+      "notes": "Finisher for Rockout, not a separate artifact roll.",
+      "verification": "benchmark_observed"
+    },
+    {
+      "id": 76895,
+      "name": "Zephyrite Sun Crystal",
+      "family": "Zephyrite Sun Crystal",
+      "role": "offensive",
+      "casts": 1,
+      "cast_times_ms": [
+        84801
+      ],
+      "median_action_ms": 160,
+      "direct_hits": 1,
+      "direct_damage": 4472,
+      "observed_direct_hits_per_cast": 1.0,
+      "children": [
+        {
+          "id": 76816,
+          "name": "Chak Shield",
+          "hits": 3,
+          "damage": 4102
+        }
+      ],
+      "follow_up_ids": [],
+      "notes": "Observed with a separate Chak Shield child damage source in this benchmark.",
+      "verification": "benchmark_observed"
+    }
+  ],
+  "timeline": [
+    {
+      "time_ms": 445,
+      "skill_id": 76633,
+      "name": "Forged Surfer Dash",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 681,
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 1279,
+      "skill_id": 77255,
+      "name": "Skritt Scuffle",
+      "role": "setup"
+    },
+    {
+      "time_ms": 2882,
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 5563,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 9125,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 11841,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 14563,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 18444,
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 19042,
+      "skill_id": 77397,
+      "name": "Skritt Swipe",
+      "role": "follow_up"
+    },
+    {
+      "time_ms": 20444,
+      "skill_id": 76633,
+      "name": "Forged Surfer Dash",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 23806,
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 36443,
+      "skill_id": 77397,
+      "name": "Skritt Swipe",
+      "role": "follow_up"
+    },
+    {
+      "time_ms": 37798,
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 39444,
+      "skill_id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 41999,
+      "skill_id": 77255,
+      "name": "Skritt Scuffle",
+      "role": "setup"
+    },
+    {
+      "time_ms": 43603,
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 46159,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 49922,
+      "skill_id": 77277,
+      "name": "Mistburn Mortar",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 52360,
+      "skill_id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 55082,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 55519,
+      "skill_id": 77397,
+      "name": "Skritt Swipe",
+      "role": "follow_up"
+    },
+    {
+      "time_ms": 56242,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 56679,
+      "skill_id": 76633,
+      "name": "Forged Surfer Dash",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 59117,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 72920,
+      "skill_id": 77397,
+      "name": "Skritt Swipe",
+      "role": "follow_up"
+    },
+    {
+      "time_ms": 74357,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 74802,
+      "skill_id": 76582,
+      "name": "Metal Legion Guitar (Rockout)",
+      "role": "channel"
+    },
+    {
+      "time_ms": 76204,
+      "skill_id": 76596,
+      "name": "Metal Legion Guitar (Smash)",
+      "role": "follow_up"
+    },
+    {
+      "time_ms": 83002,
+      "skill_id": 77255,
+      "name": "Skritt Scuffle",
+      "role": "setup"
+    },
+    {
+      "time_ms": 84801,
+      "skill_id": 76895,
+      "name": "Zephyrite Sun Crystal",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 88003,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 90718,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 91162,
+      "skill_id": 77397,
+      "name": "Skritt Swipe",
+      "role": "follow_up"
+    },
+    {
+      "time_ms": 92162,
+      "skill_id": 77192,
+      "name": "Summon Kryptis Turret",
+      "role": "offensive"
+    },
+    {
+      "time_ms": 93641,
+      "skill_id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "role": "offensive"
+    }
+  ],
+  "violations": []
+}

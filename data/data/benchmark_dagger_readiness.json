@@ -1,0 +1,269 @@
+{
+  "summary": {
+    "benchmark_records": 27,
+    "ready_skill_records": 9,
+    "aggregate_condition_rows": 5,
+    "state_dependent_or_child_records": 13,
+    "rotation_engine_status": "BLOCKED \u2014 artifact state machine still required",
+    "scope": "Dagger-only Condition Antiquary benchmark from uploaded Elite Insights JSON",
+    "critical_corrections": [
+      "PvE and competitive facts are no longer summed for Double Strike, Wild Strike, Lotus Strike, Backstab, or Death Blossom.",
+      "Condition applications are explicit per hit/pulse/charge for the verified core benchmark skills.",
+      "Observed effective action times are stored separately from tooltip activation times."
+    ]
+  },
+  "records": [
+    {
+      "id": 723,
+      "name": "Poison",
+      "casts": 0,
+      "logged_hits": 94,
+      "status": "Aggregate condition output",
+      "timing_basis": "not_a_cast",
+      "notes": "Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+    },
+    {
+      "id": 736,
+      "name": "Bleeding",
+      "casts": 0,
+      "logged_hits": 94,
+      "status": "Aggregate condition output",
+      "timing_basis": "not_a_cast",
+      "notes": "Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+    },
+    {
+      "id": 737,
+      "name": "Burning",
+      "casts": 0,
+      "logged_hits": 91,
+      "status": "Aggregate condition output",
+      "timing_basis": "not_a_cast",
+      "notes": "Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+    },
+    {
+      "id": 861,
+      "name": "Confusion",
+      "casts": 0,
+      "logged_hits": 18,
+      "status": "Aggregate condition output",
+      "timing_basis": "not_a_cast",
+      "notes": "Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+    },
+    {
+      "id": 13004,
+      "name": "Double Strike",
+      "casts": 31,
+      "logged_hits": 49,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.361,
+      "notes": "Corrected a game-mode parsing error: 0.4 is the competitive value, not an additional PvE packet."
+    },
+    {
+      "id": 13005,
+      "name": "Backstab",
+      "casts": 3,
+      "logged_hits": 3,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.362,
+      "notes": "Benchmark target is defiant, so the PvE back/defiant coefficient is used. Alternative front and competitive facts are not summed."
+    },
+    {
+      "id": 13006,
+      "name": "Death Blossom",
+      "casts": 39,
+      "logged_hits": 117,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 1.042,
+      "notes": "The former 3 stacks for 10s row was another game-mode fact and has been removed from the PvE model."
+    },
+    {
+      "id": 13026,
+      "name": "Prepare Thousand Needles",
+      "casts": 4,
+      "logged_hits": 0,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.601,
+      "notes": "Automatically synchronized from structured GW2 Wiki infobox and skill-fact parameters. Manual overrides take precedence."
+    },
+    {
+      "id": 13028,
+      "name": "Caltrops",
+      "casts": 5,
+      "logged_hits": 0,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.923,
+      "notes": "Ten one-second pulses. Bleeding stacks; Cripple overwrites its own duration."
+    },
+    {
+      "id": 13037,
+      "name": "Spider Venom",
+      "casts": 5,
+      "logged_hits": 0,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.0,
+      "notes": "Mode and recipient facts are not summed. The player receives six charges; each successful attack consumes one charge and applies one 3s Poison stack. Ally contribution remains a separate simulator input."
+    },
+    {
+      "id": 13087,
+      "name": "Wild Strike",
+      "casts": 24,
+      "logged_hits": 23,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.397,
+      "notes": "The 0.433 coefficient and 1-stack bleed are competitive values, not a second PvE hit."
+    },
+    {
+      "id": 13108,
+      "name": "Lotus Strike",
+      "casts": 22,
+      "logged_hits": 22,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.438,
+      "notes": "The 0.733 coefficient is the competitive split and is excluded from PvE."
+    },
+    {
+      "id": 19426,
+      "name": "Torment",
+      "casts": 0,
+      "logged_hits": 88,
+      "status": "Aggregate condition output",
+      "timing_basis": "not_a_cast",
+      "notes": "Elite Insights condition tick source; attribution is resolved through skill/trait events, not treated as a cast."
+    },
+    {
+      "id": 56897,
+      "name": "Thousand Needles",
+      "casts": 0,
+      "logged_hits": 25,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 56898,
+      "name": "Thousand Needles",
+      "casts": 4,
+      "logged_hits": 0,
+      "status": "Ready",
+      "timing_basis": "benchmark_effective_action_time",
+      "effective_action_time": 0.0,
+      "notes": "Prepare Thousand Needles (13026) and activation Thousand Needles (56898) remain separate skills."
+    },
+    {
+      "id": 76582,
+      "name": "Metal Legion Guitar (Rockout)",
+      "casts": 1,
+      "logged_hits": 4,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 76596,
+      "name": "Metal Legion Guitar (Smash)",
+      "casts": 1,
+      "logged_hits": 1,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 76633,
+      "name": "Forged Surfer Dash",
+      "casts": 3,
+      "logged_hits": 3,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 76674,
+      "name": "Holo-Dancer Decoy",
+      "casts": 3,
+      "logged_hits": 0,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 76816,
+      "name": "Chak Shield",
+      "casts": 0,
+      "logged_hits": 3,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 76895,
+      "name": "Zephyrite Sun Crystal",
+      "casts": 1,
+      "logged_hits": 1,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 77028,
+      "name": "Holo-Dancer Decoy",
+      "casts": 0,
+      "logged_hits": 2,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 77192,
+      "name": "Summon Kryptis Turret",
+      "casts": 12,
+      "logged_hits": 88,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 77255,
+      "name": "Skritt Scuffle",
+      "casts": 3,
+      "logged_hits": 0,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 77277,
+      "name": "Mistburn Mortar",
+      "casts": 7,
+      "logged_hits": 35,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 77397,
+      "name": "Skritt Swipe",
+      "casts": 5,
+      "logged_hits": 0,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    },
+    {
+      "id": 78440,
+      "name": "Forged Surfer Dash (Additional Bombs)",
+      "casts": 0,
+      "logged_hits": 12,
+      "status": "State-dependent artifact / child effect",
+      "timing_basis": "observed_only",
+      "notes": "Observed in this benchmark, but exact lifetime, child-hit and follow-up-state rules are not safely inferable from aggregate log rows alone."
+    }
+  ]
+}

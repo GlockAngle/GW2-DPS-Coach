@@ -1,0 +1,31 @@
+{
+  "name": "Relic of the Thief",
+  "short_name": "Thief",
+  "slug": "thief",
+  "game_mode": "PvE",
+  "model": "verified_metadata_only",
+  "implemented": false,
+  "effect_type": "strike_damage_modifier",
+  "description": "Upon striking an enemy with an eligible weapon skill, gain a stacking outgoing strike-damage increase; triggering again refreshes all stacks.",
+  "static_stats": {},
+  "damage_modifiers": {
+    "strike_damage_per_stack": 0.01,
+    "condition_damage": 0.0
+  },
+  "uptime_model": {
+    "trigger": "Hit an enemy with a weapon skill that has a recharge or resource cost",
+    "stack_duration_seconds": 6.0,
+    "maximum_stacks": 5,
+    "stack_gain_per_trigger": 1,
+    "refresh_all_stacks": true
+  },
+  "source_status": "verified_gw2wiki_pve_2026-08-01",
+  "last_verified": "2026-08-01",
+  "notes": [
+    "One stack per eligible trigger, up to five stacks.",
+    "Each stack is +1% outgoing strike damage.",
+    "Stacks last 6 seconds and all stacks refresh on a new trigger.",
+    "Not applied until the rotation engine supplies real eligible-hit timestamps.",
+    "Does not affect condition damage."
+  ]
+}

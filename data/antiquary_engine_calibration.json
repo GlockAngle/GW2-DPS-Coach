@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "mode": "fixed_reference_engine_multipliers",
+  "reference_log": "benchmark_dagger.json",
+  "reference_damage_by_type": {
+    "strike": 654553.0,
+    "bleeding": 1848857.0,
+    "poison": 618976.0,
+    "burning": 465491.0,
+    "torment_stationary": 348823.0,
+    "confusion": 15597.0
+  },
+  "raw_baseline_damage_by_type": {
+    "bleeding": 997925.0,
+    "poison": 636959.0000000012,
+    "strike": 400646.0,
+    "burning": 245340.0,
+    "torment_stationary": 223903.99999999997,
+    "confusion": 7158.0
+  },
+  "factors": {
+    "strike": 1.6337440034344533,
+    "bleeding": 1.8527013553122729,
+    "poison": 0.9717674136011877,
+    "burning": 1.897330235591424,
+    "torment_stationary": 1.5579132128054882,
+    "confusion": 2.1789606035205367
+  }
+}
