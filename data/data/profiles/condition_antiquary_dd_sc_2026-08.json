@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "profile_id": "condition-antiquary-dd-sc-2026-08",
+  "name": "Condition Antiquary — Dagger/Dagger (Snow Crows, Aug 2026)",
+  "game_mode": "PvE",
+  "profession": "Thief",
+  "specialization": "Antiquary",
+  "weapons": [
+    "Dagger",
+    "Dagger"
+  ],
+  "reference": {
+    "source": "Snow Crows",
+    "url": "https://snowcrows.com/builds/raids/thief/condition-antiquary-dagger-only",
+    "updated": "2026-08-08",
+    "balance_label": "Raids - July 2026 Balance",
+    "benchmark_max_dps": 45495,
+    "benchmark_average_dps": 45450
+  },
+  "unbooned_display_attributes": {
+    "power": 2172,
+    "precision": 1633,
+    "critical_chance_pct": 35.14,
+    "ferocity": 0,
+    "critical_damage_pct": 150,
+    "condition_damage": 1927,
+    "expertise": 783,
+    "condition_duration_pct": 67.19,
+    "concentration": 0,
+    "boon_duration_pct": 0
+  },
+  "gear": {
+    "stat_prefix": "Viper's",
+    "relic": "Relic of the Fractal",
+    "weapon_set": "Dagger/Dagger"
+  },
+  "trait_rules_verified_current": {
+    "Potent Poison": {
+      "poison_damage_modifier": 0.33,
+      "poison_duration_modifier": 0.33,
+      "source": "https://wiki.guildwars2.com/wiki/Potent_Poison"
+    },
+    "Deadly Ambush": {
+      "bleeding_damage_modifier": 0.25,
+      "steal_bleeding_stacks_pve": 3,
+      "steal_bleeding_duration_s_pve": 10,
+      "source": "https://wiki.guildwars2.com/wiki/Deadly_Ambush"
+    },
+    "Lead Attacks": {
+      "damage_per_stack": 0.01,
+      "condition_damage_per_stack": 0.01,
+      "max_stacks": 15,
+      "duration_s": 10,
+      "source": "https://wiki.guildwars2.com/wiki/Lead_Attacks"
+    },
+    "Exhilarating Ephemera": {
+      "all_damage_modifier": 0.1,
+      "duration_s": 10,
+      "max_duration_s": 20,
+      "source": "https://wiki.guildwars2.com/wiki/Exhilarating_Ephemera"
+    },
+    "Combat High": {
+      "strike_damage_per_stack_pve": 0.03,
+      "condition_damage_per_stack_pve": 0.02,
+      "max_stacks": 10,
+      "full_duration_s": 20,
+      "decay_interval_s": 2,
+      "effect_id": 76785,
+      "source": "https://wiki.guildwars2.com/wiki/Combat_High"
+    }
+  },
+  "trait_selection": {
+    "status": "verify_from_reference_log_or_build_template",
+    "rule": "Do not infer selected major traits from profession/spec alone."
+  },
+  "benchmark_evtc": {
+    "status": "pending_current_reference_upload",
+    "rule": "The current benchmark EVTC is authoritative for observed skill IDs, cast counts, child packets and modifier timelines."
+  }
+}
